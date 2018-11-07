@@ -137,7 +137,7 @@ public class Fragment_Msg extends Fragment implements OnClickListener,
                                final MsgBean con2) {
 
                 if(con1.getMessage().getTop_view() == 1){
-                    return -1;
+                    return 1;
                 }
                 if (con1.getMessage().getMsg_date() == con2.getMessage()
                         .getMsg_date()) {
