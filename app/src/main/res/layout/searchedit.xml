@@ -1,0 +1,36 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_login"
+            android:ems="18"
+            android:hint="好友账户"
+            android:imeOptions="actionSearch"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@drawable/editcursor"
+            android:textSize="32px">
+
+            <requestFocus />
+        </EditText>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

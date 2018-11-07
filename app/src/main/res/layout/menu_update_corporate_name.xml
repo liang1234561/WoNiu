@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="616px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="74px"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="301dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14px"
+                android:background="@color/lightblue"
+                android:ems="18"
+                android:hint="设置名字"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#666666"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:textSize="32px">
+
+                <requestFocus />
+            </EditText>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
