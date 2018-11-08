@@ -27,7 +27,7 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>optional string username = 1;</code>
      *
@@ -53,7 +53,7 @@ public final class ChatProtocol {
      *密码
      * </pre>
      */
-    String getPassword();
+    java.lang.String getPassword();
     /**
      * <code>optional string password = 2;</code>
      *
@@ -79,7 +79,7 @@ public final class ChatProtocol {
      *验证码
      * </pre>
      */
-    String getCode();
+    java.lang.String getCode();
     /**
      * <code>optional string code = 3;</code>
      *
@@ -105,7 +105,7 @@ public final class ChatProtocol {
      *验证码key
      * </pre>
      */
-    String getKey();
+    java.lang.String getKey();
     /**
      * <code>optional string key = 4;</code>
      *
@@ -144,7 +144,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -210,14 +210,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              RegistRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.RegistRequest.class, com.data.pbprotocol.ChatProtocol.RegistRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<RegistRequest> PARSER =
@@ -230,14 +230,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<RegistRequest> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private Object username_;
+    private java.lang.Object username_;
     /**
      * <code>optional string username = 1;</code>
      *
@@ -255,14 +255,14 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           username_ = s;
         }
@@ -278,11 +278,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -291,7 +291,7 @@ public final class ChatProtocol {
     }
 
     public static final int PASSWORD_FIELD_NUMBER = 2;
-    private Object password_;
+    private java.lang.Object password_;
     /**
      * <code>optional string password = 2;</code>
      *
@@ -309,14 +309,14 @@ public final class ChatProtocol {
      *密码
      * </pre>
      */
-    public String getPassword() {
-      Object ref = password_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPassword() {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           password_ = s;
         }
@@ -332,11 +332,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
-      Object ref = password_;
-      if (ref instanceof String) {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         password_ = b;
         return b;
       } else {
@@ -345,7 +345,7 @@ public final class ChatProtocol {
     }
 
     public static final int CODE_FIELD_NUMBER = 3;
-    private Object code_;
+    private java.lang.Object code_;
     /**
      * <code>optional string code = 3;</code>
      *
@@ -363,14 +363,14 @@ public final class ChatProtocol {
      *验证码
      * </pre>
      */
-    public String getCode() {
-      Object ref = code_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getCode() {
+      java.lang.Object ref = code_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           code_ = s;
         }
@@ -386,11 +386,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getCodeBytes() {
-      Object ref = code_;
-      if (ref instanceof String) {
+      java.lang.Object ref = code_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         code_ = b;
         return b;
       } else {
@@ -399,7 +399,7 @@ public final class ChatProtocol {
     }
 
     public static final int KEY_FIELD_NUMBER = 4;
-    private Object key_;
+    private java.lang.Object key_;
     /**
      * <code>optional string key = 4;</code>
      *
@@ -417,14 +417,14 @@ public final class ChatProtocol {
      *验证码key
      * </pre>
      */
-    public String getKey() {
-      Object ref = key_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           key_ = s;
         }
@@ -440,11 +440,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getKeyBytes() {
-      Object ref = key_;
-      if (ref instanceof String) {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         key_ = b;
         return b;
       } else {
@@ -514,59 +514,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static RegistRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static RegistRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static RegistRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static RegistRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static RegistRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static RegistRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static RegistRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static RegistRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static RegistRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static RegistRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -575,14 +575,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(RegistRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.RegistRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -596,17 +596,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.RegistRequest)
-        RegistRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.RegistRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                RegistRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.RegistRequest.class, com.data.pbprotocol.ChatProtocol.RegistRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.RegistRequest.newBuilder()
@@ -615,7 +615,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -646,23 +646,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistRequest_descriptor;
       }
 
-      public RegistRequest getDefaultInstanceForType() {
-        return RegistRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.RegistRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance();
       }
 
-      public RegistRequest build() {
-        RegistRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.RegistRequest build() {
+        com.data.pbprotocol.ChatProtocol.RegistRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public RegistRequest buildPartial() {
-        RegistRequest result = new RegistRequest(this);
+      public com.data.pbprotocol.ChatProtocol.RegistRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.RegistRequest result = new com.data.pbprotocol.ChatProtocol.RegistRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -687,16 +687,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof RegistRequest) {
-          return mergeFrom((RegistRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.RegistRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.RegistRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(RegistRequest other) {
-        if (other == RegistRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.RegistRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance()) return this;
         if (other.hasUsername()) {
           bitField0_ |= 0x00000001;
           username_ = other.username_;
@@ -729,11 +729,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        RegistRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.RegistRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (RegistRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.RegistRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -744,7 +744,7 @@ public final class ChatProtocol {
       }
       private int bitField0_;
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>optional string username = 1;</code>
        *
@@ -762,18 +762,18 @@ public final class ChatProtocol {
        *用户名
        * </pre>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             username_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -785,11 +785,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -804,7 +804,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -844,7 +844,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object password_ = "";
+      private java.lang.Object password_ = "";
       /**
        * <code>optional string password = 2;</code>
        *
@@ -862,18 +862,18 @@ public final class ChatProtocol {
        *密码
        * </pre>
        */
-      public String getPassword() {
-        Object ref = password_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPassword() {
+        java.lang.Object ref = password_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             password_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -885,11 +885,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getPasswordBytes() {
-        Object ref = password_;
+        java.lang.Object ref = password_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           password_ = b;
           return b;
         } else {
@@ -904,7 +904,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setPassword(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -944,7 +944,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object code_ = "";
+      private java.lang.Object code_ = "";
       /**
        * <code>optional string code = 3;</code>
        *
@@ -962,18 +962,18 @@ public final class ChatProtocol {
        *验证码
        * </pre>
        */
-      public String getCode() {
-        Object ref = code_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCode() {
+        java.lang.Object ref = code_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             code_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -985,11 +985,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getCodeBytes() {
-        Object ref = code_;
+        java.lang.Object ref = code_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           code_ = b;
           return b;
         } else {
@@ -1004,7 +1004,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setCode(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1044,7 +1044,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object key_ = "";
+      private java.lang.Object key_ = "";
       /**
        * <code>optional string key = 4;</code>
        *
@@ -1062,18 +1062,18 @@ public final class ChatProtocol {
        *验证码key
        * </pre>
        */
-      public String getKey() {
-        Object ref = key_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             key_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1085,11 +1085,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getKeyBytes() {
-        Object ref = key_;
+        java.lang.Object ref = key_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           key_ = b;
           return b;
         } else {
@@ -1104,7 +1104,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setKey(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1183,7 +1183,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1224,14 +1224,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              RegistResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.RegistResponse.class, com.data.pbprotocol.ChatProtocol.RegistResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<RegistResponse> PARSER =
@@ -1244,7 +1244,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<RegistResponse> getParserForType() {
       return PARSER;
     }
@@ -1279,59 +1279,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static RegistResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static RegistResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static RegistResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static RegistResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static RegistResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static RegistResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static RegistResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static RegistResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static RegistResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static RegistResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.RegistResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1340,14 +1340,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(RegistResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.RegistResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1357,17 +1357,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.RegistResponse)
-        RegistResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.RegistResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                RegistResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.RegistResponse.class, com.data.pbprotocol.ChatProtocol.RegistResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.RegistResponse.newBuilder()
@@ -1376,7 +1376,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1399,38 +1399,38 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_RegistResponse_descriptor;
       }
 
-      public RegistResponse getDefaultInstanceForType() {
-        return RegistResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.RegistResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance();
       }
 
-      public RegistResponse build() {
-        RegistResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.RegistResponse build() {
+        com.data.pbprotocol.ChatProtocol.RegistResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public RegistResponse buildPartial() {
-        RegistResponse result = new RegistResponse(this);
+      public com.data.pbprotocol.ChatProtocol.RegistResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.RegistResponse result = new com.data.pbprotocol.ChatProtocol.RegistResponse(this);
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof RegistResponse) {
-          return mergeFrom((RegistResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.RegistResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.RegistResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(RegistResponse other) {
-        if (other == RegistResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.RegistResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -1443,11 +1443,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        RegistResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.RegistResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (RegistResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.RegistResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1487,7 +1487,7 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>optional string username = 1;</code>
      *
@@ -1526,7 +1526,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1574,14 +1574,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              CheckUsernameRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.class, com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<CheckUsernameRequest> PARSER =
@@ -1594,14 +1594,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<CheckUsernameRequest> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private Object username_;
+    private java.lang.Object username_;
     /**
      * <code>optional string username = 1;</code>
      *
@@ -1619,14 +1619,14 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           username_ = s;
         }
@@ -1642,11 +1642,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -1692,59 +1692,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static CheckUsernameRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static CheckUsernameRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static CheckUsernameRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static CheckUsernameRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static CheckUsernameRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static CheckUsernameRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static CheckUsernameRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static CheckUsernameRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static CheckUsernameRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static CheckUsernameRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1753,14 +1753,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(CheckUsernameRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.CheckUsernameRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1774,17 +1774,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.CheckUsernameRequest)
-        CheckUsernameRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.CheckUsernameRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                CheckUsernameRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.class, com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.newBuilder()
@@ -1793,7 +1793,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1818,23 +1818,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor;
       }
 
-      public CheckUsernameRequest getDefaultInstanceForType() {
-        return CheckUsernameRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance();
       }
 
-      public CheckUsernameRequest build() {
-        CheckUsernameRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameRequest build() {
+        com.data.pbprotocol.ChatProtocol.CheckUsernameRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public CheckUsernameRequest buildPartial() {
-        CheckUsernameRequest result = new CheckUsernameRequest(this);
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.CheckUsernameRequest result = new com.data.pbprotocol.ChatProtocol.CheckUsernameRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1847,16 +1847,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof CheckUsernameRequest) {
-          return mergeFrom((CheckUsernameRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.CheckUsernameRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(CheckUsernameRequest other) {
-        if (other == CheckUsernameRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.CheckUsernameRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance()) return this;
         if (other.hasUsername()) {
           bitField0_ |= 0x00000001;
           username_ = other.username_;
@@ -1874,11 +1874,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        CheckUsernameRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.CheckUsernameRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (CheckUsernameRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1889,7 +1889,7 @@ public final class ChatProtocol {
       }
       private int bitField0_;
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>optional string username = 1;</code>
        *
@@ -1907,18 +1907,18 @@ public final class ChatProtocol {
        *用户名
        * </pre>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             username_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1930,11 +1930,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -1949,7 +1949,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2028,7 +2028,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -2069,14 +2069,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              CheckUsernameResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.class, com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<CheckUsernameResponse> PARSER =
@@ -2089,7 +2089,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<CheckUsernameResponse> getParserForType() {
       return PARSER;
     }
@@ -2124,59 +2124,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static CheckUsernameResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static CheckUsernameResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static CheckUsernameResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static CheckUsernameResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static CheckUsernameResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static CheckUsernameResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static CheckUsernameResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static CheckUsernameResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static CheckUsernameResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static CheckUsernameResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2185,14 +2185,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(CheckUsernameResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.CheckUsernameResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2202,17 +2202,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.CheckUsernameResponse)
-        CheckUsernameResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.CheckUsernameResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                CheckUsernameResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.class, com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.newBuilder()
@@ -2221,7 +2221,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2244,38 +2244,38 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor;
       }
 
-      public CheckUsernameResponse getDefaultInstanceForType() {
-        return CheckUsernameResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance();
       }
 
-      public CheckUsernameResponse build() {
-        CheckUsernameResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameResponse build() {
+        com.data.pbprotocol.ChatProtocol.CheckUsernameResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public CheckUsernameResponse buildPartial() {
-        CheckUsernameResponse result = new CheckUsernameResponse(this);
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.CheckUsernameResponse result = new com.data.pbprotocol.ChatProtocol.CheckUsernameResponse(this);
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof CheckUsernameResponse) {
-          return mergeFrom((CheckUsernameResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.CheckUsernameResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(CheckUsernameResponse other) {
-        if (other == CheckUsernameResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.CheckUsernameResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -2288,11 +2288,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        CheckUsernameResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.CheckUsernameResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (CheckUsernameResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2332,7 +2332,7 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>optional string username = 1;</code>
      *
@@ -2358,7 +2358,7 @@ public final class ChatProtocol {
      *密码
      * </pre>
      */
-    String getPassword();
+    java.lang.String getPassword();
     /**
      * <code>optional string password = 2;</code>
      *
@@ -2384,7 +2384,7 @@ public final class ChatProtocol {
      *当前版本号
      * </pre>
      */
-    String getCurrentVersion();
+    java.lang.String getCurrentVersion();
     /**
      * <code>optional string current_version = 3;</code>
      *
@@ -2410,7 +2410,7 @@ public final class ChatProtocol {
      *设备识别码
      * </pre>
      */
-    String getDeviceId();
+    java.lang.String getDeviceId();
     /**
      * <code>optional string device_id = 4;</code>
      *
@@ -2449,7 +2449,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -2515,14 +2515,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              LoginRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.LoginRequest.class, com.data.pbprotocol.ChatProtocol.LoginRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<LoginRequest> PARSER =
@@ -2535,14 +2535,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<LoginRequest> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private Object username_;
+    private java.lang.Object username_;
     /**
      * <code>optional string username = 1;</code>
      *
@@ -2560,14 +2560,14 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           username_ = s;
         }
@@ -2583,11 +2583,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -2596,7 +2596,7 @@ public final class ChatProtocol {
     }
 
     public static final int PASSWORD_FIELD_NUMBER = 2;
-    private Object password_;
+    private java.lang.Object password_;
     /**
      * <code>optional string password = 2;</code>
      *
@@ -2614,14 +2614,14 @@ public final class ChatProtocol {
      *密码
      * </pre>
      */
-    public String getPassword() {
-      Object ref = password_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPassword() {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           password_ = s;
         }
@@ -2637,11 +2637,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
-      Object ref = password_;
-      if (ref instanceof String) {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         password_ = b;
         return b;
       } else {
@@ -2650,7 +2650,7 @@ public final class ChatProtocol {
     }
 
     public static final int CURRENT_VERSION_FIELD_NUMBER = 3;
-    private Object currentVersion_;
+    private java.lang.Object currentVersion_;
     /**
      * <code>optional string current_version = 3;</code>
      *
@@ -2668,14 +2668,14 @@ public final class ChatProtocol {
      *当前版本号
      * </pre>
      */
-    public String getCurrentVersion() {
-      Object ref = currentVersion_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getCurrentVersion() {
+      java.lang.Object ref = currentVersion_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           currentVersion_ = s;
         }
@@ -2691,11 +2691,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getCurrentVersionBytes() {
-      Object ref = currentVersion_;
-      if (ref instanceof String) {
+      java.lang.Object ref = currentVersion_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         currentVersion_ = b;
         return b;
       } else {
@@ -2704,7 +2704,7 @@ public final class ChatProtocol {
     }
 
     public static final int DEVICE_ID_FIELD_NUMBER = 4;
-    private Object deviceId_;
+    private java.lang.Object deviceId_;
     /**
      * <code>optional string device_id = 4;</code>
      *
@@ -2722,14 +2722,14 @@ public final class ChatProtocol {
      *设备识别码
      * </pre>
      */
-    public String getDeviceId() {
-      Object ref = deviceId_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getDeviceId() {
+      java.lang.Object ref = deviceId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           deviceId_ = s;
         }
@@ -2745,11 +2745,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getDeviceIdBytes() {
-      Object ref = deviceId_;
-      if (ref instanceof String) {
+      java.lang.Object ref = deviceId_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         deviceId_ = b;
         return b;
       } else {
@@ -2819,59 +2819,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static LoginRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LoginRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LoginRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LoginRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LoginRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LoginRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static LoginRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static LoginRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static LoginRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LoginRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2880,14 +2880,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(LoginRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.LoginRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2901,17 +2901,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.LoginRequest)
-        LoginRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.LoginRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                LoginRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.LoginRequest.class, com.data.pbprotocol.ChatProtocol.LoginRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.LoginRequest.newBuilder()
@@ -2920,7 +2920,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2951,23 +2951,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginRequest_descriptor;
       }
 
-      public LoginRequest getDefaultInstanceForType() {
-        return LoginRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.LoginRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance();
       }
 
-      public LoginRequest build() {
-        LoginRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.LoginRequest build() {
+        com.data.pbprotocol.ChatProtocol.LoginRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public LoginRequest buildPartial() {
-        LoginRequest result = new LoginRequest(this);
+      public com.data.pbprotocol.ChatProtocol.LoginRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.LoginRequest result = new com.data.pbprotocol.ChatProtocol.LoginRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2992,16 +2992,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof LoginRequest) {
-          return mergeFrom((LoginRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.LoginRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.LoginRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(LoginRequest other) {
-        if (other == LoginRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.LoginRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance()) return this;
         if (other.hasUsername()) {
           bitField0_ |= 0x00000001;
           username_ = other.username_;
@@ -3034,11 +3034,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        LoginRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.LoginRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (LoginRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.LoginRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3049,7 +3049,7 @@ public final class ChatProtocol {
       }
       private int bitField0_;
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>optional string username = 1;</code>
        *
@@ -3067,18 +3067,18 @@ public final class ChatProtocol {
        *用户名
        * </pre>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             username_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3090,11 +3090,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -3109,7 +3109,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3149,7 +3149,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object password_ = "";
+      private java.lang.Object password_ = "";
       /**
        * <code>optional string password = 2;</code>
        *
@@ -3167,18 +3167,18 @@ public final class ChatProtocol {
        *密码
        * </pre>
        */
-      public String getPassword() {
-        Object ref = password_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPassword() {
+        java.lang.Object ref = password_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             password_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3190,11 +3190,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getPasswordBytes() {
-        Object ref = password_;
+        java.lang.Object ref = password_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           password_ = b;
           return b;
         } else {
@@ -3209,7 +3209,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setPassword(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3249,7 +3249,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object currentVersion_ = "";
+      private java.lang.Object currentVersion_ = "";
       /**
        * <code>optional string current_version = 3;</code>
        *
@@ -3267,18 +3267,18 @@ public final class ChatProtocol {
        *当前版本号
        * </pre>
        */
-      public String getCurrentVersion() {
-        Object ref = currentVersion_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCurrentVersion() {
+        java.lang.Object ref = currentVersion_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             currentVersion_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3290,11 +3290,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getCurrentVersionBytes() {
-        Object ref = currentVersion_;
+        java.lang.Object ref = currentVersion_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           currentVersion_ = b;
           return b;
         } else {
@@ -3309,7 +3309,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setCurrentVersion(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3349,7 +3349,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object deviceId_ = "";
+      private java.lang.Object deviceId_ = "";
       /**
        * <code>optional string device_id = 4;</code>
        *
@@ -3367,18 +3367,18 @@ public final class ChatProtocol {
        *设备识别码
        * </pre>
        */
-      public String getDeviceId() {
-        Object ref = deviceId_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getDeviceId() {
+        java.lang.Object ref = deviceId_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             deviceId_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3390,11 +3390,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getDeviceIdBytes() {
-        Object ref = deviceId_;
+        java.lang.Object ref = deviceId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           deviceId_ = b;
           return b;
         } else {
@@ -3409,7 +3409,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setDeviceId(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3479,7 +3479,7 @@ public final class ChatProtocol {
      *session
      * </pre>
      */
-    String getSessionId();
+    java.lang.String getSessionId();
     /**
      * <code>optional string session_id = 1;</code>
      *
@@ -3539,7 +3539,7 @@ public final class ChatProtocol {
      *新版本
      * </pre>
      */
-    String getNewVersion();
+    java.lang.String getNewVersion();
     /**
      * <code>optional string new_version = 4;</code>
      *
@@ -3565,7 +3565,7 @@ public final class ChatProtocol {
      *新版本描述
      * </pre>
      */
-    String getVersionTips();
+    java.lang.String getVersionTips();
     /**
      * <code>optional string version_tips = 5;</code>
      *
@@ -3591,7 +3591,7 @@ public final class ChatProtocol {
      *新版本下载地址	
      * </pre>
      */
-    String getDownloadUrl();
+    java.lang.String getDownloadUrl();
     /**
      * <code>optional string download_url = 6;</code>
      *
@@ -3630,7 +3630,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -3706,14 +3706,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              LoginResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.LoginResponse.class, com.data.pbprotocol.ChatProtocol.LoginResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<LoginResponse> PARSER =
@@ -3726,14 +3726,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<LoginResponse> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int SESSION_ID_FIELD_NUMBER = 1;
-    private Object sessionId_;
+    private java.lang.Object sessionId_;
     /**
      * <code>optional string session_id = 1;</code>
      *
@@ -3751,14 +3751,14 @@ public final class ChatProtocol {
      *session
      * </pre>
      */
-    public String getSessionId() {
-      Object ref = sessionId_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getSessionId() {
+      java.lang.Object ref = sessionId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           sessionId_ = s;
         }
@@ -3774,11 +3774,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getSessionIdBytes() {
-      Object ref = sessionId_;
-      if (ref instanceof String) {
+      java.lang.Object ref = sessionId_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         sessionId_ = b;
         return b;
       } else {
@@ -3833,7 +3833,7 @@ public final class ChatProtocol {
     }
 
     public static final int NEW_VERSION_FIELD_NUMBER = 4;
-    private Object newVersion_;
+    private java.lang.Object newVersion_;
     /**
      * <code>optional string new_version = 4;</code>
      *
@@ -3851,14 +3851,14 @@ public final class ChatProtocol {
      *新版本
      * </pre>
      */
-    public String getNewVersion() {
-      Object ref = newVersion_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getNewVersion() {
+      java.lang.Object ref = newVersion_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           newVersion_ = s;
         }
@@ -3874,11 +3874,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getNewVersionBytes() {
-      Object ref = newVersion_;
-      if (ref instanceof String) {
+      java.lang.Object ref = newVersion_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         newVersion_ = b;
         return b;
       } else {
@@ -3887,7 +3887,7 @@ public final class ChatProtocol {
     }
 
     public static final int VERSION_TIPS_FIELD_NUMBER = 5;
-    private Object versionTips_;
+    private java.lang.Object versionTips_;
     /**
      * <code>optional string version_tips = 5;</code>
      *
@@ -3905,14 +3905,14 @@ public final class ChatProtocol {
      *新版本描述
      * </pre>
      */
-    public String getVersionTips() {
-      Object ref = versionTips_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getVersionTips() {
+      java.lang.Object ref = versionTips_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           versionTips_ = s;
         }
@@ -3928,11 +3928,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getVersionTipsBytes() {
-      Object ref = versionTips_;
-      if (ref instanceof String) {
+      java.lang.Object ref = versionTips_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         versionTips_ = b;
         return b;
       } else {
@@ -3941,7 +3941,7 @@ public final class ChatProtocol {
     }
 
     public static final int DOWNLOAD_URL_FIELD_NUMBER = 6;
-    private Object downloadUrl_;
+    private java.lang.Object downloadUrl_;
     /**
      * <code>optional string download_url = 6;</code>
      *
@@ -3959,14 +3959,14 @@ public final class ChatProtocol {
      *新版本下载地址	
      * </pre>
      */
-    public String getDownloadUrl() {
-      Object ref = downloadUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getDownloadUrl() {
+      java.lang.Object ref = downloadUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           downloadUrl_ = s;
         }
@@ -3982,11 +3982,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getDownloadUrlBytes() {
-      Object ref = downloadUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = downloadUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         downloadUrl_ = b;
         return b;
       } else {
@@ -4072,59 +4072,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static LoginResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LoginResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LoginResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LoginResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LoginResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LoginResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static LoginResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static LoginResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static LoginResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LoginResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4133,14 +4133,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(LoginResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.LoginResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -4154,17 +4154,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.LoginResponse)
-        LoginResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.LoginResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                LoginResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.LoginResponse.class, com.data.pbprotocol.ChatProtocol.LoginResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.LoginResponse.newBuilder()
@@ -4173,7 +4173,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4208,23 +4208,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LoginResponse_descriptor;
       }
 
-      public LoginResponse getDefaultInstanceForType() {
-        return LoginResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.LoginResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance();
       }
 
-      public LoginResponse build() {
-        LoginResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.LoginResponse build() {
+        com.data.pbprotocol.ChatProtocol.LoginResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public LoginResponse buildPartial() {
-        LoginResponse result = new LoginResponse(this);
+      public com.data.pbprotocol.ChatProtocol.LoginResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.LoginResponse result = new com.data.pbprotocol.ChatProtocol.LoginResponse(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4257,16 +4257,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof LoginResponse) {
-          return mergeFrom((LoginResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.LoginResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.LoginResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(LoginResponse other) {
-        if (other == LoginResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.LoginResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance()) return this;
         if (other.hasSessionId()) {
           bitField0_ |= 0x00000001;
           sessionId_ = other.sessionId_;
@@ -4305,11 +4305,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        LoginResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.LoginResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (LoginResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.LoginResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4320,7 +4320,7 @@ public final class ChatProtocol {
       }
       private int bitField0_;
 
-      private Object sessionId_ = "";
+      private java.lang.Object sessionId_ = "";
       /**
        * <code>optional string session_id = 1;</code>
        *
@@ -4338,18 +4338,18 @@ public final class ChatProtocol {
        *session
        * </pre>
        */
-      public String getSessionId() {
-        Object ref = sessionId_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getSessionId() {
+        java.lang.Object ref = sessionId_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             sessionId_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4361,11 +4361,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getSessionIdBytes() {
-        Object ref = sessionId_;
+        java.lang.Object ref = sessionId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           sessionId_ = b;
           return b;
         } else {
@@ -4380,7 +4380,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setSessionId(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4516,7 +4516,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object newVersion_ = "";
+      private java.lang.Object newVersion_ = "";
       /**
        * <code>optional string new_version = 4;</code>
        *
@@ -4534,18 +4534,18 @@ public final class ChatProtocol {
        *新版本
        * </pre>
        */
-      public String getNewVersion() {
-        Object ref = newVersion_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getNewVersion() {
+        java.lang.Object ref = newVersion_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             newVersion_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4557,11 +4557,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getNewVersionBytes() {
-        Object ref = newVersion_;
+        java.lang.Object ref = newVersion_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           newVersion_ = b;
           return b;
         } else {
@@ -4576,7 +4576,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setNewVersion(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4616,7 +4616,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object versionTips_ = "";
+      private java.lang.Object versionTips_ = "";
       /**
        * <code>optional string version_tips = 5;</code>
        *
@@ -4634,18 +4634,18 @@ public final class ChatProtocol {
        *新版本描述
        * </pre>
        */
-      public String getVersionTips() {
-        Object ref = versionTips_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getVersionTips() {
+        java.lang.Object ref = versionTips_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             versionTips_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4657,11 +4657,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getVersionTipsBytes() {
-        Object ref = versionTips_;
+        java.lang.Object ref = versionTips_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           versionTips_ = b;
           return b;
         } else {
@@ -4676,7 +4676,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setVersionTips(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4716,7 +4716,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object downloadUrl_ = "";
+      private java.lang.Object downloadUrl_ = "";
       /**
        * <code>optional string download_url = 6;</code>
        *
@@ -4734,18 +4734,18 @@ public final class ChatProtocol {
        *新版本下载地址	
        * </pre>
        */
-      public String getDownloadUrl() {
-        Object ref = downloadUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getDownloadUrl() {
+        java.lang.Object ref = downloadUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             downloadUrl_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4757,11 +4757,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getDownloadUrlBytes() {
-        Object ref = downloadUrl_;
+        java.lang.Object ref = downloadUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           downloadUrl_ = b;
           return b;
         } else {
@@ -4776,7 +4776,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setDownloadUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4859,7 +4859,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -4900,14 +4900,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              LogoutRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.LogoutRequest.class, com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<LogoutRequest> PARSER =
@@ -4920,7 +4920,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<LogoutRequest> getParserForType() {
       return PARSER;
     }
@@ -4955,59 +4955,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static LogoutRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LogoutRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LogoutRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LogoutRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LogoutRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LogoutRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static LogoutRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static LogoutRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static LogoutRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LogoutRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5016,14 +5016,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(LogoutRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.LogoutRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -5037,17 +5037,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.LogoutRequest)
-        LogoutRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.LogoutRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                LogoutRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.LogoutRequest.class, com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.LogoutRequest.newBuilder()
@@ -5056,7 +5056,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5079,38 +5079,38 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutRequest_descriptor;
       }
 
-      public LogoutRequest getDefaultInstanceForType() {
-        return LogoutRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.LogoutRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance();
       }
 
-      public LogoutRequest build() {
-        LogoutRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.LogoutRequest build() {
+        com.data.pbprotocol.ChatProtocol.LogoutRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public LogoutRequest buildPartial() {
-        LogoutRequest result = new LogoutRequest(this);
+      public com.data.pbprotocol.ChatProtocol.LogoutRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.LogoutRequest result = new com.data.pbprotocol.ChatProtocol.LogoutRequest(this);
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof LogoutRequest) {
-          return mergeFrom((LogoutRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.LogoutRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.LogoutRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(LogoutRequest other) {
-        if (other == LogoutRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.LogoutRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -5123,11 +5123,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        LogoutRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.LogoutRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (LogoutRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.LogoutRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -5176,7 +5176,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -5217,14 +5217,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              LogoutResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.LogoutResponse.class, com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<LogoutResponse> PARSER =
@@ -5237,7 +5237,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<LogoutResponse> getParserForType() {
       return PARSER;
     }
@@ -5272,59 +5272,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static LogoutResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LogoutResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LogoutResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static LogoutResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static LogoutResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LogoutResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static LogoutResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static LogoutResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static LogoutResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static LogoutResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.LogoutResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5333,14 +5333,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(LogoutResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.LogoutResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -5350,17 +5350,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.LogoutResponse)
-        LogoutResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.LogoutResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                LogoutResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.LogoutResponse.class, com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.LogoutResponse.newBuilder()
@@ -5369,7 +5369,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5392,38 +5392,38 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_LogoutResponse_descriptor;
       }
 
-      public LogoutResponse getDefaultInstanceForType() {
-        return LogoutResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.LogoutResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance();
       }
 
-      public LogoutResponse build() {
-        LogoutResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.LogoutResponse build() {
+        com.data.pbprotocol.ChatProtocol.LogoutResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public LogoutResponse buildPartial() {
-        LogoutResponse result = new LogoutResponse(this);
+      public com.data.pbprotocol.ChatProtocol.LogoutResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.LogoutResponse result = new com.data.pbprotocol.ChatProtocol.LogoutResponse(this);
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof LogoutResponse) {
-          return mergeFrom((LogoutResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.LogoutResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.LogoutResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(LogoutResponse other) {
-        if (other == LogoutResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.LogoutResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -5436,11 +5436,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        LogoutResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.LogoutResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (LogoutResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.LogoutResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -5480,7 +5480,7 @@ public final class ChatProtocol {
      *当前版本号
      * </pre>
      */
-    String getCurrentVersion();
+    java.lang.String getCurrentVersion();
     /**
      * <code>optional string current_version = 1;</code>
      *
@@ -5519,7 +5519,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -5567,14 +5567,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              HeartbeatRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.HeartbeatRequest.class, com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<HeartbeatRequest> PARSER =
@@ -5587,14 +5587,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<HeartbeatRequest> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int CURRENT_VERSION_FIELD_NUMBER = 1;
-    private Object currentVersion_;
+    private java.lang.Object currentVersion_;
     /**
      * <code>optional string current_version = 1;</code>
      *
@@ -5612,14 +5612,14 @@ public final class ChatProtocol {
      *当前版本号
      * </pre>
      */
-    public String getCurrentVersion() {
-      Object ref = currentVersion_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getCurrentVersion() {
+      java.lang.Object ref = currentVersion_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           currentVersion_ = s;
         }
@@ -5635,11 +5635,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getCurrentVersionBytes() {
-      Object ref = currentVersion_;
-      if (ref instanceof String) {
+      java.lang.Object ref = currentVersion_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         currentVersion_ = b;
         return b;
       } else {
@@ -5685,59 +5685,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static HeartbeatRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static HeartbeatRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static HeartbeatRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static HeartbeatRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static HeartbeatRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static HeartbeatRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static HeartbeatRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static HeartbeatRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static HeartbeatRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static HeartbeatRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5746,14 +5746,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(HeartbeatRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.HeartbeatRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -5767,17 +5767,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.HeartbeatRequest)
-        HeartbeatRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.HeartbeatRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                HeartbeatRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.HeartbeatRequest.class, com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.HeartbeatRequest.newBuilder()
@@ -5786,7 +5786,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5811,23 +5811,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor;
       }
 
-      public HeartbeatRequest getDefaultInstanceForType() {
-        return HeartbeatRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.HeartbeatRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance();
       }
 
-      public HeartbeatRequest build() {
-        HeartbeatRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.HeartbeatRequest build() {
+        com.data.pbprotocol.ChatProtocol.HeartbeatRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public HeartbeatRequest buildPartial() {
-        HeartbeatRequest result = new HeartbeatRequest(this);
+      public com.data.pbprotocol.ChatProtocol.HeartbeatRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.HeartbeatRequest result = new com.data.pbprotocol.ChatProtocol.HeartbeatRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -5840,16 +5840,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof HeartbeatRequest) {
-          return mergeFrom((HeartbeatRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.HeartbeatRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.HeartbeatRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(HeartbeatRequest other) {
-        if (other == HeartbeatRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.HeartbeatRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance()) return this;
         if (other.hasCurrentVersion()) {
           bitField0_ |= 0x00000001;
           currentVersion_ = other.currentVersion_;
@@ -5867,11 +5867,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        HeartbeatRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.HeartbeatRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (HeartbeatRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -5882,7 +5882,7 @@ public final class ChatProtocol {
       }
       private int bitField0_;
 
-      private Object currentVersion_ = "";
+      private java.lang.Object currentVersion_ = "";
       /**
        * <code>optional string current_version = 1;</code>
        *
@@ -5900,18 +5900,18 @@ public final class ChatProtocol {
        *当前版本号
        * </pre>
        */
-      public String getCurrentVersion() {
-        Object ref = currentVersion_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCurrentVersion() {
+        java.lang.Object ref = currentVersion_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             currentVersion_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5923,11 +5923,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getCurrentVersionBytes() {
-        Object ref = currentVersion_;
+        java.lang.Object ref = currentVersion_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           currentVersion_ = b;
           return b;
         } else {
@@ -5942,7 +5942,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setCurrentVersion(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6059,7 +6059,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -6111,14 +6111,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              HeartbeatResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.HeartbeatResponse.class, com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<HeartbeatResponse> PARSER =
@@ -6131,7 +6131,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<HeartbeatResponse> getParserForType() {
       return PARSER;
     }
@@ -6229,59 +6229,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static HeartbeatResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static HeartbeatResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static HeartbeatResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static HeartbeatResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static HeartbeatResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static HeartbeatResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static HeartbeatResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static HeartbeatResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static HeartbeatResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static HeartbeatResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.HeartbeatResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6290,14 +6290,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(HeartbeatResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.HeartbeatResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6311,17 +6311,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.HeartbeatResponse)
-        HeartbeatResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.HeartbeatResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                HeartbeatResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.HeartbeatResponse.class, com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.HeartbeatResponse.newBuilder()
@@ -6330,7 +6330,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6357,23 +6357,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor;
       }
 
-      public HeartbeatResponse getDefaultInstanceForType() {
-        return HeartbeatResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.HeartbeatResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance();
       }
 
-      public HeartbeatResponse build() {
-        HeartbeatResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.HeartbeatResponse build() {
+        com.data.pbprotocol.ChatProtocol.HeartbeatResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public HeartbeatResponse buildPartial() {
-        HeartbeatResponse result = new HeartbeatResponse(this);
+      public com.data.pbprotocol.ChatProtocol.HeartbeatResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.HeartbeatResponse result = new com.data.pbprotocol.ChatProtocol.HeartbeatResponse(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -6390,16 +6390,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof HeartbeatResponse) {
-          return mergeFrom((HeartbeatResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.HeartbeatResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.HeartbeatResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(HeartbeatResponse other) {
-        if (other == HeartbeatResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.HeartbeatResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance()) return this;
         if (other.hasFriendChanged()) {
           setFriendChanged(other.getFriendChanged());
         }
@@ -6418,11 +6418,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        HeartbeatResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.HeartbeatResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (HeartbeatResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -6559,7 +6559,7 @@ public final class ChatProtocol {
      *管道号
      * </pre>
      */
-    String getCode();
+    java.lang.String getCode();
     /**
      * <code>optional string code = 1;</code>
      *
@@ -6585,7 +6585,7 @@ public final class ChatProtocol {
      *请求数据json格式
      * </pre>
      */
-    String getRequest();
+    java.lang.String getRequest();
     /**
      * <code>optional string request = 2;</code>
      *
@@ -6624,7 +6624,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -6678,14 +6678,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              PipeRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.PipeRequest.class, com.data.pbprotocol.ChatProtocol.PipeRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<PipeRequest> PARSER =
@@ -6698,14 +6698,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<PipeRequest> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int CODE_FIELD_NUMBER = 1;
-    private Object code_;
+    private java.lang.Object code_;
     /**
      * <code>optional string code = 1;</code>
      *
@@ -6723,14 +6723,14 @@ public final class ChatProtocol {
      *管道号
      * </pre>
      */
-    public String getCode() {
-      Object ref = code_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getCode() {
+      java.lang.Object ref = code_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           code_ = s;
         }
@@ -6746,11 +6746,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getCodeBytes() {
-      Object ref = code_;
-      if (ref instanceof String) {
+      java.lang.Object ref = code_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         code_ = b;
         return b;
       } else {
@@ -6759,7 +6759,7 @@ public final class ChatProtocol {
     }
 
     public static final int REQUEST_FIELD_NUMBER = 2;
-    private Object request_;
+    private java.lang.Object request_;
     /**
      * <code>optional string request = 2;</code>
      *
@@ -6777,14 +6777,14 @@ public final class ChatProtocol {
      *请求数据json格式
      * </pre>
      */
-    public String getRequest() {
-      Object ref = request_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getRequest() {
+      java.lang.Object ref = request_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           request_ = s;
         }
@@ -6800,11 +6800,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getRequestBytes() {
-      Object ref = request_;
-      if (ref instanceof String) {
+      java.lang.Object ref = request_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         request_ = b;
         return b;
       } else {
@@ -6858,59 +6858,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static PipeRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static PipeRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static PipeRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static PipeRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static PipeRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static PipeRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static PipeRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static PipeRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static PipeRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static PipeRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6919,14 +6919,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(PipeRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.PipeRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6940,17 +6940,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.PipeRequest)
-        PipeRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.PipeRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                PipeRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.PipeRequest.class, com.data.pbprotocol.ChatProtocol.PipeRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.PipeRequest.newBuilder()
@@ -6959,7 +6959,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6986,23 +6986,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeRequest_descriptor;
       }
 
-      public PipeRequest getDefaultInstanceForType() {
-        return PipeRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.PipeRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance();
       }
 
-      public PipeRequest build() {
-        PipeRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.PipeRequest build() {
+        com.data.pbprotocol.ChatProtocol.PipeRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public PipeRequest buildPartial() {
-        PipeRequest result = new PipeRequest(this);
+      public com.data.pbprotocol.ChatProtocol.PipeRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.PipeRequest result = new com.data.pbprotocol.ChatProtocol.PipeRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -7019,16 +7019,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof PipeRequest) {
-          return mergeFrom((PipeRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.PipeRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.PipeRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(PipeRequest other) {
-        if (other == PipeRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.PipeRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance()) return this;
         if (other.hasCode()) {
           bitField0_ |= 0x00000001;
           code_ = other.code_;
@@ -7051,11 +7051,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        PipeRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.PipeRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (PipeRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.PipeRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -7066,7 +7066,7 @@ public final class ChatProtocol {
       }
       private int bitField0_;
 
-      private Object code_ = "";
+      private java.lang.Object code_ = "";
       /**
        * <code>optional string code = 1;</code>
        *
@@ -7084,18 +7084,18 @@ public final class ChatProtocol {
        *管道号
        * </pre>
        */
-      public String getCode() {
-        Object ref = code_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCode() {
+        java.lang.Object ref = code_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             code_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7107,11 +7107,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getCodeBytes() {
-        Object ref = code_;
+        java.lang.Object ref = code_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           code_ = b;
           return b;
         } else {
@@ -7126,7 +7126,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setCode(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7166,7 +7166,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object request_ = "";
+      private java.lang.Object request_ = "";
       /**
        * <code>optional string request = 2;</code>
        *
@@ -7184,18 +7184,18 @@ public final class ChatProtocol {
        *请求数据json格式
        * </pre>
        */
-      public String getRequest() {
-        Object ref = request_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getRequest() {
+        java.lang.Object ref = request_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             request_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7207,11 +7207,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getRequestBytes() {
-        Object ref = request_;
+        java.lang.Object ref = request_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           request_ = b;
           return b;
         } else {
@@ -7226,7 +7226,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setRequest(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7296,7 +7296,7 @@ public final class ChatProtocol {
      *管道号
      * </pre>
      */
-    String getCode();
+    java.lang.String getCode();
     /**
      * <code>optional string code = 1;</code>
      *
@@ -7322,7 +7322,7 @@ public final class ChatProtocol {
      *相应数据json格式
      * </pre>
      */
-    String getResponse();
+    java.lang.String getResponse();
     /**
      * <code>optional string response = 2;</code>
      *
@@ -7357,7 +7357,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -7411,14 +7411,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              PipeResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.PipeResponse.class, com.data.pbprotocol.ChatProtocol.PipeResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<PipeResponse> PARSER =
@@ -7431,14 +7431,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<PipeResponse> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int CODE_FIELD_NUMBER = 1;
-    private Object code_;
+    private java.lang.Object code_;
     /**
      * <code>optional string code = 1;</code>
      *
@@ -7456,14 +7456,14 @@ public final class ChatProtocol {
      *管道号
      * </pre>
      */
-    public String getCode() {
-      Object ref = code_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getCode() {
+      java.lang.Object ref = code_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           code_ = s;
         }
@@ -7479,11 +7479,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getCodeBytes() {
-      Object ref = code_;
-      if (ref instanceof String) {
+      java.lang.Object ref = code_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         code_ = b;
         return b;
       } else {
@@ -7492,7 +7492,7 @@ public final class ChatProtocol {
     }
 
     public static final int RESPONSE_FIELD_NUMBER = 2;
-    private Object response_;
+    private java.lang.Object response_;
     /**
      * <code>optional string response = 2;</code>
      *
@@ -7510,14 +7510,14 @@ public final class ChatProtocol {
      *相应数据json格式
      * </pre>
      */
-    public String getResponse() {
-      Object ref = response_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getResponse() {
+      java.lang.Object ref = response_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           response_ = s;
         }
@@ -7533,11 +7533,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getResponseBytes() {
-      Object ref = response_;
-      if (ref instanceof String) {
+      java.lang.Object ref = response_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         response_ = b;
         return b;
       } else {
@@ -7591,59 +7591,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static PipeResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static PipeResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static PipeResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static PipeResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static PipeResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static PipeResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static PipeResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static PipeResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static PipeResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static PipeResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.PipeResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7652,14 +7652,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(PipeResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.PipeResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -7669,17 +7669,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.PipeResponse)
-        PipeResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.PipeResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                PipeResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.PipeResponse.class, com.data.pbprotocol.ChatProtocol.PipeResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.PipeResponse.newBuilder()
@@ -7688,7 +7688,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7715,23 +7715,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_PipeResponse_descriptor;
       }
 
-      public PipeResponse getDefaultInstanceForType() {
-        return PipeResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.PipeResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance();
       }
 
-      public PipeResponse build() {
-        PipeResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.PipeResponse build() {
+        com.data.pbprotocol.ChatProtocol.PipeResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public PipeResponse buildPartial() {
-        PipeResponse result = new PipeResponse(this);
+      public com.data.pbprotocol.ChatProtocol.PipeResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.PipeResponse result = new com.data.pbprotocol.ChatProtocol.PipeResponse(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -7748,16 +7748,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof PipeResponse) {
-          return mergeFrom((PipeResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.PipeResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.PipeResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(PipeResponse other) {
-        if (other == PipeResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.PipeResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance()) return this;
         if (other.hasCode()) {
           bitField0_ |= 0x00000001;
           code_ = other.code_;
@@ -7780,11 +7780,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        PipeResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.PipeResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (PipeResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.PipeResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -7795,7 +7795,7 @@ public final class ChatProtocol {
       }
       private int bitField0_;
 
-      private Object code_ = "";
+      private java.lang.Object code_ = "";
       /**
        * <code>optional string code = 1;</code>
        *
@@ -7813,18 +7813,18 @@ public final class ChatProtocol {
        *管道号
        * </pre>
        */
-      public String getCode() {
-        Object ref = code_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCode() {
+        java.lang.Object ref = code_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             code_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7836,11 +7836,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getCodeBytes() {
-        Object ref = code_;
+        java.lang.Object ref = code_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           code_ = b;
           return b;
         } else {
@@ -7855,7 +7855,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setCode(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7895,7 +7895,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object response_ = "";
+      private java.lang.Object response_ = "";
       /**
        * <code>optional string response = 2;</code>
        *
@@ -7913,18 +7913,18 @@ public final class ChatProtocol {
        *相应数据json格式
        * </pre>
        */
-      public String getResponse() {
-        Object ref = response_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getResponse() {
+        java.lang.Object ref = response_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             response_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7936,11 +7936,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getResponseBytes() {
-        Object ref = response_;
+        java.lang.Object ref = response_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           response_ = b;
           return b;
         } else {
@@ -7955,7 +7955,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setResponse(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8038,7 +8038,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -8079,14 +8079,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              FriendSyncRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.FriendSyncRequest.class, com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<FriendSyncRequest> PARSER =
@@ -8099,7 +8099,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<FriendSyncRequest> getParserForType() {
       return PARSER;
     }
@@ -8134,59 +8134,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static FriendSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FriendSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FriendSyncRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FriendSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FriendSyncRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FriendSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static FriendSyncRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static FriendSyncRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static FriendSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FriendSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8195,14 +8195,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(FriendSyncRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.FriendSyncRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8216,17 +8216,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.FriendSyncRequest)
-        FriendSyncRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.FriendSyncRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                FriendSyncRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.FriendSyncRequest.class, com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.FriendSyncRequest.newBuilder()
@@ -8235,7 +8235,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8258,38 +8258,38 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor;
       }
 
-      public FriendSyncRequest getDefaultInstanceForType() {
-        return FriendSyncRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.FriendSyncRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance();
       }
 
-      public FriendSyncRequest build() {
-        FriendSyncRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.FriendSyncRequest build() {
+        com.data.pbprotocol.ChatProtocol.FriendSyncRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public FriendSyncRequest buildPartial() {
-        FriendSyncRequest result = new FriendSyncRequest(this);
+      public com.data.pbprotocol.ChatProtocol.FriendSyncRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.FriendSyncRequest result = new com.data.pbprotocol.ChatProtocol.FriendSyncRequest(this);
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof FriendSyncRequest) {
-          return mergeFrom((FriendSyncRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.FriendSyncRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.FriendSyncRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(FriendSyncRequest other) {
-        if (other == FriendSyncRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.FriendSyncRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -8302,11 +8302,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        FriendSyncRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.FriendSyncRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (FriendSyncRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -8355,7 +8355,7 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    java.util.List<Friend>
+    java.util.List<com.data.pbprotocol.ChatProtocol.Friend> 
         getFriendsList();
     /**
      * <code>repeated .com.data.pbprotocol.Friend friends = 2;</code>
@@ -8364,7 +8364,7 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    Friend getFriends(int index);
+    com.data.pbprotocol.ChatProtocol.Friend getFriends(int index);
     /**
      * <code>repeated .com.data.pbprotocol.Friend friends = 2;</code>
      *
@@ -8380,7 +8380,7 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    java.util.List<? extends FriendOrBuilder>
+    java.util.List<? extends com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
         getFriendsOrBuilderList();
     /**
      * <code>repeated .com.data.pbprotocol.Friend friends = 2;</code>
@@ -8389,8 +8389,8 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    FriendOrBuilder getFriendsOrBuilder(
-            int index);
+    com.data.pbprotocol.ChatProtocol.FriendOrBuilder getFriendsOrBuilder(
+        int index);
 
     /**
      * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
@@ -8399,7 +8399,7 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    java.util.List<Friend>
+    java.util.List<com.data.pbprotocol.ChatProtocol.Friend> 
         getRemoveFriendsList();
     /**
      * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
@@ -8408,7 +8408,7 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    Friend getRemoveFriends(int index);
+    com.data.pbprotocol.ChatProtocol.Friend getRemoveFriends(int index);
     /**
      * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
      *
@@ -8424,7 +8424,7 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    java.util.List<? extends FriendOrBuilder>
+    java.util.List<? extends com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
         getRemoveFriendsOrBuilderList();
     /**
      * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
@@ -8433,8 +8433,8 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    FriendOrBuilder getRemoveFriendsOrBuilder(
-            int index);
+    com.data.pbprotocol.ChatProtocol.FriendOrBuilder getRemoveFriendsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code com.data.pbprotocol.FriendSyncResponse}
@@ -8460,7 +8460,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -8495,18 +8495,18 @@ public final class ChatProtocol {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                friends_ = new java.util.ArrayList<Friend>();
+                friends_ = new java.util.ArrayList<com.data.pbprotocol.ChatProtocol.Friend>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              friends_.add(input.readMessage(Friend.PARSER, extensionRegistry));
+              friends_.add(input.readMessage(com.data.pbprotocol.ChatProtocol.Friend.PARSER, extensionRegistry));
               break;
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                removeFriends_ = new java.util.ArrayList<Friend>();
+                removeFriends_ = new java.util.ArrayList<com.data.pbprotocol.ChatProtocol.Friend>();
                 mutable_bitField0_ |= 0x00000004;
               }
-              removeFriends_.add(input.readMessage(Friend.PARSER, extensionRegistry));
+              removeFriends_.add(input.readMessage(com.data.pbprotocol.ChatProtocol.Friend.PARSER, extensionRegistry));
               break;
             }
           }
@@ -8529,14 +8529,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              FriendSyncResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.FriendSyncResponse.class, com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<FriendSyncResponse> PARSER =
@@ -8549,7 +8549,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<FriendSyncResponse> getParserForType() {
       return PARSER;
     }
@@ -8579,7 +8579,7 @@ public final class ChatProtocol {
     }
 
     public static final int FRIENDS_FIELD_NUMBER = 2;
-    private java.util.List<Friend> friends_;
+    private java.util.List<com.data.pbprotocol.ChatProtocol.Friend> friends_;
     /**
      * <code>repeated .com.data.pbprotocol.Friend friends = 2;</code>
      *
@@ -8587,7 +8587,7 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    public java.util.List<Friend> getFriendsList() {
+    public java.util.List<com.data.pbprotocol.ChatProtocol.Friend> getFriendsList() {
       return friends_;
     }
     /**
@@ -8597,7 +8597,7 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    public java.util.List<? extends FriendOrBuilder>
+    public java.util.List<? extends com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
         getFriendsOrBuilderList() {
       return friends_;
     }
@@ -8618,7 +8618,7 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    public Friend getFriends(int index) {
+    public com.data.pbprotocol.ChatProtocol.Friend getFriends(int index) {
       return friends_.get(index);
     }
     /**
@@ -8628,13 +8628,13 @@ public final class ChatProtocol {
      *有变更的好友信息
      * </pre>
      */
-    public FriendOrBuilder getFriendsOrBuilder(
+    public com.data.pbprotocol.ChatProtocol.FriendOrBuilder getFriendsOrBuilder(
         int index) {
       return friends_.get(index);
     }
 
     public static final int REMOVE_FRIENDS_FIELD_NUMBER = 3;
-    private java.util.List<Friend> removeFriends_;
+    private java.util.List<com.data.pbprotocol.ChatProtocol.Friend> removeFriends_;
     /**
      * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
      *
@@ -8642,7 +8642,7 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    public java.util.List<Friend> getRemoveFriendsList() {
+    public java.util.List<com.data.pbprotocol.ChatProtocol.Friend> getRemoveFriendsList() {
       return removeFriends_;
     }
     /**
@@ -8652,7 +8652,7 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    public java.util.List<? extends FriendOrBuilder>
+    public java.util.List<? extends com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
         getRemoveFriendsOrBuilderList() {
       return removeFriends_;
     }
@@ -8673,7 +8673,7 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    public Friend getRemoveFriends(int index) {
+    public com.data.pbprotocol.ChatProtocol.Friend getRemoveFriends(int index) {
       return removeFriends_.get(index);
     }
     /**
@@ -8683,7 +8683,7 @@ public final class ChatProtocol {
      *删除的好友信息
      * </pre>
      */
-    public FriendOrBuilder getRemoveFriendsOrBuilder(
+    public com.data.pbprotocol.ChatProtocol.FriendOrBuilder getRemoveFriendsOrBuilder(
         int index) {
       return removeFriends_.get(index);
     }
@@ -8742,59 +8742,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static FriendSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FriendSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FriendSyncResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FriendSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FriendSyncResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FriendSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static FriendSyncResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static FriendSyncResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static FriendSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FriendSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FriendSyncResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8803,14 +8803,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(FriendSyncResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.FriendSyncResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8820,17 +8820,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.FriendSyncResponse)
-        FriendSyncResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.FriendSyncResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                FriendSyncResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.FriendSyncResponse.class, com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.FriendSyncResponse.newBuilder()
@@ -8839,7 +8839,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8878,23 +8878,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor;
       }
 
-      public FriendSyncResponse getDefaultInstanceForType() {
-        return FriendSyncResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.FriendSyncResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance();
       }
 
-      public FriendSyncResponse build() {
-        FriendSyncResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.FriendSyncResponse build() {
+        com.data.pbprotocol.ChatProtocol.FriendSyncResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public FriendSyncResponse buildPartial() {
-        FriendSyncResponse result = new FriendSyncResponse(this);
+      public com.data.pbprotocol.ChatProtocol.FriendSyncResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.FriendSyncResponse result = new com.data.pbprotocol.ChatProtocol.FriendSyncResponse(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -8925,16 +8925,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof FriendSyncResponse) {
-          return mergeFrom((FriendSyncResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.FriendSyncResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.FriendSyncResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(FriendSyncResponse other) {
-        if (other == FriendSyncResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.FriendSyncResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance()) return this;
         if (other.hasSyncType()) {
           setSyncType(other.getSyncType());
         }
@@ -9002,11 +9002,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        FriendSyncResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.FriendSyncResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (FriendSyncResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -9065,17 +9065,17 @@ public final class ChatProtocol {
         return this;
       }
 
-      private java.util.List<Friend> friends_ =
+      private java.util.List<com.data.pbprotocol.ChatProtocol.Friend> friends_ =
         java.util.Collections.emptyList();
       private void ensureFriendsIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          friends_ = new java.util.ArrayList<Friend>(friends_);
+          friends_ = new java.util.ArrayList<com.data.pbprotocol.ChatProtocol.Friend>(friends_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Friend, Friend.Builder, FriendOrBuilder> friendsBuilder_;
+          com.data.pbprotocol.ChatProtocol.Friend, com.data.pbprotocol.ChatProtocol.Friend.Builder, com.data.pbprotocol.ChatProtocol.FriendOrBuilder> friendsBuilder_;
 
       /**
        * <code>repeated .com.data.pbprotocol.Friend friends = 2;</code>
@@ -9084,7 +9084,7 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public java.util.List<Friend> getFriendsList() {
+      public java.util.List<com.data.pbprotocol.ChatProtocol.Friend> getFriendsList() {
         if (friendsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(friends_);
         } else {
@@ -9112,7 +9112,7 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public Friend getFriends(int index) {
+      public com.data.pbprotocol.ChatProtocol.Friend getFriends(int index) {
         if (friendsBuilder_ == null) {
           return friends_.get(index);
         } else {
@@ -9127,7 +9127,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setFriends(
-          int index, Friend value) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend value) {
         if (friendsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9148,7 +9148,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setFriends(
-          int index, Friend.Builder builderForValue) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend.Builder builderForValue) {
         if (friendsBuilder_ == null) {
           ensureFriendsIsMutable();
           friends_.set(index, builderForValue.build());
@@ -9165,7 +9165,7 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public Builder addFriends(Friend value) {
+      public Builder addFriends(com.data.pbprotocol.ChatProtocol.Friend value) {
         if (friendsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9186,7 +9186,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addFriends(
-          int index, Friend value) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend value) {
         if (friendsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9207,7 +9207,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addFriends(
-          Friend.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.Friend.Builder builderForValue) {
         if (friendsBuilder_ == null) {
           ensureFriendsIsMutable();
           friends_.add(builderForValue.build());
@@ -9225,7 +9225,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addFriends(
-          int index, Friend.Builder builderForValue) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend.Builder builderForValue) {
         if (friendsBuilder_ == null) {
           ensureFriendsIsMutable();
           friends_.add(index, builderForValue.build());
@@ -9243,7 +9243,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addAllFriends(
-          Iterable<? extends Friend> values) {
+          java.lang.Iterable<? extends com.data.pbprotocol.ChatProtocol.Friend> values) {
         if (friendsBuilder_ == null) {
           ensureFriendsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -9295,7 +9295,7 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public Friend.Builder getFriendsBuilder(
+      public com.data.pbprotocol.ChatProtocol.Friend.Builder getFriendsBuilder(
           int index) {
         return getFriendsFieldBuilder().getBuilder(index);
       }
@@ -9306,7 +9306,7 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public FriendOrBuilder getFriendsOrBuilder(
+      public com.data.pbprotocol.ChatProtocol.FriendOrBuilder getFriendsOrBuilder(
           int index) {
         if (friendsBuilder_ == null) {
           return friends_.get(index);  } else {
@@ -9320,7 +9320,7 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public java.util.List<? extends FriendOrBuilder>
+      public java.util.List<? extends com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
            getFriendsOrBuilderList() {
         if (friendsBuilder_ != null) {
           return friendsBuilder_.getMessageOrBuilderList();
@@ -9335,9 +9335,9 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public Friend.Builder addFriendsBuilder() {
+      public com.data.pbprotocol.ChatProtocol.Friend.Builder addFriendsBuilder() {
         return getFriendsFieldBuilder().addBuilder(
-            Friend.getDefaultInstance());
+            com.data.pbprotocol.ChatProtocol.Friend.getDefaultInstance());
       }
       /**
        * <code>repeated .com.data.pbprotocol.Friend friends = 2;</code>
@@ -9346,10 +9346,10 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public Friend.Builder addFriendsBuilder(
+      public com.data.pbprotocol.ChatProtocol.Friend.Builder addFriendsBuilder(
           int index) {
         return getFriendsFieldBuilder().addBuilder(
-            index, Friend.getDefaultInstance());
+            index, com.data.pbprotocol.ChatProtocol.Friend.getDefaultInstance());
       }
       /**
        * <code>repeated .com.data.pbprotocol.Friend friends = 2;</code>
@@ -9358,16 +9358,16 @@ public final class ChatProtocol {
        *有变更的好友信息
        * </pre>
        */
-      public java.util.List<Friend.Builder>
+      public java.util.List<com.data.pbprotocol.ChatProtocol.Friend.Builder> 
            getFriendsBuilderList() {
         return getFriendsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Friend, Friend.Builder, FriendOrBuilder>
+          com.data.pbprotocol.ChatProtocol.Friend, com.data.pbprotocol.ChatProtocol.Friend.Builder, com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
           getFriendsFieldBuilder() {
         if (friendsBuilder_ == null) {
           friendsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Friend, Friend.Builder, FriendOrBuilder>(
+              com.data.pbprotocol.ChatProtocol.Friend, com.data.pbprotocol.ChatProtocol.Friend.Builder, com.data.pbprotocol.ChatProtocol.FriendOrBuilder>(
                   friends_,
                   ((bitField0_ & 0x00000002) == 0x00000002),
                   getParentForChildren(),
@@ -9377,17 +9377,17 @@ public final class ChatProtocol {
         return friendsBuilder_;
       }
 
-      private java.util.List<Friend> removeFriends_ =
+      private java.util.List<com.data.pbprotocol.ChatProtocol.Friend> removeFriends_ =
         java.util.Collections.emptyList();
       private void ensureRemoveFriendsIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          removeFriends_ = new java.util.ArrayList<Friend>(removeFriends_);
+          removeFriends_ = new java.util.ArrayList<com.data.pbprotocol.ChatProtocol.Friend>(removeFriends_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Friend, Friend.Builder, FriendOrBuilder> removeFriendsBuilder_;
+          com.data.pbprotocol.ChatProtocol.Friend, com.data.pbprotocol.ChatProtocol.Friend.Builder, com.data.pbprotocol.ChatProtocol.FriendOrBuilder> removeFriendsBuilder_;
 
       /**
        * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
@@ -9396,7 +9396,7 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public java.util.List<Friend> getRemoveFriendsList() {
+      public java.util.List<com.data.pbprotocol.ChatProtocol.Friend> getRemoveFriendsList() {
         if (removeFriendsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(removeFriends_);
         } else {
@@ -9424,7 +9424,7 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public Friend getRemoveFriends(int index) {
+      public com.data.pbprotocol.ChatProtocol.Friend getRemoveFriends(int index) {
         if (removeFriendsBuilder_ == null) {
           return removeFriends_.get(index);
         } else {
@@ -9439,7 +9439,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setRemoveFriends(
-          int index, Friend value) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend value) {
         if (removeFriendsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9460,7 +9460,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setRemoveFriends(
-          int index, Friend.Builder builderForValue) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend.Builder builderForValue) {
         if (removeFriendsBuilder_ == null) {
           ensureRemoveFriendsIsMutable();
           removeFriends_.set(index, builderForValue.build());
@@ -9477,7 +9477,7 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public Builder addRemoveFriends(Friend value) {
+      public Builder addRemoveFriends(com.data.pbprotocol.ChatProtocol.Friend value) {
         if (removeFriendsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9498,7 +9498,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addRemoveFriends(
-          int index, Friend value) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend value) {
         if (removeFriendsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9519,7 +9519,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addRemoveFriends(
-          Friend.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.Friend.Builder builderForValue) {
         if (removeFriendsBuilder_ == null) {
           ensureRemoveFriendsIsMutable();
           removeFriends_.add(builderForValue.build());
@@ -9537,7 +9537,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addRemoveFriends(
-          int index, Friend.Builder builderForValue) {
+          int index, com.data.pbprotocol.ChatProtocol.Friend.Builder builderForValue) {
         if (removeFriendsBuilder_ == null) {
           ensureRemoveFriendsIsMutable();
           removeFriends_.add(index, builderForValue.build());
@@ -9555,7 +9555,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addAllRemoveFriends(
-          Iterable<? extends Friend> values) {
+          java.lang.Iterable<? extends com.data.pbprotocol.ChatProtocol.Friend> values) {
         if (removeFriendsBuilder_ == null) {
           ensureRemoveFriendsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -9607,7 +9607,7 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public Friend.Builder getRemoveFriendsBuilder(
+      public com.data.pbprotocol.ChatProtocol.Friend.Builder getRemoveFriendsBuilder(
           int index) {
         return getRemoveFriendsFieldBuilder().getBuilder(index);
       }
@@ -9618,7 +9618,7 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public FriendOrBuilder getRemoveFriendsOrBuilder(
+      public com.data.pbprotocol.ChatProtocol.FriendOrBuilder getRemoveFriendsOrBuilder(
           int index) {
         if (removeFriendsBuilder_ == null) {
           return removeFriends_.get(index);  } else {
@@ -9632,7 +9632,7 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public java.util.List<? extends FriendOrBuilder>
+      public java.util.List<? extends com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
            getRemoveFriendsOrBuilderList() {
         if (removeFriendsBuilder_ != null) {
           return removeFriendsBuilder_.getMessageOrBuilderList();
@@ -9647,9 +9647,9 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public Friend.Builder addRemoveFriendsBuilder() {
+      public com.data.pbprotocol.ChatProtocol.Friend.Builder addRemoveFriendsBuilder() {
         return getRemoveFriendsFieldBuilder().addBuilder(
-            Friend.getDefaultInstance());
+            com.data.pbprotocol.ChatProtocol.Friend.getDefaultInstance());
       }
       /**
        * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
@@ -9658,10 +9658,10 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public Friend.Builder addRemoveFriendsBuilder(
+      public com.data.pbprotocol.ChatProtocol.Friend.Builder addRemoveFriendsBuilder(
           int index) {
         return getRemoveFriendsFieldBuilder().addBuilder(
-            index, Friend.getDefaultInstance());
+            index, com.data.pbprotocol.ChatProtocol.Friend.getDefaultInstance());
       }
       /**
        * <code>repeated .com.data.pbprotocol.Friend remove_friends = 3;</code>
@@ -9670,16 +9670,16 @@ public final class ChatProtocol {
        *删除的好友信息
        * </pre>
        */
-      public java.util.List<Friend.Builder>
+      public java.util.List<com.data.pbprotocol.ChatProtocol.Friend.Builder> 
            getRemoveFriendsBuilderList() {
         return getRemoveFriendsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Friend, Friend.Builder, FriendOrBuilder>
+          com.data.pbprotocol.ChatProtocol.Friend, com.data.pbprotocol.ChatProtocol.Friend.Builder, com.data.pbprotocol.ChatProtocol.FriendOrBuilder> 
           getRemoveFriendsFieldBuilder() {
         if (removeFriendsBuilder_ == null) {
           removeFriendsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Friend, Friend.Builder, FriendOrBuilder>(
+              com.data.pbprotocol.ChatProtocol.Friend, com.data.pbprotocol.ChatProtocol.Friend.Builder, com.data.pbprotocol.ChatProtocol.FriendOrBuilder>(
                   removeFriends_,
                   ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
@@ -9736,7 +9736,7 @@ public final class ChatProtocol {
      *昵称
      * </pre>
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>optional string name = 2;</code>
      *
@@ -9779,7 +9779,7 @@ public final class ChatProtocol {
      *头像url
      * </pre>
      */
-    String getPhoto();
+    java.lang.String getPhoto();
     /**
      * <code>optional string photo = 4;</code>
      *
@@ -9805,7 +9805,7 @@ public final class ChatProtocol {
      *管理id
      * </pre>
      */
-    String getMangerIds();
+    java.lang.String getMangerIds();
     /**
      * <code>optional string manger_ids = 5;</code>
      *
@@ -9831,7 +9831,7 @@ public final class ChatProtocol {
      *群友[Friend]
      * </pre>
      */
-    String getMembers();
+    java.lang.String getMembers();
     /**
      * <code>optional string members = 6;</code>
      *
@@ -9870,7 +9870,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -9946,14 +9946,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Friend_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Friend_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Friend_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Friend_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Friend.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.Friend.class, com.data.pbprotocol.ChatProtocol.Friend.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Friend> PARSER =
@@ -9966,7 +9966,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Friend> getParserForType() {
       return PARSER;
     }
@@ -9996,7 +9996,7 @@ public final class ChatProtocol {
     }
 
     public static final int NAME_FIELD_NUMBER = 2;
-    private Object name_;
+    private java.lang.Object name_;
     /**
      * <code>optional string name = 2;</code>
      *
@@ -10014,14 +10014,14 @@ public final class ChatProtocol {
      *昵称
      * </pre>
      */
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           name_ = s;
         }
@@ -10037,11 +10037,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -10073,7 +10073,7 @@ public final class ChatProtocol {
     }
 
     public static final int PHOTO_FIELD_NUMBER = 4;
-    private Object photo_;
+    private java.lang.Object photo_;
     /**
      * <code>optional string photo = 4;</code>
      *
@@ -10091,14 +10091,14 @@ public final class ChatProtocol {
      *头像url
      * </pre>
      */
-    public String getPhoto() {
-      Object ref = photo_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPhoto() {
+      java.lang.Object ref = photo_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           photo_ = s;
         }
@@ -10114,11 +10114,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getPhotoBytes() {
-      Object ref = photo_;
-      if (ref instanceof String) {
+      java.lang.Object ref = photo_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         photo_ = b;
         return b;
       } else {
@@ -10127,7 +10127,7 @@ public final class ChatProtocol {
     }
 
     public static final int MANGER_IDS_FIELD_NUMBER = 5;
-    private Object mangerIds_;
+    private java.lang.Object mangerIds_;
     /**
      * <code>optional string manger_ids = 5;</code>
      *
@@ -10145,14 +10145,14 @@ public final class ChatProtocol {
      *管理id
      * </pre>
      */
-    public String getMangerIds() {
-      Object ref = mangerIds_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getMangerIds() {
+      java.lang.Object ref = mangerIds_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           mangerIds_ = s;
         }
@@ -10168,11 +10168,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getMangerIdsBytes() {
-      Object ref = mangerIds_;
-      if (ref instanceof String) {
+      java.lang.Object ref = mangerIds_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         mangerIds_ = b;
         return b;
       } else {
@@ -10181,7 +10181,7 @@ public final class ChatProtocol {
     }
 
     public static final int MEMBERS_FIELD_NUMBER = 6;
-    private Object members_;
+    private java.lang.Object members_;
     /**
      * <code>optional string members = 6;</code>
      *
@@ -10199,14 +10199,14 @@ public final class ChatProtocol {
      *群友[Friend]
      * </pre>
      */
-    public String getMembers() {
-      Object ref = members_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getMembers() {
+      java.lang.Object ref = members_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           members_ = s;
         }
@@ -10222,11 +10222,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getMembersBytes() {
-      Object ref = members_;
-      if (ref instanceof String) {
+      java.lang.Object ref = members_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         members_ = b;
         return b;
       } else {
@@ -10312,59 +10312,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Friend parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Friend parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Friend parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Friend parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Friend parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Friend parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Friend parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Friend parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Friend parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.Friend parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Friend parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Friend parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Friend parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -10373,14 +10373,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Friend prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.Friend prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -10394,17 +10394,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.Friend)
-        FriendOrBuilder {
+        com.data.pbprotocol.ChatProtocol.FriendOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Friend_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Friend_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Friend_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Friend_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Friend.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.Friend.class, com.data.pbprotocol.ChatProtocol.Friend.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.Friend.newBuilder()
@@ -10413,7 +10413,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -10448,23 +10448,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Friend_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Friend_descriptor;
       }
 
-      public Friend getDefaultInstanceForType() {
-        return Friend.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.Friend getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.Friend.getDefaultInstance();
       }
 
-      public Friend build() {
-        Friend result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.Friend build() {
+        com.data.pbprotocol.ChatProtocol.Friend result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Friend buildPartial() {
-        Friend result = new Friend(this);
+      public com.data.pbprotocol.ChatProtocol.Friend buildPartial() {
+        com.data.pbprotocol.ChatProtocol.Friend result = new com.data.pbprotocol.ChatProtocol.Friend(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -10497,16 +10497,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Friend) {
-          return mergeFrom((Friend)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.Friend) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.Friend)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Friend other) {
-        if (other == Friend.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.Friend other) {
+        if (other == com.data.pbprotocol.ChatProtocol.Friend.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -10545,11 +10545,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Friend parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.Friend parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Friend) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.Friend) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -10608,7 +10608,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 2;</code>
        *
@@ -10626,18 +10626,18 @@ public final class ChatProtocol {
        *昵称
        * </pre>
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             name_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -10649,11 +10649,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -10668,7 +10668,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10756,7 +10756,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object photo_ = "";
+      private java.lang.Object photo_ = "";
       /**
        * <code>optional string photo = 4;</code>
        *
@@ -10774,18 +10774,18 @@ public final class ChatProtocol {
        *头像url
        * </pre>
        */
-      public String getPhoto() {
-        Object ref = photo_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPhoto() {
+        java.lang.Object ref = photo_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             photo_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -10797,11 +10797,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getPhotoBytes() {
-        Object ref = photo_;
+        java.lang.Object ref = photo_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           photo_ = b;
           return b;
         } else {
@@ -10816,7 +10816,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setPhoto(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10856,7 +10856,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object mangerIds_ = "";
+      private java.lang.Object mangerIds_ = "";
       /**
        * <code>optional string manger_ids = 5;</code>
        *
@@ -10874,18 +10874,18 @@ public final class ChatProtocol {
        *管理id
        * </pre>
        */
-      public String getMangerIds() {
-        Object ref = mangerIds_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getMangerIds() {
+        java.lang.Object ref = mangerIds_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             mangerIds_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -10897,11 +10897,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getMangerIdsBytes() {
-        Object ref = mangerIds_;
+        java.lang.Object ref = mangerIds_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           mangerIds_ = b;
           return b;
         } else {
@@ -10916,7 +10916,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setMangerIds(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10956,7 +10956,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object members_ = "";
+      private java.lang.Object members_ = "";
       /**
        * <code>optional string members = 6;</code>
        *
@@ -10974,18 +10974,18 @@ public final class ChatProtocol {
        *群友[Friend]
        * </pre>
        */
-      public String getMembers() {
-        Object ref = members_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getMembers() {
+        java.lang.Object ref = members_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             members_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -10997,11 +10997,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getMembersBytes() {
-        Object ref = members_;
+        java.lang.Object ref = members_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           members_ = b;
           return b;
         } else {
@@ -11016,7 +11016,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setMembers(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -11103,7 +11103,7 @@ public final class ChatProtocol {
      *消息内容，如果为复合消息结构为json具体根据type判断
      * </pre>
      */
-    String getText();
+    java.lang.String getText();
     /**
      * <code>optional string text = 2;</code>
      *
@@ -11244,7 +11244,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -11327,14 +11327,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Message_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Message_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Message_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Message.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.Message.class, com.data.pbprotocol.ChatProtocol.Message.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Message> PARSER =
@@ -11347,7 +11347,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Message> getParserForType() {
       return PARSER;
     }
@@ -11377,7 +11377,7 @@ public final class ChatProtocol {
     }
 
     public static final int TEXT_FIELD_NUMBER = 2;
-    private Object text_;
+    private java.lang.Object text_;
     /**
      * <code>optional string text = 2;</code>
      *
@@ -11395,14 +11395,14 @@ public final class ChatProtocol {
      *消息内容，如果为复合消息结构为json具体根据type判断
      * </pre>
      */
-    public String getText() {
-      Object ref = text_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getText() {
+      java.lang.Object ref = text_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           text_ = s;
         }
@@ -11418,11 +11418,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getTextBytes() {
-      Object ref = text_;
-      if (ref instanceof String) {
+      java.lang.Object ref = text_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         text_ = b;
         return b;
       } else {
@@ -11662,59 +11662,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Message parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Message parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Message parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Message parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Message parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Message parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Message parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Message parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Message parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.Message parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Message parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Message parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Message parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -11723,14 +11723,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Message prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.Message prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -11744,17 +11744,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.Message)
-        MessageOrBuilder {
+        com.data.pbprotocol.ChatProtocol.MessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Message_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Message_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Message_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Message_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Message.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.Message.class, com.data.pbprotocol.ChatProtocol.Message.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.Message.newBuilder()
@@ -11763,7 +11763,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -11802,23 +11802,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Message_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Message_descriptor;
       }
 
-      public Message getDefaultInstanceForType() {
-        return Message.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.Message getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance();
       }
 
-      public Message build() {
-        Message result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.Message build() {
+        com.data.pbprotocol.ChatProtocol.Message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Message buildPartial() {
-        Message result = new Message(this);
+      public com.data.pbprotocol.ChatProtocol.Message buildPartial() {
+        com.data.pbprotocol.ChatProtocol.Message result = new com.data.pbprotocol.ChatProtocol.Message(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -11859,16 +11859,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Message) {
-          return mergeFrom((Message)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.Message) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.Message)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Message other) {
-        if (other == Message.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.Message other) {
+        if (other == com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -11907,11 +11907,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Message parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.Message parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Message) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.Message) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -11970,7 +11970,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object text_ = "";
+      private java.lang.Object text_ = "";
       /**
        * <code>optional string text = 2;</code>
        *
@@ -11988,18 +11988,18 @@ public final class ChatProtocol {
        *消息内容，如果为复合消息结构为json具体根据type判断
        * </pre>
        */
-      public String getText() {
-        Object ref = text_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getText() {
+        java.lang.Object ref = text_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             text_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -12011,11 +12011,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getTextBytes() {
-        Object ref = text_;
+        java.lang.Object ref = text_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           text_ = b;
           return b;
         } else {
@@ -12030,7 +12030,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setText(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -12418,7 +12418,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -12465,14 +12465,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MessageSyncRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.MessageSyncRequest.class, com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<MessageSyncRequest> PARSER =
@@ -12485,7 +12485,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MessageSyncRequest> getParserForType() {
       return PARSER;
     }
@@ -12552,59 +12552,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static MessageSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MessageSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MessageSyncRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MessageSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MessageSyncRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static MessageSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static MessageSyncRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static MessageSyncRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static MessageSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static MessageSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -12613,14 +12613,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(MessageSyncRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.MessageSyncRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -12634,17 +12634,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.MessageSyncRequest)
-        MessageSyncRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.MessageSyncRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                MessageSyncRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.MessageSyncRequest.class, com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.MessageSyncRequest.newBuilder()
@@ -12653,7 +12653,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -12678,23 +12678,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor;
       }
 
-      public MessageSyncRequest getDefaultInstanceForType() {
-        return MessageSyncRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.MessageSyncRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance();
       }
 
-      public MessageSyncRequest build() {
-        MessageSyncRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.MessageSyncRequest build() {
+        com.data.pbprotocol.ChatProtocol.MessageSyncRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public MessageSyncRequest buildPartial() {
-        MessageSyncRequest result = new MessageSyncRequest(this);
+      public com.data.pbprotocol.ChatProtocol.MessageSyncRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.MessageSyncRequest result = new com.data.pbprotocol.ChatProtocol.MessageSyncRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -12707,16 +12707,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MessageSyncRequest) {
-          return mergeFrom((MessageSyncRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.MessageSyncRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.MessageSyncRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(MessageSyncRequest other) {
-        if (other == MessageSyncRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.MessageSyncRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance()) return this;
         if (other.hasLastId()) {
           setLastId(other.getLastId());
         }
@@ -12732,11 +12732,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        MessageSyncRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.MessageSyncRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MessageSyncRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -12834,7 +12834,7 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    java.util.List<Message>
+    java.util.List<com.data.pbprotocol.ChatProtocol.Message> 
         getMessagesList();
     /**
      * <code>repeated .com.data.pbprotocol.Message messages = 2;</code>
@@ -12843,7 +12843,7 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    Message getMessages(int index);
+    com.data.pbprotocol.ChatProtocol.Message getMessages(int index);
     /**
      * <code>repeated .com.data.pbprotocol.Message messages = 2;</code>
      *
@@ -12859,7 +12859,7 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    java.util.List<? extends MessageOrBuilder>
+    java.util.List<? extends com.data.pbprotocol.ChatProtocol.MessageOrBuilder> 
         getMessagesOrBuilderList();
     /**
      * <code>repeated .com.data.pbprotocol.Message messages = 2;</code>
@@ -12868,8 +12868,8 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    MessageOrBuilder getMessagesOrBuilder(
-            int index);
+    com.data.pbprotocol.ChatProtocol.MessageOrBuilder getMessagesOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code com.data.pbprotocol.MessageSyncResponse}
@@ -12895,7 +12895,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -12930,10 +12930,10 @@ public final class ChatProtocol {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                messages_ = new java.util.ArrayList<Message>();
+                messages_ = new java.util.ArrayList<com.data.pbprotocol.ChatProtocol.Message>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              messages_.add(input.readMessage(Message.PARSER, extensionRegistry));
+              messages_.add(input.readMessage(com.data.pbprotocol.ChatProtocol.Message.PARSER, extensionRegistry));
               break;
             }
           }
@@ -12953,14 +12953,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MessageSyncResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.MessageSyncResponse.class, com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<MessageSyncResponse> PARSER =
@@ -12973,7 +12973,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MessageSyncResponse> getParserForType() {
       return PARSER;
     }
@@ -13003,7 +13003,7 @@ public final class ChatProtocol {
     }
 
     public static final int MESSAGES_FIELD_NUMBER = 2;
-    private java.util.List<Message> messages_;
+    private java.util.List<com.data.pbprotocol.ChatProtocol.Message> messages_;
     /**
      * <code>repeated .com.data.pbprotocol.Message messages = 2;</code>
      *
@@ -13011,7 +13011,7 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    public java.util.List<Message> getMessagesList() {
+    public java.util.List<com.data.pbprotocol.ChatProtocol.Message> getMessagesList() {
       return messages_;
     }
     /**
@@ -13021,7 +13021,7 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    public java.util.List<? extends MessageOrBuilder>
+    public java.util.List<? extends com.data.pbprotocol.ChatProtocol.MessageOrBuilder> 
         getMessagesOrBuilderList() {
       return messages_;
     }
@@ -13042,7 +13042,7 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    public Message getMessages(int index) {
+    public com.data.pbprotocol.ChatProtocol.Message getMessages(int index) {
       return messages_.get(index);
     }
     /**
@@ -13052,7 +13052,7 @@ public final class ChatProtocol {
      *消息集合
      * </pre>
      */
-    public MessageOrBuilder getMessagesOrBuilder(
+    public com.data.pbprotocol.ChatProtocol.MessageOrBuilder getMessagesOrBuilder(
         int index) {
       return messages_.get(index);
     }
@@ -13103,59 +13103,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static MessageSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MessageSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MessageSyncResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MessageSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MessageSyncResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static MessageSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static MessageSyncResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static MessageSyncResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static MessageSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static MessageSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.MessageSyncResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -13164,14 +13164,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(MessageSyncResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.MessageSyncResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -13181,17 +13181,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.MessageSyncResponse)
-        MessageSyncResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.MessageSyncResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                MessageSyncResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.MessageSyncResponse.class, com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.MessageSyncResponse.newBuilder()
@@ -13200,7 +13200,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13232,23 +13232,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor;
       }
 
-      public MessageSyncResponse getDefaultInstanceForType() {
-        return MessageSyncResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.MessageSyncResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance();
       }
 
-      public MessageSyncResponse build() {
-        MessageSyncResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.MessageSyncResponse build() {
+        com.data.pbprotocol.ChatProtocol.MessageSyncResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public MessageSyncResponse buildPartial() {
-        MessageSyncResponse result = new MessageSyncResponse(this);
+      public com.data.pbprotocol.ChatProtocol.MessageSyncResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.MessageSyncResponse result = new com.data.pbprotocol.ChatProtocol.MessageSyncResponse(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -13270,16 +13270,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MessageSyncResponse) {
-          return mergeFrom((MessageSyncResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.MessageSyncResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.MessageSyncResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(MessageSyncResponse other) {
-        if (other == MessageSyncResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.MessageSyncResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance()) return this;
         if (other.hasSyncType()) {
           setSyncType(other.getSyncType());
         }
@@ -13321,11 +13321,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        MessageSyncResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.MessageSyncResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MessageSyncResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -13384,17 +13384,17 @@ public final class ChatProtocol {
         return this;
       }
 
-      private java.util.List<Message> messages_ =
+      private java.util.List<com.data.pbprotocol.ChatProtocol.Message> messages_ =
         java.util.Collections.emptyList();
       private void ensureMessagesIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          messages_ = new java.util.ArrayList<Message>(messages_);
+          messages_ = new java.util.ArrayList<com.data.pbprotocol.ChatProtocol.Message>(messages_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Message, Message.Builder, MessageOrBuilder> messagesBuilder_;
+          com.data.pbprotocol.ChatProtocol.Message, com.data.pbprotocol.ChatProtocol.Message.Builder, com.data.pbprotocol.ChatProtocol.MessageOrBuilder> messagesBuilder_;
 
       /**
        * <code>repeated .com.data.pbprotocol.Message messages = 2;</code>
@@ -13403,7 +13403,7 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public java.util.List<Message> getMessagesList() {
+      public java.util.List<com.data.pbprotocol.ChatProtocol.Message> getMessagesList() {
         if (messagesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(messages_);
         } else {
@@ -13431,7 +13431,7 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public Message getMessages(int index) {
+      public com.data.pbprotocol.ChatProtocol.Message getMessages(int index) {
         if (messagesBuilder_ == null) {
           return messages_.get(index);
         } else {
@@ -13446,7 +13446,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setMessages(
-          int index, Message value) {
+          int index, com.data.pbprotocol.ChatProtocol.Message value) {
         if (messagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -13467,7 +13467,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setMessages(
-          int index, Message.Builder builderForValue) {
+          int index, com.data.pbprotocol.ChatProtocol.Message.Builder builderForValue) {
         if (messagesBuilder_ == null) {
           ensureMessagesIsMutable();
           messages_.set(index, builderForValue.build());
@@ -13484,7 +13484,7 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public Builder addMessages(Message value) {
+      public Builder addMessages(com.data.pbprotocol.ChatProtocol.Message value) {
         if (messagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -13505,7 +13505,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addMessages(
-          int index, Message value) {
+          int index, com.data.pbprotocol.ChatProtocol.Message value) {
         if (messagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -13526,7 +13526,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addMessages(
-          Message.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.Message.Builder builderForValue) {
         if (messagesBuilder_ == null) {
           ensureMessagesIsMutable();
           messages_.add(builderForValue.build());
@@ -13544,7 +13544,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addMessages(
-          int index, Message.Builder builderForValue) {
+          int index, com.data.pbprotocol.ChatProtocol.Message.Builder builderForValue) {
         if (messagesBuilder_ == null) {
           ensureMessagesIsMutable();
           messages_.add(index, builderForValue.build());
@@ -13562,7 +13562,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder addAllMessages(
-          Iterable<? extends Message> values) {
+          java.lang.Iterable<? extends com.data.pbprotocol.ChatProtocol.Message> values) {
         if (messagesBuilder_ == null) {
           ensureMessagesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -13614,7 +13614,7 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public Message.Builder getMessagesBuilder(
+      public com.data.pbprotocol.ChatProtocol.Message.Builder getMessagesBuilder(
           int index) {
         return getMessagesFieldBuilder().getBuilder(index);
       }
@@ -13625,7 +13625,7 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public MessageOrBuilder getMessagesOrBuilder(
+      public com.data.pbprotocol.ChatProtocol.MessageOrBuilder getMessagesOrBuilder(
           int index) {
         if (messagesBuilder_ == null) {
           return messages_.get(index);  } else {
@@ -13639,7 +13639,7 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public java.util.List<? extends MessageOrBuilder>
+      public java.util.List<? extends com.data.pbprotocol.ChatProtocol.MessageOrBuilder> 
            getMessagesOrBuilderList() {
         if (messagesBuilder_ != null) {
           return messagesBuilder_.getMessageOrBuilderList();
@@ -13654,9 +13654,9 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public Message.Builder addMessagesBuilder() {
+      public com.data.pbprotocol.ChatProtocol.Message.Builder addMessagesBuilder() {
         return getMessagesFieldBuilder().addBuilder(
-            Message.getDefaultInstance());
+            com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance());
       }
       /**
        * <code>repeated .com.data.pbprotocol.Message messages = 2;</code>
@@ -13665,10 +13665,10 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public Message.Builder addMessagesBuilder(
+      public com.data.pbprotocol.ChatProtocol.Message.Builder addMessagesBuilder(
           int index) {
         return getMessagesFieldBuilder().addBuilder(
-            index, Message.getDefaultInstance());
+            index, com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance());
       }
       /**
        * <code>repeated .com.data.pbprotocol.Message messages = 2;</code>
@@ -13677,16 +13677,16 @@ public final class ChatProtocol {
        *消息集合
        * </pre>
        */
-      public java.util.List<Message.Builder>
+      public java.util.List<com.data.pbprotocol.ChatProtocol.Message.Builder> 
            getMessagesBuilderList() {
         return getMessagesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Message, Message.Builder, MessageOrBuilder>
+          com.data.pbprotocol.ChatProtocol.Message, com.data.pbprotocol.ChatProtocol.Message.Builder, com.data.pbprotocol.ChatProtocol.MessageOrBuilder> 
           getMessagesFieldBuilder() {
         if (messagesBuilder_ == null) {
           messagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Message, Message.Builder, MessageOrBuilder>(
+              com.data.pbprotocol.ChatProtocol.Message, com.data.pbprotocol.ChatProtocol.Message.Builder, com.data.pbprotocol.ChatProtocol.MessageOrBuilder>(
                   messages_,
                   ((bitField0_ & 0x00000002) == 0x00000002),
                   getParentForChildren(),
@@ -13739,7 +13739,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -13780,14 +13780,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              UserSyncRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.UserSyncRequest.class, com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<UserSyncRequest> PARSER =
@@ -13800,7 +13800,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<UserSyncRequest> getParserForType() {
       return PARSER;
     }
@@ -13835,59 +13835,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static UserSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static UserSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static UserSyncRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static UserSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static UserSyncRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static UserSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static UserSyncRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static UserSyncRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static UserSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static UserSyncRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -13896,14 +13896,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(UserSyncRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.UserSyncRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -13917,17 +13917,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.UserSyncRequest)
-        UserSyncRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.UserSyncRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                UserSyncRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.UserSyncRequest.class, com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.UserSyncRequest.newBuilder()
@@ -13936,7 +13936,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13959,38 +13959,38 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncRequest_descriptor;
       }
 
-      public UserSyncRequest getDefaultInstanceForType() {
-        return UserSyncRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.UserSyncRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance();
       }
 
-      public UserSyncRequest build() {
-        UserSyncRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.UserSyncRequest build() {
+        com.data.pbprotocol.ChatProtocol.UserSyncRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public UserSyncRequest buildPartial() {
-        UserSyncRequest result = new UserSyncRequest(this);
+      public com.data.pbprotocol.ChatProtocol.UserSyncRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.UserSyncRequest result = new com.data.pbprotocol.ChatProtocol.UserSyncRequest(this);
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof UserSyncRequest) {
-          return mergeFrom((UserSyncRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.UserSyncRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.UserSyncRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(UserSyncRequest other) {
-        if (other == UserSyncRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.UserSyncRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -14003,11 +14003,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        UserSyncRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.UserSyncRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (UserSyncRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.UserSyncRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -14064,7 +14064,7 @@ public final class ChatProtocol {
      *昵称
      * </pre>
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>optional string name = 2;</code>
      *
@@ -14090,7 +14090,7 @@ public final class ChatProtocol {
      *头像
      * </pre>
      */
-    String getPhoto();
+    java.lang.String getPhoto();
     /**
      * <code>optional string photo = 3;</code>
      *
@@ -14116,7 +14116,7 @@ public final class ChatProtocol {
      *消息提示音
      * </pre>
      */
-    String getSound();
+    java.lang.String getSound();
     /**
      * <code>optional string sound = 4;</code>
      *
@@ -14142,7 +14142,7 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>optional string username = 5;</code>
      *
@@ -14177,7 +14177,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -14248,14 +14248,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              UserSyncResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.UserSyncResponse.class, com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<UserSyncResponse> PARSER =
@@ -14268,7 +14268,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<UserSyncResponse> getParserForType() {
       return PARSER;
     }
@@ -14298,7 +14298,7 @@ public final class ChatProtocol {
     }
 
     public static final int NAME_FIELD_NUMBER = 2;
-    private Object name_;
+    private java.lang.Object name_;
     /**
      * <code>optional string name = 2;</code>
      *
@@ -14316,14 +14316,14 @@ public final class ChatProtocol {
      *昵称
      * </pre>
      */
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           name_ = s;
         }
@@ -14339,11 +14339,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -14352,7 +14352,7 @@ public final class ChatProtocol {
     }
 
     public static final int PHOTO_FIELD_NUMBER = 3;
-    private Object photo_;
+    private java.lang.Object photo_;
     /**
      * <code>optional string photo = 3;</code>
      *
@@ -14370,14 +14370,14 @@ public final class ChatProtocol {
      *头像
      * </pre>
      */
-    public String getPhoto() {
-      Object ref = photo_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPhoto() {
+      java.lang.Object ref = photo_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           photo_ = s;
         }
@@ -14393,11 +14393,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getPhotoBytes() {
-      Object ref = photo_;
-      if (ref instanceof String) {
+      java.lang.Object ref = photo_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         photo_ = b;
         return b;
       } else {
@@ -14406,7 +14406,7 @@ public final class ChatProtocol {
     }
 
     public static final int SOUND_FIELD_NUMBER = 4;
-    private Object sound_;
+    private java.lang.Object sound_;
     /**
      * <code>optional string sound = 4;</code>
      *
@@ -14424,14 +14424,14 @@ public final class ChatProtocol {
      *消息提示音
      * </pre>
      */
-    public String getSound() {
-      Object ref = sound_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getSound() {
+      java.lang.Object ref = sound_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           sound_ = s;
         }
@@ -14447,11 +14447,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getSoundBytes() {
-      Object ref = sound_;
-      if (ref instanceof String) {
+      java.lang.Object ref = sound_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         sound_ = b;
         return b;
       } else {
@@ -14460,7 +14460,7 @@ public final class ChatProtocol {
     }
 
     public static final int USERNAME_FIELD_NUMBER = 5;
-    private Object username_;
+    private java.lang.Object username_;
     /**
      * <code>optional string username = 5;</code>
      *
@@ -14478,14 +14478,14 @@ public final class ChatProtocol {
      *用户名
      * </pre>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           username_ = s;
         }
@@ -14501,11 +14501,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -14583,59 +14583,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static UserSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static UserSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static UserSyncResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static UserSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static UserSyncResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static UserSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static UserSyncResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static UserSyncResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static UserSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static UserSyncResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.UserSyncResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -14644,14 +14644,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(UserSyncResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.UserSyncResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -14661,17 +14661,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.UserSyncResponse)
-        UserSyncResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.UserSyncResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                UserSyncResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.UserSyncResponse.class, com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.UserSyncResponse.newBuilder()
@@ -14680,7 +14680,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -14713,23 +14713,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_UserSyncResponse_descriptor;
       }
 
-      public UserSyncResponse getDefaultInstanceForType() {
-        return UserSyncResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.UserSyncResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance();
       }
 
-      public UserSyncResponse build() {
-        UserSyncResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.UserSyncResponse build() {
+        com.data.pbprotocol.ChatProtocol.UserSyncResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public UserSyncResponse buildPartial() {
-        UserSyncResponse result = new UserSyncResponse(this);
+      public com.data.pbprotocol.ChatProtocol.UserSyncResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.UserSyncResponse result = new com.data.pbprotocol.ChatProtocol.UserSyncResponse(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -14758,16 +14758,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof UserSyncResponse) {
-          return mergeFrom((UserSyncResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.UserSyncResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.UserSyncResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(UserSyncResponse other) {
-        if (other == UserSyncResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.UserSyncResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance()) return this;
         if (other.hasUserId()) {
           setUserId(other.getUserId());
         }
@@ -14803,11 +14803,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        UserSyncResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.UserSyncResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (UserSyncResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.UserSyncResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -14866,7 +14866,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 2;</code>
        *
@@ -14884,18 +14884,18 @@ public final class ChatProtocol {
        *昵称
        * </pre>
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             name_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -14907,11 +14907,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -14926,7 +14926,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -14966,7 +14966,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object photo_ = "";
+      private java.lang.Object photo_ = "";
       /**
        * <code>optional string photo = 3;</code>
        *
@@ -14984,18 +14984,18 @@ public final class ChatProtocol {
        *头像
        * </pre>
        */
-      public String getPhoto() {
-        Object ref = photo_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPhoto() {
+        java.lang.Object ref = photo_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             photo_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -15007,11 +15007,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getPhotoBytes() {
-        Object ref = photo_;
+        java.lang.Object ref = photo_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           photo_ = b;
           return b;
         } else {
@@ -15026,7 +15026,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setPhoto(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -15066,7 +15066,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object sound_ = "";
+      private java.lang.Object sound_ = "";
       /**
        * <code>optional string sound = 4;</code>
        *
@@ -15084,18 +15084,18 @@ public final class ChatProtocol {
        *消息提示音
        * </pre>
        */
-      public String getSound() {
-        Object ref = sound_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getSound() {
+        java.lang.Object ref = sound_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             sound_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -15107,11 +15107,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getSoundBytes() {
-        Object ref = sound_;
+        java.lang.Object ref = sound_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           sound_ = b;
           return b;
         } else {
@@ -15126,7 +15126,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setSound(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -15166,7 +15166,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>optional string username = 5;</code>
        *
@@ -15184,18 +15184,18 @@ public final class ChatProtocol {
        *用户名
        * </pre>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             username_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -15207,11 +15207,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -15226,7 +15226,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -15313,7 +15313,7 @@ public final class ChatProtocol {
      *文件类型
      * </pre>
      */
-    String getType();
+    java.lang.String getType();
     /**
      * <code>optional string type = 2;</code>
      *
@@ -15339,7 +15339,7 @@ public final class ChatProtocol {
      *文件后缀txt png jpg mp3
      * </pre>
      */
-    String getFileSuff();
+    java.lang.String getFileSuff();
     /**
      * <code>optional string file_suff = 3;</code>
      *
@@ -15378,7 +15378,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -15437,14 +15437,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              FileUploadRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.FileUploadRequest.class, com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<FileUploadRequest> PARSER =
@@ -15457,7 +15457,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<FileUploadRequest> getParserForType() {
       return PARSER;
     }
@@ -15487,7 +15487,7 @@ public final class ChatProtocol {
     }
 
     public static final int TYPE_FIELD_NUMBER = 2;
-    private Object type_;
+    private java.lang.Object type_;
     /**
      * <code>optional string type = 2;</code>
      *
@@ -15505,14 +15505,14 @@ public final class ChatProtocol {
      *文件类型
      * </pre>
      */
-    public String getType() {
-      Object ref = type_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getType() {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           type_ = s;
         }
@@ -15528,11 +15528,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
-      Object ref = type_;
-      if (ref instanceof String) {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         type_ = b;
         return b;
       } else {
@@ -15541,7 +15541,7 @@ public final class ChatProtocol {
     }
 
     public static final int FILE_SUFF_FIELD_NUMBER = 3;
-    private Object fileSuff_;
+    private java.lang.Object fileSuff_;
     /**
      * <code>optional string file_suff = 3;</code>
      *
@@ -15559,14 +15559,14 @@ public final class ChatProtocol {
      *文件后缀txt png jpg mp3
      * </pre>
      */
-    public String getFileSuff() {
-      Object ref = fileSuff_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getFileSuff() {
+      java.lang.Object ref = fileSuff_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           fileSuff_ = s;
         }
@@ -15582,11 +15582,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getFileSuffBytes() {
-      Object ref = fileSuff_;
-      if (ref instanceof String) {
+      java.lang.Object ref = fileSuff_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         fileSuff_ = b;
         return b;
       } else {
@@ -15648,59 +15648,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static FileUploadRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FileUploadRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FileUploadRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FileUploadRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FileUploadRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FileUploadRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static FileUploadRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static FileUploadRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static FileUploadRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FileUploadRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -15709,14 +15709,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(FileUploadRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.FileUploadRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -15730,17 +15730,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.FileUploadRequest)
-        FileUploadRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.FileUploadRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                FileUploadRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.FileUploadRequest.class, com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.FileUploadRequest.newBuilder()
@@ -15749,7 +15749,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -15778,23 +15778,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadRequest_descriptor;
       }
 
-      public FileUploadRequest getDefaultInstanceForType() {
-        return FileUploadRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.FileUploadRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance();
       }
 
-      public FileUploadRequest build() {
-        FileUploadRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.FileUploadRequest build() {
+        com.data.pbprotocol.ChatProtocol.FileUploadRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public FileUploadRequest buildPartial() {
-        FileUploadRequest result = new FileUploadRequest(this);
+      public com.data.pbprotocol.ChatProtocol.FileUploadRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.FileUploadRequest result = new com.data.pbprotocol.ChatProtocol.FileUploadRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -15815,16 +15815,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof FileUploadRequest) {
-          return mergeFrom((FileUploadRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.FileUploadRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.FileUploadRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(FileUploadRequest other) {
-        if (other == FileUploadRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.FileUploadRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance()) return this;
         if (other.hasContent()) {
           setContent(other.getContent());
         }
@@ -15850,11 +15850,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        FileUploadRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.FileUploadRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (FileUploadRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.FileUploadRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -15916,7 +15916,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object type_ = "";
+      private java.lang.Object type_ = "";
       /**
        * <code>optional string type = 2;</code>
        *
@@ -15934,18 +15934,18 @@ public final class ChatProtocol {
        *文件类型
        * </pre>
        */
-      public String getType() {
-        Object ref = type_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getType() {
+        java.lang.Object ref = type_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             type_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -15957,11 +15957,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getTypeBytes() {
-        Object ref = type_;
+        java.lang.Object ref = type_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           type_ = b;
           return b;
         } else {
@@ -15976,7 +15976,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setType(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -16016,7 +16016,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object fileSuff_ = "";
+      private java.lang.Object fileSuff_ = "";
       /**
        * <code>optional string file_suff = 3;</code>
        *
@@ -16034,18 +16034,18 @@ public final class ChatProtocol {
        *文件后缀txt png jpg mp3
        * </pre>
        */
-      public String getFileSuff() {
-        Object ref = fileSuff_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getFileSuff() {
+        java.lang.Object ref = fileSuff_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             fileSuff_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -16057,11 +16057,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getFileSuffBytes() {
-        Object ref = fileSuff_;
+        java.lang.Object ref = fileSuff_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           fileSuff_ = b;
           return b;
         } else {
@@ -16076,7 +16076,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setFileSuff(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -16163,7 +16163,7 @@ public final class ChatProtocol {
      *文件访问地址
      * </pre>
      */
-    String getUrl();
+    java.lang.String getUrl();
     /**
      * <code>optional string url = 2;</code>
      *
@@ -16198,7 +16198,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -16251,14 +16251,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              FileUploadResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.FileUploadResponse.class, com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<FileUploadResponse> PARSER =
@@ -16271,7 +16271,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<FileUploadResponse> getParserForType() {
       return PARSER;
     }
@@ -16301,7 +16301,7 @@ public final class ChatProtocol {
     }
 
     public static final int URL_FIELD_NUMBER = 2;
-    private Object url_;
+    private java.lang.Object url_;
     /**
      * <code>optional string url = 2;</code>
      *
@@ -16319,14 +16319,14 @@ public final class ChatProtocol {
      *文件访问地址
      * </pre>
      */
-    public String getUrl() {
-      Object ref = url_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUrl() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           url_ = s;
         }
@@ -16342,11 +16342,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
-      Object ref = url_;
-      if (ref instanceof String) {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         url_ = b;
         return b;
       } else {
@@ -16400,59 +16400,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static FileUploadResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FileUploadResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FileUploadResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static FileUploadResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static FileUploadResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FileUploadResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static FileUploadResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static FileUploadResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static FileUploadResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static FileUploadResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.FileUploadResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -16461,14 +16461,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(FileUploadResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.FileUploadResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -16478,17 +16478,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.FileUploadResponse)
-        FileUploadResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.FileUploadResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                FileUploadResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.FileUploadResponse.class, com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.FileUploadResponse.newBuilder()
@@ -16497,7 +16497,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -16524,23 +16524,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_FileUploadResponse_descriptor;
       }
 
-      public FileUploadResponse getDefaultInstanceForType() {
-        return FileUploadResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.FileUploadResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance();
       }
 
-      public FileUploadResponse build() {
-        FileUploadResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.FileUploadResponse build() {
+        com.data.pbprotocol.ChatProtocol.FileUploadResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public FileUploadResponse buildPartial() {
-        FileUploadResponse result = new FileUploadResponse(this);
+      public com.data.pbprotocol.ChatProtocol.FileUploadResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.FileUploadResponse result = new com.data.pbprotocol.ChatProtocol.FileUploadResponse(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -16557,16 +16557,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof FileUploadResponse) {
-          return mergeFrom((FileUploadResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.FileUploadResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.FileUploadResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(FileUploadResponse other) {
-        if (other == FileUploadResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.FileUploadResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -16587,11 +16587,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        FileUploadResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.FileUploadResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (FileUploadResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.FileUploadResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -16650,7 +16650,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object url_ = "";
+      private java.lang.Object url_ = "";
       /**
        * <code>optional string url = 2;</code>
        *
@@ -16668,18 +16668,18 @@ public final class ChatProtocol {
        *文件访问地址
        * </pre>
        */
-      public String getUrl() {
-        Object ref = url_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             url_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -16691,11 +16691,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getUrlBytes() {
-        Object ref = url_;
+        java.lang.Object ref = url_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           url_ = b;
           return b;
         } else {
@@ -16710,7 +16710,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -16814,7 +16814,7 @@ public final class ChatProtocol {
      *消息内容
      * </pre>
      */
-    String getText();
+    java.lang.String getText();
     /**
      * <code>optional string text = 3;</code>
      *
@@ -16849,7 +16849,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -16907,14 +16907,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SendMessageRequest.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.SendMessageRequest.class, com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder.class);
     }
 
     public static com.google.protobuf.Parser<SendMessageRequest> PARSER =
@@ -16927,7 +16927,7 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<SendMessageRequest> getParserForType() {
       return PARSER;
     }
@@ -16980,7 +16980,7 @@ public final class ChatProtocol {
     }
 
     public static final int TEXT_FIELD_NUMBER = 3;
-    private Object text_;
+    private java.lang.Object text_;
     /**
      * <code>optional string text = 3;</code>
      *
@@ -16998,14 +16998,14 @@ public final class ChatProtocol {
      *消息内容
      * </pre>
      */
-    public String getText() {
-      Object ref = text_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getText() {
+      java.lang.Object ref = text_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           text_ = s;
         }
@@ -17021,11 +17021,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getTextBytes() {
-      Object ref = text_;
-      if (ref instanceof String) {
+      java.lang.Object ref = text_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         text_ = b;
         return b;
       } else {
@@ -17087,59 +17087,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static SendMessageRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SendMessageRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SendMessageRequest parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SendMessageRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SendMessageRequest parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static SendMessageRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static SendMessageRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static SendMessageRequest parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static SendMessageRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static SendMessageRequest parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -17148,14 +17148,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(SendMessageRequest prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.SendMessageRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -17165,17 +17165,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.SendMessageRequest)
-        SendMessageRequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.SendMessageRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                SendMessageRequest.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.SendMessageRequest.class, com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.SendMessageRequest.newBuilder()
@@ -17184,7 +17184,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -17213,23 +17213,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageRequest_descriptor;
       }
 
-      public SendMessageRequest getDefaultInstanceForType() {
-        return SendMessageRequest.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.SendMessageRequest getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance();
       }
 
-      public SendMessageRequest build() {
-        SendMessageRequest result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.SendMessageRequest build() {
+        com.data.pbprotocol.ChatProtocol.SendMessageRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public SendMessageRequest buildPartial() {
-        SendMessageRequest result = new SendMessageRequest(this);
+      public com.data.pbprotocol.ChatProtocol.SendMessageRequest buildPartial() {
+        com.data.pbprotocol.ChatProtocol.SendMessageRequest result = new com.data.pbprotocol.ChatProtocol.SendMessageRequest(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -17250,16 +17250,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof SendMessageRequest) {
-          return mergeFrom((SendMessageRequest)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.SendMessageRequest) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.SendMessageRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(SendMessageRequest other) {
-        if (other == SendMessageRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.SendMessageRequest other) {
+        if (other == com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance()) return this;
         if (other.hasChatId()) {
           setChatId(other.getChatId());
         }
@@ -17283,11 +17283,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        SendMessageRequest parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.SendMessageRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (SendMessageRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.SendMessageRequest) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -17394,7 +17394,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object text_ = "";
+      private java.lang.Object text_ = "";
       /**
        * <code>optional string text = 3;</code>
        *
@@ -17412,18 +17412,18 @@ public final class ChatProtocol {
        *消息内容
        * </pre>
        */
-      public String getText() {
-        Object ref = text_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getText() {
+        java.lang.Object ref = text_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             text_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -17435,11 +17435,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getTextBytes() {
-        Object ref = text_;
+        java.lang.Object ref = text_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           text_ = b;
           return b;
         } else {
@@ -17454,7 +17454,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setText(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -17508,6 +17508,31 @@ public final class ChatProtocol {
   public interface SendMessageResponseOrBuilder extends
       // @@protoc_insertion_point(interface_extends:com.data.pbprotocol.SendMessageResponse)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+     *
+     * <pre>
+     *消息类型
+     * </pre>
+     */
+    boolean hasMessages();
+    /**
+     * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+     *
+     * <pre>
+     *消息类型
+     * </pre>
+     */
+    com.data.pbprotocol.ChatProtocol.Message getMessages();
+    /**
+     * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+     *
+     * <pre>
+     *消息类型
+     * </pre>
+     */
+    com.data.pbprotocol.ChatProtocol.MessageOrBuilder getMessagesOrBuilder();
   }
   /**
    * Protobuf type {@code com.data.pbprotocol.SendMessageResponse}
@@ -17533,7 +17558,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -17543,6 +17568,7 @@ public final class ChatProtocol {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       initFields();
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -17560,6 +17586,19 @@ public final class ChatProtocol {
               }
               break;
             }
+            case 10: {
+              com.data.pbprotocol.ChatProtocol.Message.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = messages_.toBuilder();
+              }
+              messages_ = input.readMessage(com.data.pbprotocol.ChatProtocol.Message.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(messages_);
+                messages_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -17574,14 +17613,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SendMessageResponse.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.SendMessageResponse.class, com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<SendMessageResponse> PARSER =
@@ -17594,12 +17633,47 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<SendMessageResponse> getParserForType() {
       return PARSER;
     }
 
+    private int bitField0_;
+    public static final int MESSAGES_FIELD_NUMBER = 1;
+    private com.data.pbprotocol.ChatProtocol.Message messages_;
+    /**
+     * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+     *
+     * <pre>
+     *消息类型
+     * </pre>
+     */
+    public boolean hasMessages() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+     *
+     * <pre>
+     *消息类型
+     * </pre>
+     */
+    public com.data.pbprotocol.ChatProtocol.Message getMessages() {
+      return messages_;
+    }
+    /**
+     * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+     *
+     * <pre>
+     *消息类型
+     * </pre>
+     */
+    public com.data.pbprotocol.ChatProtocol.MessageOrBuilder getMessagesOrBuilder() {
+      return messages_;
+    }
+
     private void initFields() {
+      messages_ = com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -17614,6 +17688,9 @@ public final class ChatProtocol {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, messages_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -17623,65 +17700,69 @@ public final class ChatProtocol {
       if (size != -1) return size;
 
       size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, messages_);
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static SendMessageResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SendMessageResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SendMessageResponse parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SendMessageResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SendMessageResponse parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static SendMessageResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static SendMessageResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static SendMessageResponse parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static SendMessageResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static SendMessageResponse parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.SendMessageResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -17690,14 +17771,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(SendMessageResponse prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.SendMessageResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -17707,17 +17788,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.SendMessageResponse)
-        SendMessageResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.SendMessageResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                SendMessageResponse.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.SendMessageResponse.class, com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.SendMessageResponse.newBuilder()
@@ -17726,12 +17807,13 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getMessagesFieldBuilder();
         }
       }
       private static Builder create() {
@@ -17740,6 +17822,12 @@ public final class ChatProtocol {
 
       public Builder clear() {
         super.clear();
+        if (messagesBuilder_ == null) {
+          messages_ = com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance();
+        } else {
+          messagesBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -17749,38 +17837,52 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_SendMessageResponse_descriptor;
       }
 
-      public SendMessageResponse getDefaultInstanceForType() {
-        return SendMessageResponse.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.SendMessageResponse getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance();
       }
 
-      public SendMessageResponse build() {
-        SendMessageResponse result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.SendMessageResponse build() {
+        com.data.pbprotocol.ChatProtocol.SendMessageResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public SendMessageResponse buildPartial() {
-        SendMessageResponse result = new SendMessageResponse(this);
+      public com.data.pbprotocol.ChatProtocol.SendMessageResponse buildPartial() {
+        com.data.pbprotocol.ChatProtocol.SendMessageResponse result = new com.data.pbprotocol.ChatProtocol.SendMessageResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (messagesBuilder_ == null) {
+          result.messages_ = messages_;
+        } else {
+          result.messages_ = messagesBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof SendMessageResponse) {
-          return mergeFrom((SendMessageResponse)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.SendMessageResponse) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.SendMessageResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(SendMessageResponse other) {
-        if (other == SendMessageResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.SendMessageResponse other) {
+        if (other == com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance()) return this;
+        if (other.hasMessages()) {
+          mergeMessages(other.getMessages());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -17793,11 +17895,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        SendMessageResponse parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.SendMessageResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (SendMessageResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.SendMessageResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -17805,6 +17907,159 @@ public final class ChatProtocol {
           }
         }
         return this;
+      }
+      private int bitField0_;
+
+      private com.data.pbprotocol.ChatProtocol.Message messages_ = com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.data.pbprotocol.ChatProtocol.Message, com.data.pbprotocol.ChatProtocol.Message.Builder, com.data.pbprotocol.ChatProtocol.MessageOrBuilder> messagesBuilder_;
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public boolean hasMessages() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public com.data.pbprotocol.ChatProtocol.Message getMessages() {
+        if (messagesBuilder_ == null) {
+          return messages_;
+        } else {
+          return messagesBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public Builder setMessages(com.data.pbprotocol.ChatProtocol.Message value) {
+        if (messagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          messages_ = value;
+          onChanged();
+        } else {
+          messagesBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public Builder setMessages(
+          com.data.pbprotocol.ChatProtocol.Message.Builder builderForValue) {
+        if (messagesBuilder_ == null) {
+          messages_ = builderForValue.build();
+          onChanged();
+        } else {
+          messagesBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public Builder mergeMessages(com.data.pbprotocol.ChatProtocol.Message value) {
+        if (messagesBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              messages_ != com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance()) {
+            messages_ =
+              com.data.pbprotocol.ChatProtocol.Message.newBuilder(messages_).mergeFrom(value).buildPartial();
+          } else {
+            messages_ = value;
+          }
+          onChanged();
+        } else {
+          messagesBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public Builder clearMessages() {
+        if (messagesBuilder_ == null) {
+          messages_ = com.data.pbprotocol.ChatProtocol.Message.getDefaultInstance();
+          onChanged();
+        } else {
+          messagesBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public com.data.pbprotocol.ChatProtocol.Message.Builder getMessagesBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getMessagesFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      public com.data.pbprotocol.ChatProtocol.MessageOrBuilder getMessagesOrBuilder() {
+        if (messagesBuilder_ != null) {
+          return messagesBuilder_.getMessageOrBuilder();
+        } else {
+          return messages_;
+        }
+      }
+      /**
+       * <code>optional .com.data.pbprotocol.Message messages = 1;</code>
+       *
+       * <pre>
+       *消息类型
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.data.pbprotocol.ChatProtocol.Message, com.data.pbprotocol.ChatProtocol.Message.Builder, com.data.pbprotocol.ChatProtocol.MessageOrBuilder> 
+          getMessagesFieldBuilder() {
+        if (messagesBuilder_ == null) {
+          messagesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.data.pbprotocol.ChatProtocol.Message, com.data.pbprotocol.ChatProtocol.Message.Builder, com.data.pbprotocol.ChatProtocol.MessageOrBuilder>(
+                  getMessages(),
+                  getParentForChildren(),
+                  isClean());
+          messages_ = null;
+        }
+        return messagesBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:com.data.pbprotocol.SendMessageResponse)
@@ -17837,7 +18092,7 @@ public final class ChatProtocol {
      *session编号
      * </pre>
      */
-    String getSessionId();
+    java.lang.String getSessionId();
     /**
      * <code>optional string session_id = 1;</code>
      *
@@ -17880,7 +18135,7 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    RegistRequest getRegistRequest();
+    com.data.pbprotocol.ChatProtocol.RegistRequest getRegistRequest();
     /**
      * <code>optional .com.data.pbprotocol.RegistRequest regist_request = 10;</code>
      *
@@ -17888,7 +18143,7 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    RegistRequestOrBuilder getRegistRequestOrBuilder();
+    com.data.pbprotocol.ChatProtocol.RegistRequestOrBuilder getRegistRequestOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.LoginRequest login = 11;</code>
@@ -17905,7 +18160,7 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    LoginRequest getLogin();
+    com.data.pbprotocol.ChatProtocol.LoginRequest getLogin();
     /**
      * <code>optional .com.data.pbprotocol.LoginRequest login = 11;</code>
      *
@@ -17913,7 +18168,7 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    LoginRequestOrBuilder getLoginOrBuilder();
+    com.data.pbprotocol.ChatProtocol.LoginRequestOrBuilder getLoginOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.LogoutRequest logout = 12;</code>
@@ -17930,7 +18185,7 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    LogoutRequest getLogout();
+    com.data.pbprotocol.ChatProtocol.LogoutRequest getLogout();
     /**
      * <code>optional .com.data.pbprotocol.LogoutRequest logout = 12;</code>
      *
@@ -17938,7 +18193,7 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    LogoutRequestOrBuilder getLogoutOrBuilder();
+    com.data.pbprotocol.ChatProtocol.LogoutRequestOrBuilder getLogoutOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.PipeRequest pipe = 13;</code>
@@ -17955,7 +18210,7 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    PipeRequest getPipe();
+    com.data.pbprotocol.ChatProtocol.PipeRequest getPipe();
     /**
      * <code>optional .com.data.pbprotocol.PipeRequest pipe = 13;</code>
      *
@@ -17963,7 +18218,7 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    PipeRequestOrBuilder getPipeOrBuilder();
+    com.data.pbprotocol.ChatProtocol.PipeRequestOrBuilder getPipeOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.HeartbeatRequest heartbeat = 14;</code>
@@ -17980,7 +18235,7 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    HeartbeatRequest getHeartbeat();
+    com.data.pbprotocol.ChatProtocol.HeartbeatRequest getHeartbeat();
     /**
      * <code>optional .com.data.pbprotocol.HeartbeatRequest heartbeat = 14;</code>
      *
@@ -17988,7 +18243,7 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    HeartbeatRequestOrBuilder getHeartbeatOrBuilder();
+    com.data.pbprotocol.ChatProtocol.HeartbeatRequestOrBuilder getHeartbeatOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.FriendSyncRequest friend_sync = 15;</code>
@@ -18005,7 +18260,7 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    FriendSyncRequest getFriendSync();
+    com.data.pbprotocol.ChatProtocol.FriendSyncRequest getFriendSync();
     /**
      * <code>optional .com.data.pbprotocol.FriendSyncRequest friend_sync = 15;</code>
      *
@@ -18013,7 +18268,7 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    FriendSyncRequestOrBuilder getFriendSyncOrBuilder();
+    com.data.pbprotocol.ChatProtocol.FriendSyncRequestOrBuilder getFriendSyncOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.MessageSyncRequest message_sync = 16;</code>
@@ -18030,7 +18285,7 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    MessageSyncRequest getMessageSync();
+    com.data.pbprotocol.ChatProtocol.MessageSyncRequest getMessageSync();
     /**
      * <code>optional .com.data.pbprotocol.MessageSyncRequest message_sync = 16;</code>
      *
@@ -18038,7 +18293,7 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    MessageSyncRequestOrBuilder getMessageSyncOrBuilder();
+    com.data.pbprotocol.ChatProtocol.MessageSyncRequestOrBuilder getMessageSyncOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.UserSyncRequest user_sync = 17;</code>
@@ -18055,7 +18310,7 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    UserSyncRequest getUserSync();
+    com.data.pbprotocol.ChatProtocol.UserSyncRequest getUserSync();
     /**
      * <code>optional .com.data.pbprotocol.UserSyncRequest user_sync = 17;</code>
      *
@@ -18063,7 +18318,7 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    UserSyncRequestOrBuilder getUserSyncOrBuilder();
+    com.data.pbprotocol.ChatProtocol.UserSyncRequestOrBuilder getUserSyncOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.FileUploadRequest file_upload = 18;</code>
@@ -18080,7 +18335,7 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    FileUploadRequest getFileUpload();
+    com.data.pbprotocol.ChatProtocol.FileUploadRequest getFileUpload();
     /**
      * <code>optional .com.data.pbprotocol.FileUploadRequest file_upload = 18;</code>
      *
@@ -18088,7 +18343,7 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    FileUploadRequestOrBuilder getFileUploadOrBuilder();
+    com.data.pbprotocol.ChatProtocol.FileUploadRequestOrBuilder getFileUploadOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.CheckUsernameRequest check_username = 19;</code>
@@ -18105,7 +18360,7 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    CheckUsernameRequest getCheckUsername();
+    com.data.pbprotocol.ChatProtocol.CheckUsernameRequest getCheckUsername();
     /**
      * <code>optional .com.data.pbprotocol.CheckUsernameRequest check_username = 19;</code>
      *
@@ -18113,7 +18368,7 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    CheckUsernameRequestOrBuilder getCheckUsernameOrBuilder();
+    com.data.pbprotocol.ChatProtocol.CheckUsernameRequestOrBuilder getCheckUsernameOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.SendMessageRequest send_message = 20;</code>
@@ -18130,7 +18385,7 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    SendMessageRequest getSendMessage();
+    com.data.pbprotocol.ChatProtocol.SendMessageRequest getSendMessage();
     /**
      * <code>optional .com.data.pbprotocol.SendMessageRequest send_message = 20;</code>
      *
@@ -18138,7 +18393,7 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    SendMessageRequestOrBuilder getSendMessageOrBuilder();
+    com.data.pbprotocol.ChatProtocol.SendMessageRequestOrBuilder getSendMessageOrBuilder();
   }
   /**
    * Protobuf type {@code com.data.pbprotocol.Request}
@@ -18164,7 +18419,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -18204,143 +18459,143 @@ public final class ChatProtocol {
               break;
             }
             case 82: {
-              RegistRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.RegistRequest.Builder subBuilder = null;
               if (protocolCase_ == 10) {
-                subBuilder = ((RegistRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(RegistRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.RegistRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((RegistRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 10;
               break;
             }
             case 90: {
-              LoginRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.LoginRequest.Builder subBuilder = null;
               if (protocolCase_ == 11) {
-                subBuilder = ((LoginRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(LoginRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.LoginRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((LoginRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 11;
               break;
             }
             case 98: {
-              LogoutRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder subBuilder = null;
               if (protocolCase_ == 12) {
-                subBuilder = ((LogoutRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(LogoutRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.LogoutRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((LogoutRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 12;
               break;
             }
             case 106: {
-              PipeRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.PipeRequest.Builder subBuilder = null;
               if (protocolCase_ == 13) {
-                subBuilder = ((PipeRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(PipeRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.PipeRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((PipeRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 13;
               break;
             }
             case 114: {
-              HeartbeatRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder subBuilder = null;
               if (protocolCase_ == 14) {
-                subBuilder = ((HeartbeatRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(HeartbeatRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.HeartbeatRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((HeartbeatRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 14;
               break;
             }
             case 122: {
-              FriendSyncRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder subBuilder = null;
               if (protocolCase_ == 15) {
-                subBuilder = ((FriendSyncRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(FriendSyncRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.FriendSyncRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((FriendSyncRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 15;
               break;
             }
             case 130: {
-              MessageSyncRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder subBuilder = null;
               if (protocolCase_ == 16) {
-                subBuilder = ((MessageSyncRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(MessageSyncRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.MessageSyncRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((MessageSyncRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 16;
               break;
             }
             case 138: {
-              UserSyncRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder subBuilder = null;
               if (protocolCase_ == 17) {
-                subBuilder = ((UserSyncRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(UserSyncRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.UserSyncRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((UserSyncRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 17;
               break;
             }
             case 146: {
-              FileUploadRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder subBuilder = null;
               if (protocolCase_ == 18) {
-                subBuilder = ((FileUploadRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(FileUploadRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.FileUploadRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((FileUploadRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 18;
               break;
             }
             case 154: {
-              CheckUsernameRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder subBuilder = null;
               if (protocolCase_ == 19) {
-                subBuilder = ((CheckUsernameRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(CheckUsernameRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((CheckUsernameRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 19;
               break;
             }
             case 162: {
-              SendMessageRequest.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder subBuilder = null;
               if (protocolCase_ == 20) {
-                subBuilder = ((SendMessageRequest) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(SendMessageRequest.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.SendMessageRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((SendMessageRequest) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 20;
@@ -18360,14 +18615,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Request_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Request_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Request_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Request_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Request.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.Request.class, com.data.pbprotocol.ChatProtocol.Request.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Request> PARSER =
@@ -18380,14 +18635,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Request> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     private int protocolCase_ = 0;
-    private Object protocol_;
+    private java.lang.Object protocol_;
     public enum ProtocolCase
         implements com.google.protobuf.Internal.EnumLite {
       REGIST_REQUEST(10),
@@ -18420,7 +18675,7 @@ public final class ChatProtocol {
           case 19: return CHECK_USERNAME;
           case 20: return SEND_MESSAGE;
           case 0: return PROTOCOL_NOT_SET;
-          default: throw new IllegalArgumentException(
+          default: throw new java.lang.IllegalArgumentException(
             "Value is undefined for this oneof enum.");
         }
       }
@@ -18436,7 +18691,7 @@ public final class ChatProtocol {
     }
 
     public static final int SESSION_ID_FIELD_NUMBER = 1;
-    private Object sessionId_;
+    private java.lang.Object sessionId_;
     /**
      * <code>optional string session_id = 1;</code>
      *
@@ -18454,14 +18709,14 @@ public final class ChatProtocol {
      *session编号
      * </pre>
      */
-    public String getSessionId() {
-      Object ref = sessionId_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getSessionId() {
+      java.lang.Object ref = sessionId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           sessionId_ = s;
         }
@@ -18477,11 +18732,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getSessionIdBytes() {
-      Object ref = sessionId_;
-      if (ref instanceof String) {
+      java.lang.Object ref = sessionId_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         sessionId_ = b;
         return b;
       } else {
@@ -18530,11 +18785,11 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    public RegistRequest getRegistRequest() {
+    public com.data.pbprotocol.ChatProtocol.RegistRequest getRegistRequest() {
       if (protocolCase_ == 10) {
-         return (RegistRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_;
       }
-      return RegistRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.RegistRequest regist_request = 10;</code>
@@ -18543,11 +18798,11 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    public RegistRequestOrBuilder getRegistRequestOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.RegistRequestOrBuilder getRegistRequestOrBuilder() {
       if (protocolCase_ == 10) {
-         return (RegistRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_;
       }
-      return RegistRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance();
     }
 
     public static final int LOGIN_FIELD_NUMBER = 11;
@@ -18568,11 +18823,11 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    public LoginRequest getLogin() {
+    public com.data.pbprotocol.ChatProtocol.LoginRequest getLogin() {
       if (protocolCase_ == 11) {
-         return (LoginRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_;
       }
-      return LoginRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.LoginRequest login = 11;</code>
@@ -18581,11 +18836,11 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    public LoginRequestOrBuilder getLoginOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.LoginRequestOrBuilder getLoginOrBuilder() {
       if (protocolCase_ == 11) {
-         return (LoginRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_;
       }
-      return LoginRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance();
     }
 
     public static final int LOGOUT_FIELD_NUMBER = 12;
@@ -18606,11 +18861,11 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    public LogoutRequest getLogout() {
+    public com.data.pbprotocol.ChatProtocol.LogoutRequest getLogout() {
       if (protocolCase_ == 12) {
-         return (LogoutRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_;
       }
-      return LogoutRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.LogoutRequest logout = 12;</code>
@@ -18619,11 +18874,11 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    public LogoutRequestOrBuilder getLogoutOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.LogoutRequestOrBuilder getLogoutOrBuilder() {
       if (protocolCase_ == 12) {
-         return (LogoutRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_;
       }
-      return LogoutRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance();
     }
 
     public static final int PIPE_FIELD_NUMBER = 13;
@@ -18644,11 +18899,11 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    public PipeRequest getPipe() {
+    public com.data.pbprotocol.ChatProtocol.PipeRequest getPipe() {
       if (protocolCase_ == 13) {
-         return (PipeRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_;
       }
-      return PipeRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.PipeRequest pipe = 13;</code>
@@ -18657,11 +18912,11 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    public PipeRequestOrBuilder getPipeOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.PipeRequestOrBuilder getPipeOrBuilder() {
       if (protocolCase_ == 13) {
-         return (PipeRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_;
       }
-      return PipeRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance();
     }
 
     public static final int HEARTBEAT_FIELD_NUMBER = 14;
@@ -18682,11 +18937,11 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    public HeartbeatRequest getHeartbeat() {
+    public com.data.pbprotocol.ChatProtocol.HeartbeatRequest getHeartbeat() {
       if (protocolCase_ == 14) {
-         return (HeartbeatRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_;
       }
-      return HeartbeatRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.HeartbeatRequest heartbeat = 14;</code>
@@ -18695,11 +18950,11 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    public HeartbeatRequestOrBuilder getHeartbeatOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.HeartbeatRequestOrBuilder getHeartbeatOrBuilder() {
       if (protocolCase_ == 14) {
-         return (HeartbeatRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_;
       }
-      return HeartbeatRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance();
     }
 
     public static final int FRIEND_SYNC_FIELD_NUMBER = 15;
@@ -18720,11 +18975,11 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    public FriendSyncRequest getFriendSync() {
+    public com.data.pbprotocol.ChatProtocol.FriendSyncRequest getFriendSync() {
       if (protocolCase_ == 15) {
-         return (FriendSyncRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_;
       }
-      return FriendSyncRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.FriendSyncRequest friend_sync = 15;</code>
@@ -18733,11 +18988,11 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    public FriendSyncRequestOrBuilder getFriendSyncOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.FriendSyncRequestOrBuilder getFriendSyncOrBuilder() {
       if (protocolCase_ == 15) {
-         return (FriendSyncRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_;
       }
-      return FriendSyncRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance();
     }
 
     public static final int MESSAGE_SYNC_FIELD_NUMBER = 16;
@@ -18758,11 +19013,11 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    public MessageSyncRequest getMessageSync() {
+    public com.data.pbprotocol.ChatProtocol.MessageSyncRequest getMessageSync() {
       if (protocolCase_ == 16) {
-         return (MessageSyncRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_;
       }
-      return MessageSyncRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.MessageSyncRequest message_sync = 16;</code>
@@ -18771,11 +19026,11 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    public MessageSyncRequestOrBuilder getMessageSyncOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.MessageSyncRequestOrBuilder getMessageSyncOrBuilder() {
       if (protocolCase_ == 16) {
-         return (MessageSyncRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_;
       }
-      return MessageSyncRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance();
     }
 
     public static final int USER_SYNC_FIELD_NUMBER = 17;
@@ -18796,11 +19051,11 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    public UserSyncRequest getUserSync() {
+    public com.data.pbprotocol.ChatProtocol.UserSyncRequest getUserSync() {
       if (protocolCase_ == 17) {
-         return (UserSyncRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_;
       }
-      return UserSyncRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.UserSyncRequest user_sync = 17;</code>
@@ -18809,11 +19064,11 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    public UserSyncRequestOrBuilder getUserSyncOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.UserSyncRequestOrBuilder getUserSyncOrBuilder() {
       if (protocolCase_ == 17) {
-         return (UserSyncRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_;
       }
-      return UserSyncRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance();
     }
 
     public static final int FILE_UPLOAD_FIELD_NUMBER = 18;
@@ -18834,11 +19089,11 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    public FileUploadRequest getFileUpload() {
+    public com.data.pbprotocol.ChatProtocol.FileUploadRequest getFileUpload() {
       if (protocolCase_ == 18) {
-         return (FileUploadRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_;
       }
-      return FileUploadRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.FileUploadRequest file_upload = 18;</code>
@@ -18847,11 +19102,11 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    public FileUploadRequestOrBuilder getFileUploadOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.FileUploadRequestOrBuilder getFileUploadOrBuilder() {
       if (protocolCase_ == 18) {
-         return (FileUploadRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_;
       }
-      return FileUploadRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance();
     }
 
     public static final int CHECK_USERNAME_FIELD_NUMBER = 19;
@@ -18872,11 +19127,11 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    public CheckUsernameRequest getCheckUsername() {
+    public com.data.pbprotocol.ChatProtocol.CheckUsernameRequest getCheckUsername() {
       if (protocolCase_ == 19) {
-         return (CheckUsernameRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_;
       }
-      return CheckUsernameRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.CheckUsernameRequest check_username = 19;</code>
@@ -18885,11 +19140,11 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    public CheckUsernameRequestOrBuilder getCheckUsernameOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.CheckUsernameRequestOrBuilder getCheckUsernameOrBuilder() {
       if (protocolCase_ == 19) {
-         return (CheckUsernameRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_;
       }
-      return CheckUsernameRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance();
     }
 
     public static final int SEND_MESSAGE_FIELD_NUMBER = 20;
@@ -18910,11 +19165,11 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    public SendMessageRequest getSendMessage() {
+    public com.data.pbprotocol.ChatProtocol.SendMessageRequest getSendMessage() {
       if (protocolCase_ == 20) {
-         return (SendMessageRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_;
       }
-      return SendMessageRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.SendMessageRequest send_message = 20;</code>
@@ -18923,11 +19178,11 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    public SendMessageRequestOrBuilder getSendMessageOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.SendMessageRequestOrBuilder getSendMessageOrBuilder() {
       if (protocolCase_ == 20) {
-         return (SendMessageRequest) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_;
       }
-      return SendMessageRequest.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance();
     }
 
     private void initFields() {
@@ -18954,37 +19209,37 @@ public final class ChatProtocol {
         output.writeInt64(2, userId_);
       }
       if (protocolCase_ == 10) {
-        output.writeMessage(10, (RegistRequest) protocol_);
+        output.writeMessage(10, (com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_);
       }
       if (protocolCase_ == 11) {
-        output.writeMessage(11, (LoginRequest) protocol_);
+        output.writeMessage(11, (com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_);
       }
       if (protocolCase_ == 12) {
-        output.writeMessage(12, (LogoutRequest) protocol_);
+        output.writeMessage(12, (com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_);
       }
       if (protocolCase_ == 13) {
-        output.writeMessage(13, (PipeRequest) protocol_);
+        output.writeMessage(13, (com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_);
       }
       if (protocolCase_ == 14) {
-        output.writeMessage(14, (HeartbeatRequest) protocol_);
+        output.writeMessage(14, (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_);
       }
       if (protocolCase_ == 15) {
-        output.writeMessage(15, (FriendSyncRequest) protocol_);
+        output.writeMessage(15, (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_);
       }
       if (protocolCase_ == 16) {
-        output.writeMessage(16, (MessageSyncRequest) protocol_);
+        output.writeMessage(16, (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_);
       }
       if (protocolCase_ == 17) {
-        output.writeMessage(17, (UserSyncRequest) protocol_);
+        output.writeMessage(17, (com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_);
       }
       if (protocolCase_ == 18) {
-        output.writeMessage(18, (FileUploadRequest) protocol_);
+        output.writeMessage(18, (com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_);
       }
       if (protocolCase_ == 19) {
-        output.writeMessage(19, (CheckUsernameRequest) protocol_);
+        output.writeMessage(19, (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_);
       }
       if (protocolCase_ == 20) {
-        output.writeMessage(20, (SendMessageRequest) protocol_);
+        output.writeMessage(20, (com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -19005,47 +19260,47 @@ public final class ChatProtocol {
       }
       if (protocolCase_ == 10) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (RegistRequest) protocol_);
+          .computeMessageSize(10, (com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_);
       }
       if (protocolCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (LoginRequest) protocol_);
+          .computeMessageSize(11, (com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_);
       }
       if (protocolCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, (LogoutRequest) protocol_);
+          .computeMessageSize(12, (com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_);
       }
       if (protocolCase_ == 13) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, (PipeRequest) protocol_);
+          .computeMessageSize(13, (com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_);
       }
       if (protocolCase_ == 14) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, (HeartbeatRequest) protocol_);
+          .computeMessageSize(14, (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_);
       }
       if (protocolCase_ == 15) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, (FriendSyncRequest) protocol_);
+          .computeMessageSize(15, (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_);
       }
       if (protocolCase_ == 16) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(16, (MessageSyncRequest) protocol_);
+          .computeMessageSize(16, (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_);
       }
       if (protocolCase_ == 17) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(17, (UserSyncRequest) protocol_);
+          .computeMessageSize(17, (com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_);
       }
       if (protocolCase_ == 18) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(18, (FileUploadRequest) protocol_);
+          .computeMessageSize(18, (com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_);
       }
       if (protocolCase_ == 19) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(19, (CheckUsernameRequest) protocol_);
+          .computeMessageSize(19, (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_);
       }
       if (protocolCase_ == 20) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(20, (SendMessageRequest) protocol_);
+          .computeMessageSize(20, (com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -19053,59 +19308,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Request parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Request parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Request parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Request parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Request parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Request parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Request parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Request parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Request parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.Request parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Request parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Request parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Request parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -19114,14 +19369,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Request prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.Request prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -19131,17 +19386,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.Request)
-        RequestOrBuilder {
+        com.data.pbprotocol.ChatProtocol.RequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Request_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Request_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Request_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Request_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Request.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.Request.class, com.data.pbprotocol.ChatProtocol.Request.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.Request.newBuilder()
@@ -19150,7 +19405,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -19179,23 +19434,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Request_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Request_descriptor;
       }
 
-      public Request getDefaultInstanceForType() {
-        return Request.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.Request getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.Request.getDefaultInstance();
       }
 
-      public Request build() {
-        Request result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.Request build() {
+        com.data.pbprotocol.ChatProtocol.Request result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Request buildPartial() {
-        Request result = new Request(this);
+      public com.data.pbprotocol.ChatProtocol.Request buildPartial() {
+        com.data.pbprotocol.ChatProtocol.Request result = new com.data.pbprotocol.ChatProtocol.Request(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -19290,16 +19545,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Request) {
-          return mergeFrom((Request)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.Request) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.Request)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Request other) {
-        if (other == Request.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.Request other) {
+        if (other == com.data.pbprotocol.ChatProtocol.Request.getDefaultInstance()) return this;
         if (other.hasSessionId()) {
           bitField0_ |= 0x00000001;
           sessionId_ = other.sessionId_;
@@ -19369,11 +19624,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Request parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.Request parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Request) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.Request) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -19383,7 +19638,7 @@ public final class ChatProtocol {
         return this;
       }
       private int protocolCase_ = 0;
-      private Object protocol_;
+      private java.lang.Object protocol_;
       public ProtocolCase
           getProtocolCase() {
         return ProtocolCase.valueOf(
@@ -19399,7 +19654,7 @@ public final class ChatProtocol {
 
       private int bitField0_;
 
-      private Object sessionId_ = "";
+      private java.lang.Object sessionId_ = "";
       /**
        * <code>optional string session_id = 1;</code>
        *
@@ -19417,18 +19672,18 @@ public final class ChatProtocol {
        *session编号
        * </pre>
        */
-      public String getSessionId() {
-        Object ref = sessionId_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getSessionId() {
+        java.lang.Object ref = sessionId_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             sessionId_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -19440,11 +19695,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getSessionIdBytes() {
-        Object ref = sessionId_;
+        java.lang.Object ref = sessionId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           sessionId_ = b;
           return b;
         } else {
@@ -19459,7 +19714,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setSessionId(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -19548,7 +19803,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          RegistRequest, RegistRequest.Builder, RegistRequestOrBuilder> registRequestBuilder_;
+          com.data.pbprotocol.ChatProtocol.RegistRequest, com.data.pbprotocol.ChatProtocol.RegistRequest.Builder, com.data.pbprotocol.ChatProtocol.RegistRequestOrBuilder> registRequestBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.RegistRequest regist_request = 10;</code>
        *
@@ -19566,17 +19821,17 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public RegistRequest getRegistRequest() {
+      public com.data.pbprotocol.ChatProtocol.RegistRequest getRegistRequest() {
         if (registRequestBuilder_ == null) {
           if (protocolCase_ == 10) {
-            return (RegistRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_;
           }
-          return RegistRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 10) {
             return registRequestBuilder_.getMessage();
           }
-          return RegistRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance();
         }
       }
       /**
@@ -19586,7 +19841,7 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public Builder setRegistRequest(RegistRequest value) {
+      public Builder setRegistRequest(com.data.pbprotocol.ChatProtocol.RegistRequest value) {
         if (registRequestBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -19607,7 +19862,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setRegistRequest(
-          RegistRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.RegistRequest.Builder builderForValue) {
         if (registRequestBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -19624,11 +19879,11 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public Builder mergeRegistRequest(RegistRequest value) {
+      public Builder mergeRegistRequest(com.data.pbprotocol.ChatProtocol.RegistRequest value) {
         if (registRequestBuilder_ == null) {
           if (protocolCase_ == 10 &&
-              protocol_ != RegistRequest.getDefaultInstance()) {
-            protocol_ = RegistRequest.newBuilder((RegistRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.RegistRequest.newBuilder((com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -19673,7 +19928,7 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public RegistRequest.Builder getRegistRequestBuilder() {
+      public com.data.pbprotocol.ChatProtocol.RegistRequest.Builder getRegistRequestBuilder() {
         return getRegistRequestFieldBuilder().getBuilder();
       }
       /**
@@ -19683,14 +19938,14 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public RegistRequestOrBuilder getRegistRequestOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.RegistRequestOrBuilder getRegistRequestOrBuilder() {
         if ((protocolCase_ == 10) && (registRequestBuilder_ != null)) {
           return registRequestBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 10) {
-            return (RegistRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_;
           }
-          return RegistRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance();
         }
       }
       /**
@@ -19701,15 +19956,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          RegistRequest, RegistRequest.Builder, RegistRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.RegistRequest, com.data.pbprotocol.ChatProtocol.RegistRequest.Builder, com.data.pbprotocol.ChatProtocol.RegistRequestOrBuilder> 
           getRegistRequestFieldBuilder() {
         if (registRequestBuilder_ == null) {
           if (!(protocolCase_ == 10)) {
-            protocol_ = RegistRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.RegistRequest.getDefaultInstance();
           }
           registRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              RegistRequest, RegistRequest.Builder, RegistRequestOrBuilder>(
-                  (RegistRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.RegistRequest, com.data.pbprotocol.ChatProtocol.RegistRequest.Builder, com.data.pbprotocol.ChatProtocol.RegistRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.RegistRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -19719,7 +19974,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          LoginRequest, LoginRequest.Builder, LoginRequestOrBuilder> loginBuilder_;
+          com.data.pbprotocol.ChatProtocol.LoginRequest, com.data.pbprotocol.ChatProtocol.LoginRequest.Builder, com.data.pbprotocol.ChatProtocol.LoginRequestOrBuilder> loginBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.LoginRequest login = 11;</code>
        *
@@ -19737,17 +19992,17 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public LoginRequest getLogin() {
+      public com.data.pbprotocol.ChatProtocol.LoginRequest getLogin() {
         if (loginBuilder_ == null) {
           if (protocolCase_ == 11) {
-            return (LoginRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_;
           }
-          return LoginRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 11) {
             return loginBuilder_.getMessage();
           }
-          return LoginRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance();
         }
       }
       /**
@@ -19757,7 +20012,7 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public Builder setLogin(LoginRequest value) {
+      public Builder setLogin(com.data.pbprotocol.ChatProtocol.LoginRequest value) {
         if (loginBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -19778,7 +20033,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setLogin(
-          LoginRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.LoginRequest.Builder builderForValue) {
         if (loginBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -19795,11 +20050,11 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public Builder mergeLogin(LoginRequest value) {
+      public Builder mergeLogin(com.data.pbprotocol.ChatProtocol.LoginRequest value) {
         if (loginBuilder_ == null) {
           if (protocolCase_ == 11 &&
-              protocol_ != LoginRequest.getDefaultInstance()) {
-            protocol_ = LoginRequest.newBuilder((LoginRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.LoginRequest.newBuilder((com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -19844,7 +20099,7 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public LoginRequest.Builder getLoginBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LoginRequest.Builder getLoginBuilder() {
         return getLoginFieldBuilder().getBuilder();
       }
       /**
@@ -19854,14 +20109,14 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public LoginRequestOrBuilder getLoginOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LoginRequestOrBuilder getLoginOrBuilder() {
         if ((protocolCase_ == 11) && (loginBuilder_ != null)) {
           return loginBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 11) {
-            return (LoginRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_;
           }
-          return LoginRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance();
         }
       }
       /**
@@ -19872,15 +20127,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          LoginRequest, LoginRequest.Builder, LoginRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.LoginRequest, com.data.pbprotocol.ChatProtocol.LoginRequest.Builder, com.data.pbprotocol.ChatProtocol.LoginRequestOrBuilder> 
           getLoginFieldBuilder() {
         if (loginBuilder_ == null) {
           if (!(protocolCase_ == 11)) {
-            protocol_ = LoginRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.LoginRequest.getDefaultInstance();
           }
           loginBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              LoginRequest, LoginRequest.Builder, LoginRequestOrBuilder>(
-                  (LoginRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.LoginRequest, com.data.pbprotocol.ChatProtocol.LoginRequest.Builder, com.data.pbprotocol.ChatProtocol.LoginRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.LoginRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -19890,7 +20145,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          LogoutRequest, LogoutRequest.Builder, LogoutRequestOrBuilder> logoutBuilder_;
+          com.data.pbprotocol.ChatProtocol.LogoutRequest, com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder, com.data.pbprotocol.ChatProtocol.LogoutRequestOrBuilder> logoutBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.LogoutRequest logout = 12;</code>
        *
@@ -19908,17 +20163,17 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public LogoutRequest getLogout() {
+      public com.data.pbprotocol.ChatProtocol.LogoutRequest getLogout() {
         if (logoutBuilder_ == null) {
           if (protocolCase_ == 12) {
-            return (LogoutRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_;
           }
-          return LogoutRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 12) {
             return logoutBuilder_.getMessage();
           }
-          return LogoutRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance();
         }
       }
       /**
@@ -19928,7 +20183,7 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public Builder setLogout(LogoutRequest value) {
+      public Builder setLogout(com.data.pbprotocol.ChatProtocol.LogoutRequest value) {
         if (logoutBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -19949,7 +20204,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setLogout(
-          LogoutRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder builderForValue) {
         if (logoutBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -19966,11 +20221,11 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public Builder mergeLogout(LogoutRequest value) {
+      public Builder mergeLogout(com.data.pbprotocol.ChatProtocol.LogoutRequest value) {
         if (logoutBuilder_ == null) {
           if (protocolCase_ == 12 &&
-              protocol_ != LogoutRequest.getDefaultInstance()) {
-            protocol_ = LogoutRequest.newBuilder((LogoutRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.LogoutRequest.newBuilder((com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -20015,7 +20270,7 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public LogoutRequest.Builder getLogoutBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder getLogoutBuilder() {
         return getLogoutFieldBuilder().getBuilder();
       }
       /**
@@ -20025,14 +20280,14 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public LogoutRequestOrBuilder getLogoutOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LogoutRequestOrBuilder getLogoutOrBuilder() {
         if ((protocolCase_ == 12) && (logoutBuilder_ != null)) {
           return logoutBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 12) {
-            return (LogoutRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_;
           }
-          return LogoutRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance();
         }
       }
       /**
@@ -20043,15 +20298,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          LogoutRequest, LogoutRequest.Builder, LogoutRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.LogoutRequest, com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder, com.data.pbprotocol.ChatProtocol.LogoutRequestOrBuilder> 
           getLogoutFieldBuilder() {
         if (logoutBuilder_ == null) {
           if (!(protocolCase_ == 12)) {
-            protocol_ = LogoutRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.LogoutRequest.getDefaultInstance();
           }
           logoutBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              LogoutRequest, LogoutRequest.Builder, LogoutRequestOrBuilder>(
-                  (LogoutRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.LogoutRequest, com.data.pbprotocol.ChatProtocol.LogoutRequest.Builder, com.data.pbprotocol.ChatProtocol.LogoutRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.LogoutRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -20061,7 +20316,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          PipeRequest, PipeRequest.Builder, PipeRequestOrBuilder> pipeBuilder_;
+          com.data.pbprotocol.ChatProtocol.PipeRequest, com.data.pbprotocol.ChatProtocol.PipeRequest.Builder, com.data.pbprotocol.ChatProtocol.PipeRequestOrBuilder> pipeBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.PipeRequest pipe = 13;</code>
        *
@@ -20079,17 +20334,17 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public PipeRequest getPipe() {
+      public com.data.pbprotocol.ChatProtocol.PipeRequest getPipe() {
         if (pipeBuilder_ == null) {
           if (protocolCase_ == 13) {
-            return (PipeRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_;
           }
-          return PipeRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 13) {
             return pipeBuilder_.getMessage();
           }
-          return PipeRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance();
         }
       }
       /**
@@ -20099,7 +20354,7 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public Builder setPipe(PipeRequest value) {
+      public Builder setPipe(com.data.pbprotocol.ChatProtocol.PipeRequest value) {
         if (pipeBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -20120,7 +20375,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setPipe(
-          PipeRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.PipeRequest.Builder builderForValue) {
         if (pipeBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -20137,11 +20392,11 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public Builder mergePipe(PipeRequest value) {
+      public Builder mergePipe(com.data.pbprotocol.ChatProtocol.PipeRequest value) {
         if (pipeBuilder_ == null) {
           if (protocolCase_ == 13 &&
-              protocol_ != PipeRequest.getDefaultInstance()) {
-            protocol_ = PipeRequest.newBuilder((PipeRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.PipeRequest.newBuilder((com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -20186,7 +20441,7 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public PipeRequest.Builder getPipeBuilder() {
+      public com.data.pbprotocol.ChatProtocol.PipeRequest.Builder getPipeBuilder() {
         return getPipeFieldBuilder().getBuilder();
       }
       /**
@@ -20196,14 +20451,14 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public PipeRequestOrBuilder getPipeOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.PipeRequestOrBuilder getPipeOrBuilder() {
         if ((protocolCase_ == 13) && (pipeBuilder_ != null)) {
           return pipeBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 13) {
-            return (PipeRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_;
           }
-          return PipeRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance();
         }
       }
       /**
@@ -20214,15 +20469,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          PipeRequest, PipeRequest.Builder, PipeRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.PipeRequest, com.data.pbprotocol.ChatProtocol.PipeRequest.Builder, com.data.pbprotocol.ChatProtocol.PipeRequestOrBuilder> 
           getPipeFieldBuilder() {
         if (pipeBuilder_ == null) {
           if (!(protocolCase_ == 13)) {
-            protocol_ = PipeRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.PipeRequest.getDefaultInstance();
           }
           pipeBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              PipeRequest, PipeRequest.Builder, PipeRequestOrBuilder>(
-                  (PipeRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.PipeRequest, com.data.pbprotocol.ChatProtocol.PipeRequest.Builder, com.data.pbprotocol.ChatProtocol.PipeRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.PipeRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -20232,7 +20487,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          HeartbeatRequest, HeartbeatRequest.Builder, HeartbeatRequestOrBuilder> heartbeatBuilder_;
+          com.data.pbprotocol.ChatProtocol.HeartbeatRequest, com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder, com.data.pbprotocol.ChatProtocol.HeartbeatRequestOrBuilder> heartbeatBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.HeartbeatRequest heartbeat = 14;</code>
        *
@@ -20250,17 +20505,17 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public HeartbeatRequest getHeartbeat() {
+      public com.data.pbprotocol.ChatProtocol.HeartbeatRequest getHeartbeat() {
         if (heartbeatBuilder_ == null) {
           if (protocolCase_ == 14) {
-            return (HeartbeatRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_;
           }
-          return HeartbeatRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 14) {
             return heartbeatBuilder_.getMessage();
           }
-          return HeartbeatRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance();
         }
       }
       /**
@@ -20270,7 +20525,7 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public Builder setHeartbeat(HeartbeatRequest value) {
+      public Builder setHeartbeat(com.data.pbprotocol.ChatProtocol.HeartbeatRequest value) {
         if (heartbeatBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -20291,7 +20546,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setHeartbeat(
-          HeartbeatRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder builderForValue) {
         if (heartbeatBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -20308,11 +20563,11 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public Builder mergeHeartbeat(HeartbeatRequest value) {
+      public Builder mergeHeartbeat(com.data.pbprotocol.ChatProtocol.HeartbeatRequest value) {
         if (heartbeatBuilder_ == null) {
           if (protocolCase_ == 14 &&
-              protocol_ != HeartbeatRequest.getDefaultInstance()) {
-            protocol_ = HeartbeatRequest.newBuilder((HeartbeatRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.HeartbeatRequest.newBuilder((com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -20357,7 +20612,7 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public HeartbeatRequest.Builder getHeartbeatBuilder() {
+      public com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder getHeartbeatBuilder() {
         return getHeartbeatFieldBuilder().getBuilder();
       }
       /**
@@ -20367,14 +20622,14 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public HeartbeatRequestOrBuilder getHeartbeatOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.HeartbeatRequestOrBuilder getHeartbeatOrBuilder() {
         if ((protocolCase_ == 14) && (heartbeatBuilder_ != null)) {
           return heartbeatBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 14) {
-            return (HeartbeatRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_;
           }
-          return HeartbeatRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance();
         }
       }
       /**
@@ -20385,15 +20640,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          HeartbeatRequest, HeartbeatRequest.Builder, HeartbeatRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.HeartbeatRequest, com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder, com.data.pbprotocol.ChatProtocol.HeartbeatRequestOrBuilder> 
           getHeartbeatFieldBuilder() {
         if (heartbeatBuilder_ == null) {
           if (!(protocolCase_ == 14)) {
-            protocol_ = HeartbeatRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.HeartbeatRequest.getDefaultInstance();
           }
           heartbeatBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              HeartbeatRequest, HeartbeatRequest.Builder, HeartbeatRequestOrBuilder>(
-                  (HeartbeatRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.HeartbeatRequest, com.data.pbprotocol.ChatProtocol.HeartbeatRequest.Builder, com.data.pbprotocol.ChatProtocol.HeartbeatRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.HeartbeatRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -20403,7 +20658,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          FriendSyncRequest, FriendSyncRequest.Builder, FriendSyncRequestOrBuilder> friendSyncBuilder_;
+          com.data.pbprotocol.ChatProtocol.FriendSyncRequest, com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.FriendSyncRequestOrBuilder> friendSyncBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.FriendSyncRequest friend_sync = 15;</code>
        *
@@ -20421,17 +20676,17 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public FriendSyncRequest getFriendSync() {
+      public com.data.pbprotocol.ChatProtocol.FriendSyncRequest getFriendSync() {
         if (friendSyncBuilder_ == null) {
           if (protocolCase_ == 15) {
-            return (FriendSyncRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_;
           }
-          return FriendSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 15) {
             return friendSyncBuilder_.getMessage();
           }
-          return FriendSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance();
         }
       }
       /**
@@ -20441,7 +20696,7 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public Builder setFriendSync(FriendSyncRequest value) {
+      public Builder setFriendSync(com.data.pbprotocol.ChatProtocol.FriendSyncRequest value) {
         if (friendSyncBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -20462,7 +20717,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setFriendSync(
-          FriendSyncRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder builderForValue) {
         if (friendSyncBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -20479,11 +20734,11 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public Builder mergeFriendSync(FriendSyncRequest value) {
+      public Builder mergeFriendSync(com.data.pbprotocol.ChatProtocol.FriendSyncRequest value) {
         if (friendSyncBuilder_ == null) {
           if (protocolCase_ == 15 &&
-              protocol_ != FriendSyncRequest.getDefaultInstance()) {
-            protocol_ = FriendSyncRequest.newBuilder((FriendSyncRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.FriendSyncRequest.newBuilder((com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -20528,7 +20783,7 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public FriendSyncRequest.Builder getFriendSyncBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder getFriendSyncBuilder() {
         return getFriendSyncFieldBuilder().getBuilder();
       }
       /**
@@ -20538,14 +20793,14 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public FriendSyncRequestOrBuilder getFriendSyncOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FriendSyncRequestOrBuilder getFriendSyncOrBuilder() {
         if ((protocolCase_ == 15) && (friendSyncBuilder_ != null)) {
           return friendSyncBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 15) {
-            return (FriendSyncRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_;
           }
-          return FriendSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance();
         }
       }
       /**
@@ -20556,15 +20811,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          FriendSyncRequest, FriendSyncRequest.Builder, FriendSyncRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.FriendSyncRequest, com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.FriendSyncRequestOrBuilder> 
           getFriendSyncFieldBuilder() {
         if (friendSyncBuilder_ == null) {
           if (!(protocolCase_ == 15)) {
-            protocol_ = FriendSyncRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.FriendSyncRequest.getDefaultInstance();
           }
           friendSyncBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              FriendSyncRequest, FriendSyncRequest.Builder, FriendSyncRequestOrBuilder>(
-                  (FriendSyncRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.FriendSyncRequest, com.data.pbprotocol.ChatProtocol.FriendSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.FriendSyncRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.FriendSyncRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -20574,7 +20829,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          MessageSyncRequest, MessageSyncRequest.Builder, MessageSyncRequestOrBuilder> messageSyncBuilder_;
+          com.data.pbprotocol.ChatProtocol.MessageSyncRequest, com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.MessageSyncRequestOrBuilder> messageSyncBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.MessageSyncRequest message_sync = 16;</code>
        *
@@ -20592,17 +20847,17 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public MessageSyncRequest getMessageSync() {
+      public com.data.pbprotocol.ChatProtocol.MessageSyncRequest getMessageSync() {
         if (messageSyncBuilder_ == null) {
           if (protocolCase_ == 16) {
-            return (MessageSyncRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_;
           }
-          return MessageSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 16) {
             return messageSyncBuilder_.getMessage();
           }
-          return MessageSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance();
         }
       }
       /**
@@ -20612,7 +20867,7 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public Builder setMessageSync(MessageSyncRequest value) {
+      public Builder setMessageSync(com.data.pbprotocol.ChatProtocol.MessageSyncRequest value) {
         if (messageSyncBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -20633,7 +20888,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setMessageSync(
-          MessageSyncRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder builderForValue) {
         if (messageSyncBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -20650,11 +20905,11 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public Builder mergeMessageSync(MessageSyncRequest value) {
+      public Builder mergeMessageSync(com.data.pbprotocol.ChatProtocol.MessageSyncRequest value) {
         if (messageSyncBuilder_ == null) {
           if (protocolCase_ == 16 &&
-              protocol_ != MessageSyncRequest.getDefaultInstance()) {
-            protocol_ = MessageSyncRequest.newBuilder((MessageSyncRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.MessageSyncRequest.newBuilder((com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -20699,7 +20954,7 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public MessageSyncRequest.Builder getMessageSyncBuilder() {
+      public com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder getMessageSyncBuilder() {
         return getMessageSyncFieldBuilder().getBuilder();
       }
       /**
@@ -20709,14 +20964,14 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public MessageSyncRequestOrBuilder getMessageSyncOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.MessageSyncRequestOrBuilder getMessageSyncOrBuilder() {
         if ((protocolCase_ == 16) && (messageSyncBuilder_ != null)) {
           return messageSyncBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 16) {
-            return (MessageSyncRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_;
           }
-          return MessageSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance();
         }
       }
       /**
@@ -20727,15 +20982,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          MessageSyncRequest, MessageSyncRequest.Builder, MessageSyncRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.MessageSyncRequest, com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.MessageSyncRequestOrBuilder> 
           getMessageSyncFieldBuilder() {
         if (messageSyncBuilder_ == null) {
           if (!(protocolCase_ == 16)) {
-            protocol_ = MessageSyncRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.MessageSyncRequest.getDefaultInstance();
           }
           messageSyncBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              MessageSyncRequest, MessageSyncRequest.Builder, MessageSyncRequestOrBuilder>(
-                  (MessageSyncRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.MessageSyncRequest, com.data.pbprotocol.ChatProtocol.MessageSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.MessageSyncRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.MessageSyncRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -20745,7 +21000,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          UserSyncRequest, UserSyncRequest.Builder, UserSyncRequestOrBuilder> userSyncBuilder_;
+          com.data.pbprotocol.ChatProtocol.UserSyncRequest, com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.UserSyncRequestOrBuilder> userSyncBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.UserSyncRequest user_sync = 17;</code>
        *
@@ -20763,17 +21018,17 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public UserSyncRequest getUserSync() {
+      public com.data.pbprotocol.ChatProtocol.UserSyncRequest getUserSync() {
         if (userSyncBuilder_ == null) {
           if (protocolCase_ == 17) {
-            return (UserSyncRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_;
           }
-          return UserSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 17) {
             return userSyncBuilder_.getMessage();
           }
-          return UserSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance();
         }
       }
       /**
@@ -20783,7 +21038,7 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public Builder setUserSync(UserSyncRequest value) {
+      public Builder setUserSync(com.data.pbprotocol.ChatProtocol.UserSyncRequest value) {
         if (userSyncBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -20804,7 +21059,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setUserSync(
-          UserSyncRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder builderForValue) {
         if (userSyncBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -20821,11 +21076,11 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public Builder mergeUserSync(UserSyncRequest value) {
+      public Builder mergeUserSync(com.data.pbprotocol.ChatProtocol.UserSyncRequest value) {
         if (userSyncBuilder_ == null) {
           if (protocolCase_ == 17 &&
-              protocol_ != UserSyncRequest.getDefaultInstance()) {
-            protocol_ = UserSyncRequest.newBuilder((UserSyncRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.UserSyncRequest.newBuilder((com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -20870,7 +21125,7 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public UserSyncRequest.Builder getUserSyncBuilder() {
+      public com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder getUserSyncBuilder() {
         return getUserSyncFieldBuilder().getBuilder();
       }
       /**
@@ -20880,14 +21135,14 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public UserSyncRequestOrBuilder getUserSyncOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.UserSyncRequestOrBuilder getUserSyncOrBuilder() {
         if ((protocolCase_ == 17) && (userSyncBuilder_ != null)) {
           return userSyncBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 17) {
-            return (UserSyncRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_;
           }
-          return UserSyncRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance();
         }
       }
       /**
@@ -20898,15 +21153,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          UserSyncRequest, UserSyncRequest.Builder, UserSyncRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.UserSyncRequest, com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.UserSyncRequestOrBuilder> 
           getUserSyncFieldBuilder() {
         if (userSyncBuilder_ == null) {
           if (!(protocolCase_ == 17)) {
-            protocol_ = UserSyncRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.UserSyncRequest.getDefaultInstance();
           }
           userSyncBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              UserSyncRequest, UserSyncRequest.Builder, UserSyncRequestOrBuilder>(
-                  (UserSyncRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.UserSyncRequest, com.data.pbprotocol.ChatProtocol.UserSyncRequest.Builder, com.data.pbprotocol.ChatProtocol.UserSyncRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.UserSyncRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -20916,7 +21171,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          FileUploadRequest, FileUploadRequest.Builder, FileUploadRequestOrBuilder> fileUploadBuilder_;
+          com.data.pbprotocol.ChatProtocol.FileUploadRequest, com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder, com.data.pbprotocol.ChatProtocol.FileUploadRequestOrBuilder> fileUploadBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.FileUploadRequest file_upload = 18;</code>
        *
@@ -20934,17 +21189,17 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public FileUploadRequest getFileUpload() {
+      public com.data.pbprotocol.ChatProtocol.FileUploadRequest getFileUpload() {
         if (fileUploadBuilder_ == null) {
           if (protocolCase_ == 18) {
-            return (FileUploadRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_;
           }
-          return FileUploadRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 18) {
             return fileUploadBuilder_.getMessage();
           }
-          return FileUploadRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance();
         }
       }
       /**
@@ -20954,7 +21209,7 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public Builder setFileUpload(FileUploadRequest value) {
+      public Builder setFileUpload(com.data.pbprotocol.ChatProtocol.FileUploadRequest value) {
         if (fileUploadBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -20975,7 +21230,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setFileUpload(
-          FileUploadRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder builderForValue) {
         if (fileUploadBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -20992,11 +21247,11 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public Builder mergeFileUpload(FileUploadRequest value) {
+      public Builder mergeFileUpload(com.data.pbprotocol.ChatProtocol.FileUploadRequest value) {
         if (fileUploadBuilder_ == null) {
           if (protocolCase_ == 18 &&
-              protocol_ != FileUploadRequest.getDefaultInstance()) {
-            protocol_ = FileUploadRequest.newBuilder((FileUploadRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.FileUploadRequest.newBuilder((com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -21041,7 +21296,7 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public FileUploadRequest.Builder getFileUploadBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder getFileUploadBuilder() {
         return getFileUploadFieldBuilder().getBuilder();
       }
       /**
@@ -21051,14 +21306,14 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public FileUploadRequestOrBuilder getFileUploadOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FileUploadRequestOrBuilder getFileUploadOrBuilder() {
         if ((protocolCase_ == 18) && (fileUploadBuilder_ != null)) {
           return fileUploadBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 18) {
-            return (FileUploadRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_;
           }
-          return FileUploadRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance();
         }
       }
       /**
@@ -21069,15 +21324,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          FileUploadRequest, FileUploadRequest.Builder, FileUploadRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.FileUploadRequest, com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder, com.data.pbprotocol.ChatProtocol.FileUploadRequestOrBuilder> 
           getFileUploadFieldBuilder() {
         if (fileUploadBuilder_ == null) {
           if (!(protocolCase_ == 18)) {
-            protocol_ = FileUploadRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.FileUploadRequest.getDefaultInstance();
           }
           fileUploadBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              FileUploadRequest, FileUploadRequest.Builder, FileUploadRequestOrBuilder>(
-                  (FileUploadRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.FileUploadRequest, com.data.pbprotocol.ChatProtocol.FileUploadRequest.Builder, com.data.pbprotocol.ChatProtocol.FileUploadRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.FileUploadRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -21087,7 +21342,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          CheckUsernameRequest, CheckUsernameRequest.Builder, CheckUsernameRequestOrBuilder> checkUsernameBuilder_;
+          com.data.pbprotocol.ChatProtocol.CheckUsernameRequest, com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder, com.data.pbprotocol.ChatProtocol.CheckUsernameRequestOrBuilder> checkUsernameBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.CheckUsernameRequest check_username = 19;</code>
        *
@@ -21105,17 +21360,17 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public CheckUsernameRequest getCheckUsername() {
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameRequest getCheckUsername() {
         if (checkUsernameBuilder_ == null) {
           if (protocolCase_ == 19) {
-            return (CheckUsernameRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_;
           }
-          return CheckUsernameRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 19) {
             return checkUsernameBuilder_.getMessage();
           }
-          return CheckUsernameRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance();
         }
       }
       /**
@@ -21125,7 +21380,7 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public Builder setCheckUsername(CheckUsernameRequest value) {
+      public Builder setCheckUsername(com.data.pbprotocol.ChatProtocol.CheckUsernameRequest value) {
         if (checkUsernameBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -21146,7 +21401,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setCheckUsername(
-          CheckUsernameRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder builderForValue) {
         if (checkUsernameBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -21163,11 +21418,11 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public Builder mergeCheckUsername(CheckUsernameRequest value) {
+      public Builder mergeCheckUsername(com.data.pbprotocol.ChatProtocol.CheckUsernameRequest value) {
         if (checkUsernameBuilder_ == null) {
           if (protocolCase_ == 19 &&
-              protocol_ != CheckUsernameRequest.getDefaultInstance()) {
-            protocol_ = CheckUsernameRequest.newBuilder((CheckUsernameRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.newBuilder((com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -21212,7 +21467,7 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public CheckUsernameRequest.Builder getCheckUsernameBuilder() {
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder getCheckUsernameBuilder() {
         return getCheckUsernameFieldBuilder().getBuilder();
       }
       /**
@@ -21222,14 +21477,14 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public CheckUsernameRequestOrBuilder getCheckUsernameOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameRequestOrBuilder getCheckUsernameOrBuilder() {
         if ((protocolCase_ == 19) && (checkUsernameBuilder_ != null)) {
           return checkUsernameBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 19) {
-            return (CheckUsernameRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_;
           }
-          return CheckUsernameRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance();
         }
       }
       /**
@@ -21240,15 +21495,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          CheckUsernameRequest, CheckUsernameRequest.Builder, CheckUsernameRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.CheckUsernameRequest, com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder, com.data.pbprotocol.ChatProtocol.CheckUsernameRequestOrBuilder> 
           getCheckUsernameFieldBuilder() {
         if (checkUsernameBuilder_ == null) {
           if (!(protocolCase_ == 19)) {
-            protocol_ = CheckUsernameRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.getDefaultInstance();
           }
           checkUsernameBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              CheckUsernameRequest, CheckUsernameRequest.Builder, CheckUsernameRequestOrBuilder>(
-                  (CheckUsernameRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.CheckUsernameRequest, com.data.pbprotocol.ChatProtocol.CheckUsernameRequest.Builder, com.data.pbprotocol.ChatProtocol.CheckUsernameRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.CheckUsernameRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -21258,7 +21513,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          SendMessageRequest, SendMessageRequest.Builder, SendMessageRequestOrBuilder> sendMessageBuilder_;
+          com.data.pbprotocol.ChatProtocol.SendMessageRequest, com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder, com.data.pbprotocol.ChatProtocol.SendMessageRequestOrBuilder> sendMessageBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.SendMessageRequest send_message = 20;</code>
        *
@@ -21276,17 +21531,17 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public SendMessageRequest getSendMessage() {
+      public com.data.pbprotocol.ChatProtocol.SendMessageRequest getSendMessage() {
         if (sendMessageBuilder_ == null) {
           if (protocolCase_ == 20) {
-            return (SendMessageRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_;
           }
-          return SendMessageRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance();
         } else {
           if (protocolCase_ == 20) {
             return sendMessageBuilder_.getMessage();
           }
-          return SendMessageRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance();
         }
       }
       /**
@@ -21296,7 +21551,7 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public Builder setSendMessage(SendMessageRequest value) {
+      public Builder setSendMessage(com.data.pbprotocol.ChatProtocol.SendMessageRequest value) {
         if (sendMessageBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -21317,7 +21572,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setSendMessage(
-          SendMessageRequest.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder builderForValue) {
         if (sendMessageBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -21334,11 +21589,11 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public Builder mergeSendMessage(SendMessageRequest value) {
+      public Builder mergeSendMessage(com.data.pbprotocol.ChatProtocol.SendMessageRequest value) {
         if (sendMessageBuilder_ == null) {
           if (protocolCase_ == 20 &&
-              protocol_ != SendMessageRequest.getDefaultInstance()) {
-            protocol_ = SendMessageRequest.newBuilder((SendMessageRequest) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.SendMessageRequest.newBuilder((com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -21383,7 +21638,7 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public SendMessageRequest.Builder getSendMessageBuilder() {
+      public com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder getSendMessageBuilder() {
         return getSendMessageFieldBuilder().getBuilder();
       }
       /**
@@ -21393,14 +21648,14 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public SendMessageRequestOrBuilder getSendMessageOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.SendMessageRequestOrBuilder getSendMessageOrBuilder() {
         if ((protocolCase_ == 20) && (sendMessageBuilder_ != null)) {
           return sendMessageBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 20) {
-            return (SendMessageRequest) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_;
           }
-          return SendMessageRequest.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance();
         }
       }
       /**
@@ -21411,15 +21666,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          SendMessageRequest, SendMessageRequest.Builder, SendMessageRequestOrBuilder>
+          com.data.pbprotocol.ChatProtocol.SendMessageRequest, com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder, com.data.pbprotocol.ChatProtocol.SendMessageRequestOrBuilder> 
           getSendMessageFieldBuilder() {
         if (sendMessageBuilder_ == null) {
           if (!(protocolCase_ == 20)) {
-            protocol_ = SendMessageRequest.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.SendMessageRequest.getDefaultInstance();
           }
           sendMessageBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              SendMessageRequest, SendMessageRequest.Builder, SendMessageRequestOrBuilder>(
-                  (SendMessageRequest) protocol_,
+              com.data.pbprotocol.ChatProtocol.SendMessageRequest, com.data.pbprotocol.ChatProtocol.SendMessageRequest.Builder, com.data.pbprotocol.ChatProtocol.SendMessageRequestOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.SendMessageRequest) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -21475,7 +21730,7 @@ public final class ChatProtocol {
      *错误提示
      * </pre>
      */
-    String getErrorMessage();
+    java.lang.String getErrorMessage();
     /**
      * <code>optional string error_message = 2;</code>
      *
@@ -21501,7 +21756,7 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    RegistResponse getRegistRequest();
+    com.data.pbprotocol.ChatProtocol.RegistResponse getRegistRequest();
     /**
      * <code>optional .com.data.pbprotocol.RegistResponse regist_request = 10;</code>
      *
@@ -21509,7 +21764,7 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    RegistResponseOrBuilder getRegistRequestOrBuilder();
+    com.data.pbprotocol.ChatProtocol.RegistResponseOrBuilder getRegistRequestOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.LoginResponse login = 11;</code>
@@ -21526,7 +21781,7 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    LoginResponse getLogin();
+    com.data.pbprotocol.ChatProtocol.LoginResponse getLogin();
     /**
      * <code>optional .com.data.pbprotocol.LoginResponse login = 11;</code>
      *
@@ -21534,7 +21789,7 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    LoginResponseOrBuilder getLoginOrBuilder();
+    com.data.pbprotocol.ChatProtocol.LoginResponseOrBuilder getLoginOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.LogoutResponse logout = 12;</code>
@@ -21551,7 +21806,7 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    LogoutResponse getLogout();
+    com.data.pbprotocol.ChatProtocol.LogoutResponse getLogout();
     /**
      * <code>optional .com.data.pbprotocol.LogoutResponse logout = 12;</code>
      *
@@ -21559,7 +21814,7 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    LogoutResponseOrBuilder getLogoutOrBuilder();
+    com.data.pbprotocol.ChatProtocol.LogoutResponseOrBuilder getLogoutOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.PipeResponse pipe = 13;</code>
@@ -21576,7 +21831,7 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    PipeResponse getPipe();
+    com.data.pbprotocol.ChatProtocol.PipeResponse getPipe();
     /**
      * <code>optional .com.data.pbprotocol.PipeResponse pipe = 13;</code>
      *
@@ -21584,7 +21839,7 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    PipeResponseOrBuilder getPipeOrBuilder();
+    com.data.pbprotocol.ChatProtocol.PipeResponseOrBuilder getPipeOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.HeartbeatResponse heartbeat = 14;</code>
@@ -21601,7 +21856,7 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    HeartbeatResponse getHeartbeat();
+    com.data.pbprotocol.ChatProtocol.HeartbeatResponse getHeartbeat();
     /**
      * <code>optional .com.data.pbprotocol.HeartbeatResponse heartbeat = 14;</code>
      *
@@ -21609,7 +21864,7 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    HeartbeatResponseOrBuilder getHeartbeatOrBuilder();
+    com.data.pbprotocol.ChatProtocol.HeartbeatResponseOrBuilder getHeartbeatOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.FriendSyncResponse friend_sync = 15;</code>
@@ -21626,7 +21881,7 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    FriendSyncResponse getFriendSync();
+    com.data.pbprotocol.ChatProtocol.FriendSyncResponse getFriendSync();
     /**
      * <code>optional .com.data.pbprotocol.FriendSyncResponse friend_sync = 15;</code>
      *
@@ -21634,7 +21889,7 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    FriendSyncResponseOrBuilder getFriendSyncOrBuilder();
+    com.data.pbprotocol.ChatProtocol.FriendSyncResponseOrBuilder getFriendSyncOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.MessageSyncResponse message_sync = 16;</code>
@@ -21651,7 +21906,7 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    MessageSyncResponse getMessageSync();
+    com.data.pbprotocol.ChatProtocol.MessageSyncResponse getMessageSync();
     /**
      * <code>optional .com.data.pbprotocol.MessageSyncResponse message_sync = 16;</code>
      *
@@ -21659,7 +21914,7 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    MessageSyncResponseOrBuilder getMessageSyncOrBuilder();
+    com.data.pbprotocol.ChatProtocol.MessageSyncResponseOrBuilder getMessageSyncOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.UserSyncResponse user_sync = 17;</code>
@@ -21676,7 +21931,7 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    UserSyncResponse getUserSync();
+    com.data.pbprotocol.ChatProtocol.UserSyncResponse getUserSync();
     /**
      * <code>optional .com.data.pbprotocol.UserSyncResponse user_sync = 17;</code>
      *
@@ -21684,7 +21939,7 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    UserSyncResponseOrBuilder getUserSyncOrBuilder();
+    com.data.pbprotocol.ChatProtocol.UserSyncResponseOrBuilder getUserSyncOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.FileUploadResponse file_upload = 18;</code>
@@ -21701,7 +21956,7 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    FileUploadResponse getFileUpload();
+    com.data.pbprotocol.ChatProtocol.FileUploadResponse getFileUpload();
     /**
      * <code>optional .com.data.pbprotocol.FileUploadResponse file_upload = 18;</code>
      *
@@ -21709,7 +21964,7 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    FileUploadResponseOrBuilder getFileUploadOrBuilder();
+    com.data.pbprotocol.ChatProtocol.FileUploadResponseOrBuilder getFileUploadOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.CheckUsernameResponse check_username = 19;</code>
@@ -21726,7 +21981,7 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    CheckUsernameResponse getCheckUsername();
+    com.data.pbprotocol.ChatProtocol.CheckUsernameResponse getCheckUsername();
     /**
      * <code>optional .com.data.pbprotocol.CheckUsernameResponse check_username = 19;</code>
      *
@@ -21734,7 +21989,7 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    CheckUsernameResponseOrBuilder getCheckUsernameOrBuilder();
+    com.data.pbprotocol.ChatProtocol.CheckUsernameResponseOrBuilder getCheckUsernameOrBuilder();
 
     /**
      * <code>optional .com.data.pbprotocol.SendMessageResponse send_message = 20;</code>
@@ -21751,7 +22006,7 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    SendMessageResponse getSendMessage();
+    com.data.pbprotocol.ChatProtocol.SendMessageResponse getSendMessage();
     /**
      * <code>optional .com.data.pbprotocol.SendMessageResponse send_message = 20;</code>
      *
@@ -21759,7 +22014,7 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    SendMessageResponseOrBuilder getSendMessageOrBuilder();
+    com.data.pbprotocol.ChatProtocol.SendMessageResponseOrBuilder getSendMessageOrBuilder();
   }
   /**
    * Protobuf type {@code com.data.pbprotocol.Response}
@@ -21785,7 +22040,7 @@ public final class ChatProtocol {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -21825,143 +22080,143 @@ public final class ChatProtocol {
               break;
             }
             case 82: {
-              RegistResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.RegistResponse.Builder subBuilder = null;
               if (protocolCase_ == 10) {
-                subBuilder = ((RegistResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(RegistResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.RegistResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((RegistResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 10;
               break;
             }
             case 90: {
-              LoginResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.LoginResponse.Builder subBuilder = null;
               if (protocolCase_ == 11) {
-                subBuilder = ((LoginResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(LoginResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.LoginResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((LoginResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 11;
               break;
             }
             case 98: {
-              LogoutResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder subBuilder = null;
               if (protocolCase_ == 12) {
-                subBuilder = ((LogoutResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(LogoutResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.LogoutResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((LogoutResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 12;
               break;
             }
             case 106: {
-              PipeResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.PipeResponse.Builder subBuilder = null;
               if (protocolCase_ == 13) {
-                subBuilder = ((PipeResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(PipeResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.PipeResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((PipeResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 13;
               break;
             }
             case 114: {
-              HeartbeatResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder subBuilder = null;
               if (protocolCase_ == 14) {
-                subBuilder = ((HeartbeatResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(HeartbeatResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.HeartbeatResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((HeartbeatResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 14;
               break;
             }
             case 122: {
-              FriendSyncResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder subBuilder = null;
               if (protocolCase_ == 15) {
-                subBuilder = ((FriendSyncResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(FriendSyncResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.FriendSyncResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((FriendSyncResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 15;
               break;
             }
             case 130: {
-              MessageSyncResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder subBuilder = null;
               if (protocolCase_ == 16) {
-                subBuilder = ((MessageSyncResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(MessageSyncResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.MessageSyncResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((MessageSyncResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 16;
               break;
             }
             case 138: {
-              UserSyncResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder subBuilder = null;
               if (protocolCase_ == 17) {
-                subBuilder = ((UserSyncResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(UserSyncResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.UserSyncResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((UserSyncResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 17;
               break;
             }
             case 146: {
-              FileUploadResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder subBuilder = null;
               if (protocolCase_ == 18) {
-                subBuilder = ((FileUploadResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(FileUploadResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.FileUploadResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((FileUploadResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 18;
               break;
             }
             case 154: {
-              CheckUsernameResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder subBuilder = null;
               if (protocolCase_ == 19) {
-                subBuilder = ((CheckUsernameResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(CheckUsernameResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((CheckUsernameResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 19;
               break;
             }
             case 162: {
-              SendMessageResponse.Builder subBuilder = null;
+              com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder subBuilder = null;
               if (protocolCase_ == 20) {
-                subBuilder = ((SendMessageResponse) protocol_).toBuilder();
+                subBuilder = ((com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_).toBuilder();
               }
-              protocol_ = input.readMessage(SendMessageResponse.PARSER, extensionRegistry);
+              protocol_ = input.readMessage(com.data.pbprotocol.ChatProtocol.SendMessageResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((SendMessageResponse) protocol_);
+                subBuilder.mergeFrom((com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_);
                 protocol_ = subBuilder.buildPartial();
               }
               protocolCase_ = 20;
@@ -21981,14 +22236,14 @@ public final class ChatProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Response_descriptor;
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Response_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChatProtocol.internal_static_com_data_pbprotocol_Response_fieldAccessorTable
+      return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Response_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Response.class, Builder.class);
+              com.data.pbprotocol.ChatProtocol.Response.class, com.data.pbprotocol.ChatProtocol.Response.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Response> PARSER =
@@ -22001,14 +22256,14 @@ public final class ChatProtocol {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Response> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     private int protocolCase_ = 0;
-    private Object protocol_;
+    private java.lang.Object protocol_;
     public enum ProtocolCase
         implements com.google.protobuf.Internal.EnumLite {
       REGIST_REQUEST(10),
@@ -22041,7 +22296,7 @@ public final class ChatProtocol {
           case 19: return CHECK_USERNAME;
           case 20: return SEND_MESSAGE;
           case 0: return PROTOCOL_NOT_SET;
-          default: throw new IllegalArgumentException(
+          default: throw new java.lang.IllegalArgumentException(
             "Value is undefined for this oneof enum.");
         }
       }
@@ -22080,7 +22335,7 @@ public final class ChatProtocol {
     }
 
     public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private Object errorMessage_;
+    private java.lang.Object errorMessage_;
     /**
      * <code>optional string error_message = 2;</code>
      *
@@ -22098,14 +22353,14 @@ public final class ChatProtocol {
      *错误提示
      * </pre>
      */
-    public String getErrorMessage() {
-      Object ref = errorMessage_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           errorMessage_ = s;
         }
@@ -22121,11 +22376,11 @@ public final class ChatProtocol {
      */
     public com.google.protobuf.ByteString
         getErrorMessageBytes() {
-      Object ref = errorMessage_;
-      if (ref instanceof String) {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         errorMessage_ = b;
         return b;
       } else {
@@ -22151,11 +22406,11 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    public RegistResponse getRegistRequest() {
+    public com.data.pbprotocol.ChatProtocol.RegistResponse getRegistRequest() {
       if (protocolCase_ == 10) {
-         return (RegistResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_;
       }
-      return RegistResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.RegistResponse regist_request = 10;</code>
@@ -22164,11 +22419,11 @@ public final class ChatProtocol {
      *注册
      * </pre>
      */
-    public RegistResponseOrBuilder getRegistRequestOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.RegistResponseOrBuilder getRegistRequestOrBuilder() {
       if (protocolCase_ == 10) {
-         return (RegistResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_;
       }
-      return RegistResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance();
     }
 
     public static final int LOGIN_FIELD_NUMBER = 11;
@@ -22189,11 +22444,11 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    public LoginResponse getLogin() {
+    public com.data.pbprotocol.ChatProtocol.LoginResponse getLogin() {
       if (protocolCase_ == 11) {
-         return (LoginResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_;
       }
-      return LoginResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.LoginResponse login = 11;</code>
@@ -22202,11 +22457,11 @@ public final class ChatProtocol {
      *登录
      * </pre>
      */
-    public LoginResponseOrBuilder getLoginOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.LoginResponseOrBuilder getLoginOrBuilder() {
       if (protocolCase_ == 11) {
-         return (LoginResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_;
       }
-      return LoginResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance();
     }
 
     public static final int LOGOUT_FIELD_NUMBER = 12;
@@ -22227,11 +22482,11 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    public LogoutResponse getLogout() {
+    public com.data.pbprotocol.ChatProtocol.LogoutResponse getLogout() {
       if (protocolCase_ == 12) {
-         return (LogoutResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_;
       }
-      return LogoutResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.LogoutResponse logout = 12;</code>
@@ -22240,11 +22495,11 @@ public final class ChatProtocol {
      *退出
      * </pre>
      */
-    public LogoutResponseOrBuilder getLogoutOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.LogoutResponseOrBuilder getLogoutOrBuilder() {
       if (protocolCase_ == 12) {
-         return (LogoutResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_;
       }
-      return LogoutResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance();
     }
 
     public static final int PIPE_FIELD_NUMBER = 13;
@@ -22265,11 +22520,11 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    public PipeResponse getPipe() {
+    public com.data.pbprotocol.ChatProtocol.PipeResponse getPipe() {
       if (protocolCase_ == 13) {
-         return (PipeResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_;
       }
-      return PipeResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.PipeResponse pipe = 13;</code>
@@ -22278,11 +22533,11 @@ public final class ChatProtocol {
      *管道
      * </pre>
      */
-    public PipeResponseOrBuilder getPipeOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.PipeResponseOrBuilder getPipeOrBuilder() {
       if (protocolCase_ == 13) {
-         return (PipeResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_;
       }
-      return PipeResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance();
     }
 
     public static final int HEARTBEAT_FIELD_NUMBER = 14;
@@ -22303,11 +22558,11 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    public HeartbeatResponse getHeartbeat() {
+    public com.data.pbprotocol.ChatProtocol.HeartbeatResponse getHeartbeat() {
       if (protocolCase_ == 14) {
-         return (HeartbeatResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_;
       }
-      return HeartbeatResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.HeartbeatResponse heartbeat = 14;</code>
@@ -22316,11 +22571,11 @@ public final class ChatProtocol {
      *心跳
      * </pre>
      */
-    public HeartbeatResponseOrBuilder getHeartbeatOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.HeartbeatResponseOrBuilder getHeartbeatOrBuilder() {
       if (protocolCase_ == 14) {
-         return (HeartbeatResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_;
       }
-      return HeartbeatResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance();
     }
 
     public static final int FRIEND_SYNC_FIELD_NUMBER = 15;
@@ -22341,11 +22596,11 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    public FriendSyncResponse getFriendSync() {
+    public com.data.pbprotocol.ChatProtocol.FriendSyncResponse getFriendSync() {
       if (protocolCase_ == 15) {
-         return (FriendSyncResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_;
       }
-      return FriendSyncResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.FriendSyncResponse friend_sync = 15;</code>
@@ -22354,11 +22609,11 @@ public final class ChatProtocol {
      *好友同步
      * </pre>
      */
-    public FriendSyncResponseOrBuilder getFriendSyncOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.FriendSyncResponseOrBuilder getFriendSyncOrBuilder() {
       if (protocolCase_ == 15) {
-         return (FriendSyncResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_;
       }
-      return FriendSyncResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance();
     }
 
     public static final int MESSAGE_SYNC_FIELD_NUMBER = 16;
@@ -22379,11 +22634,11 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    public MessageSyncResponse getMessageSync() {
+    public com.data.pbprotocol.ChatProtocol.MessageSyncResponse getMessageSync() {
       if (protocolCase_ == 16) {
-         return (MessageSyncResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_;
       }
-      return MessageSyncResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.MessageSyncResponse message_sync = 16;</code>
@@ -22392,11 +22647,11 @@ public final class ChatProtocol {
      *消息同步
      * </pre>
      */
-    public MessageSyncResponseOrBuilder getMessageSyncOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.MessageSyncResponseOrBuilder getMessageSyncOrBuilder() {
       if (protocolCase_ == 16) {
-         return (MessageSyncResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_;
       }
-      return MessageSyncResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance();
     }
 
     public static final int USER_SYNC_FIELD_NUMBER = 17;
@@ -22417,11 +22672,11 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    public UserSyncResponse getUserSync() {
+    public com.data.pbprotocol.ChatProtocol.UserSyncResponse getUserSync() {
       if (protocolCase_ == 17) {
-         return (UserSyncResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_;
       }
-      return UserSyncResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.UserSyncResponse user_sync = 17;</code>
@@ -22430,11 +22685,11 @@ public final class ChatProtocol {
      *用户同步
      * </pre>
      */
-    public UserSyncResponseOrBuilder getUserSyncOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.UserSyncResponseOrBuilder getUserSyncOrBuilder() {
       if (protocolCase_ == 17) {
-         return (UserSyncResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_;
       }
-      return UserSyncResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance();
     }
 
     public static final int FILE_UPLOAD_FIELD_NUMBER = 18;
@@ -22455,11 +22710,11 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    public FileUploadResponse getFileUpload() {
+    public com.data.pbprotocol.ChatProtocol.FileUploadResponse getFileUpload() {
       if (protocolCase_ == 18) {
-         return (FileUploadResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_;
       }
-      return FileUploadResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.FileUploadResponse file_upload = 18;</code>
@@ -22468,11 +22723,11 @@ public final class ChatProtocol {
      *文件上传
      * </pre>
      */
-    public FileUploadResponseOrBuilder getFileUploadOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.FileUploadResponseOrBuilder getFileUploadOrBuilder() {
       if (protocolCase_ == 18) {
-         return (FileUploadResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_;
       }
-      return FileUploadResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance();
     }
 
     public static final int CHECK_USERNAME_FIELD_NUMBER = 19;
@@ -22493,11 +22748,11 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    public CheckUsernameResponse getCheckUsername() {
+    public com.data.pbprotocol.ChatProtocol.CheckUsernameResponse getCheckUsername() {
       if (protocolCase_ == 19) {
-         return (CheckUsernameResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_;
       }
-      return CheckUsernameResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.CheckUsernameResponse check_username = 19;</code>
@@ -22506,11 +22761,11 @@ public final class ChatProtocol {
      *检查用户名
      * </pre>
      */
-    public CheckUsernameResponseOrBuilder getCheckUsernameOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.CheckUsernameResponseOrBuilder getCheckUsernameOrBuilder() {
       if (protocolCase_ == 19) {
-         return (CheckUsernameResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_;
       }
-      return CheckUsernameResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance();
     }
 
     public static final int SEND_MESSAGE_FIELD_NUMBER = 20;
@@ -22531,11 +22786,11 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    public SendMessageResponse getSendMessage() {
+    public com.data.pbprotocol.ChatProtocol.SendMessageResponse getSendMessage() {
       if (protocolCase_ == 20) {
-         return (SendMessageResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_;
       }
-      return SendMessageResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance();
     }
     /**
      * <code>optional .com.data.pbprotocol.SendMessageResponse send_message = 20;</code>
@@ -22544,11 +22799,11 @@ public final class ChatProtocol {
      *发消息
      * </pre>
      */
-    public SendMessageResponseOrBuilder getSendMessageOrBuilder() {
+    public com.data.pbprotocol.ChatProtocol.SendMessageResponseOrBuilder getSendMessageOrBuilder() {
       if (protocolCase_ == 20) {
-         return (SendMessageResponse) protocol_;
+         return (com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_;
       }
-      return SendMessageResponse.getDefaultInstance();
+      return com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance();
     }
 
     private void initFields() {
@@ -22575,37 +22830,37 @@ public final class ChatProtocol {
         output.writeBytes(2, getErrorMessageBytes());
       }
       if (protocolCase_ == 10) {
-        output.writeMessage(10, (RegistResponse) protocol_);
+        output.writeMessage(10, (com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_);
       }
       if (protocolCase_ == 11) {
-        output.writeMessage(11, (LoginResponse) protocol_);
+        output.writeMessage(11, (com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_);
       }
       if (protocolCase_ == 12) {
-        output.writeMessage(12, (LogoutResponse) protocol_);
+        output.writeMessage(12, (com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_);
       }
       if (protocolCase_ == 13) {
-        output.writeMessage(13, (PipeResponse) protocol_);
+        output.writeMessage(13, (com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_);
       }
       if (protocolCase_ == 14) {
-        output.writeMessage(14, (HeartbeatResponse) protocol_);
+        output.writeMessage(14, (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_);
       }
       if (protocolCase_ == 15) {
-        output.writeMessage(15, (FriendSyncResponse) protocol_);
+        output.writeMessage(15, (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_);
       }
       if (protocolCase_ == 16) {
-        output.writeMessage(16, (MessageSyncResponse) protocol_);
+        output.writeMessage(16, (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_);
       }
       if (protocolCase_ == 17) {
-        output.writeMessage(17, (UserSyncResponse) protocol_);
+        output.writeMessage(17, (com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_);
       }
       if (protocolCase_ == 18) {
-        output.writeMessage(18, (FileUploadResponse) protocol_);
+        output.writeMessage(18, (com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_);
       }
       if (protocolCase_ == 19) {
-        output.writeMessage(19, (CheckUsernameResponse) protocol_);
+        output.writeMessage(19, (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_);
       }
       if (protocolCase_ == 20) {
-        output.writeMessage(20, (SendMessageResponse) protocol_);
+        output.writeMessage(20, (com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -22626,47 +22881,47 @@ public final class ChatProtocol {
       }
       if (protocolCase_ == 10) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (RegistResponse) protocol_);
+          .computeMessageSize(10, (com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_);
       }
       if (protocolCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (LoginResponse) protocol_);
+          .computeMessageSize(11, (com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_);
       }
       if (protocolCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, (LogoutResponse) protocol_);
+          .computeMessageSize(12, (com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_);
       }
       if (protocolCase_ == 13) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, (PipeResponse) protocol_);
+          .computeMessageSize(13, (com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_);
       }
       if (protocolCase_ == 14) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, (HeartbeatResponse) protocol_);
+          .computeMessageSize(14, (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_);
       }
       if (protocolCase_ == 15) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, (FriendSyncResponse) protocol_);
+          .computeMessageSize(15, (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_);
       }
       if (protocolCase_ == 16) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(16, (MessageSyncResponse) protocol_);
+          .computeMessageSize(16, (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_);
       }
       if (protocolCase_ == 17) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(17, (UserSyncResponse) protocol_);
+          .computeMessageSize(17, (com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_);
       }
       if (protocolCase_ == 18) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(18, (FileUploadResponse) protocol_);
+          .computeMessageSize(18, (com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_);
       }
       if (protocolCase_ == 19) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(19, (CheckUsernameResponse) protocol_);
+          .computeMessageSize(19, (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_);
       }
       if (protocolCase_ == 20) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(20, (SendMessageResponse) protocol_);
+          .computeMessageSize(20, (com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -22674,59 +22929,59 @@ public final class ChatProtocol {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Response parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Response parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Response parseFrom(byte[] data)
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Response parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Response parseFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Response parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Response parseDelimitedFrom(java.io.InputStream input)
+    public static com.data.pbprotocol.ChatProtocol.Response parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Response parseDelimitedFrom(
+    public static com.data.pbprotocol.ChatProtocol.Response parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Response parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Response parseFrom(
+    public static com.data.pbprotocol.ChatProtocol.Response parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -22735,14 +22990,14 @@ public final class ChatProtocol {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Response prototype) {
+    public static Builder newBuilder(com.data.pbprotocol.ChatProtocol.Response prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -22752,17 +23007,17 @@ public final class ChatProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.data.pbprotocol.Response)
-        ResponseOrBuilder {
+        com.data.pbprotocol.ChatProtocol.ResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Response_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Response_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Response_fieldAccessorTable
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Response_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Response.class, Builder.class);
+                com.data.pbprotocol.ChatProtocol.Response.class, com.data.pbprotocol.ChatProtocol.Response.Builder.class);
       }
 
       // Construct using com.data.pbprotocol.ChatProtocol.Response.newBuilder()
@@ -22771,7 +23026,7 @@ public final class ChatProtocol {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -22800,23 +23055,23 @@ public final class ChatProtocol {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ChatProtocol.internal_static_com_data_pbprotocol_Response_descriptor;
+        return com.data.pbprotocol.ChatProtocol.internal_static_com_data_pbprotocol_Response_descriptor;
       }
 
-      public Response getDefaultInstanceForType() {
-        return Response.getDefaultInstance();
+      public com.data.pbprotocol.ChatProtocol.Response getDefaultInstanceForType() {
+        return com.data.pbprotocol.ChatProtocol.Response.getDefaultInstance();
       }
 
-      public Response build() {
-        Response result = buildPartial();
+      public com.data.pbprotocol.ChatProtocol.Response build() {
+        com.data.pbprotocol.ChatProtocol.Response result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Response buildPartial() {
-        Response result = new Response(this);
+      public com.data.pbprotocol.ChatProtocol.Response buildPartial() {
+        com.data.pbprotocol.ChatProtocol.Response result = new com.data.pbprotocol.ChatProtocol.Response(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -22911,16 +23166,16 @@ public final class ChatProtocol {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Response) {
-          return mergeFrom((Response)other);
+        if (other instanceof com.data.pbprotocol.ChatProtocol.Response) {
+          return mergeFrom((com.data.pbprotocol.ChatProtocol.Response)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Response other) {
-        if (other == Response.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.data.pbprotocol.ChatProtocol.Response other) {
+        if (other == com.data.pbprotocol.ChatProtocol.Response.getDefaultInstance()) return this;
         if (other.hasErrorCode()) {
           setErrorCode(other.getErrorCode());
         }
@@ -22990,11 +23245,11 @@ public final class ChatProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Response parsedMessage = null;
+        com.data.pbprotocol.ChatProtocol.Response parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Response) e.getUnfinishedMessage();
+          parsedMessage = (com.data.pbprotocol.ChatProtocol.Response) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -23004,7 +23259,7 @@ public final class ChatProtocol {
         return this;
       }
       private int protocolCase_ = 0;
-      private Object protocol_;
+      private java.lang.Object protocol_;
       public ProtocolCase
           getProtocolCase() {
         return ProtocolCase.valueOf(
@@ -23068,7 +23323,7 @@ public final class ChatProtocol {
         return this;
       }
 
-      private Object errorMessage_ = "";
+      private java.lang.Object errorMessage_ = "";
       /**
        * <code>optional string error_message = 2;</code>
        *
@@ -23086,18 +23341,18 @@ public final class ChatProtocol {
        *错误提示
        * </pre>
        */
-      public String getErrorMessage() {
-        Object ref = errorMessage_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getErrorMessage() {
+        java.lang.Object ref = errorMessage_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             errorMessage_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -23109,11 +23364,11 @@ public final class ChatProtocol {
        */
       public com.google.protobuf.ByteString
           getErrorMessageBytes() {
-        Object ref = errorMessage_;
+        java.lang.Object ref = errorMessage_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           errorMessage_ = b;
           return b;
         } else {
@@ -23128,7 +23383,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setErrorMessage(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -23169,7 +23424,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          RegistResponse, RegistResponse.Builder, RegistResponseOrBuilder> registRequestBuilder_;
+          com.data.pbprotocol.ChatProtocol.RegistResponse, com.data.pbprotocol.ChatProtocol.RegistResponse.Builder, com.data.pbprotocol.ChatProtocol.RegistResponseOrBuilder> registRequestBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.RegistResponse regist_request = 10;</code>
        *
@@ -23187,17 +23442,17 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public RegistResponse getRegistRequest() {
+      public com.data.pbprotocol.ChatProtocol.RegistResponse getRegistRequest() {
         if (registRequestBuilder_ == null) {
           if (protocolCase_ == 10) {
-            return (RegistResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_;
           }
-          return RegistResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 10) {
             return registRequestBuilder_.getMessage();
           }
-          return RegistResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance();
         }
       }
       /**
@@ -23207,7 +23462,7 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public Builder setRegistRequest(RegistResponse value) {
+      public Builder setRegistRequest(com.data.pbprotocol.ChatProtocol.RegistResponse value) {
         if (registRequestBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -23228,7 +23483,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setRegistRequest(
-          RegistResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.RegistResponse.Builder builderForValue) {
         if (registRequestBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -23245,11 +23500,11 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public Builder mergeRegistRequest(RegistResponse value) {
+      public Builder mergeRegistRequest(com.data.pbprotocol.ChatProtocol.RegistResponse value) {
         if (registRequestBuilder_ == null) {
           if (protocolCase_ == 10 &&
-              protocol_ != RegistResponse.getDefaultInstance()) {
-            protocol_ = RegistResponse.newBuilder((RegistResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.RegistResponse.newBuilder((com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -23294,7 +23549,7 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public RegistResponse.Builder getRegistRequestBuilder() {
+      public com.data.pbprotocol.ChatProtocol.RegistResponse.Builder getRegistRequestBuilder() {
         return getRegistRequestFieldBuilder().getBuilder();
       }
       /**
@@ -23304,14 +23559,14 @@ public final class ChatProtocol {
        *注册
        * </pre>
        */
-      public RegistResponseOrBuilder getRegistRequestOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.RegistResponseOrBuilder getRegistRequestOrBuilder() {
         if ((protocolCase_ == 10) && (registRequestBuilder_ != null)) {
           return registRequestBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 10) {
-            return (RegistResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_;
           }
-          return RegistResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance();
         }
       }
       /**
@@ -23322,15 +23577,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          RegistResponse, RegistResponse.Builder, RegistResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.RegistResponse, com.data.pbprotocol.ChatProtocol.RegistResponse.Builder, com.data.pbprotocol.ChatProtocol.RegistResponseOrBuilder> 
           getRegistRequestFieldBuilder() {
         if (registRequestBuilder_ == null) {
           if (!(protocolCase_ == 10)) {
-            protocol_ = RegistResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.RegistResponse.getDefaultInstance();
           }
           registRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              RegistResponse, RegistResponse.Builder, RegistResponseOrBuilder>(
-                  (RegistResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.RegistResponse, com.data.pbprotocol.ChatProtocol.RegistResponse.Builder, com.data.pbprotocol.ChatProtocol.RegistResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.RegistResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -23340,7 +23595,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          LoginResponse, LoginResponse.Builder, LoginResponseOrBuilder> loginBuilder_;
+          com.data.pbprotocol.ChatProtocol.LoginResponse, com.data.pbprotocol.ChatProtocol.LoginResponse.Builder, com.data.pbprotocol.ChatProtocol.LoginResponseOrBuilder> loginBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.LoginResponse login = 11;</code>
        *
@@ -23358,17 +23613,17 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public LoginResponse getLogin() {
+      public com.data.pbprotocol.ChatProtocol.LoginResponse getLogin() {
         if (loginBuilder_ == null) {
           if (protocolCase_ == 11) {
-            return (LoginResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_;
           }
-          return LoginResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 11) {
             return loginBuilder_.getMessage();
           }
-          return LoginResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance();
         }
       }
       /**
@@ -23378,7 +23633,7 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public Builder setLogin(LoginResponse value) {
+      public Builder setLogin(com.data.pbprotocol.ChatProtocol.LoginResponse value) {
         if (loginBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -23399,7 +23654,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setLogin(
-          LoginResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.LoginResponse.Builder builderForValue) {
         if (loginBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -23416,11 +23671,11 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public Builder mergeLogin(LoginResponse value) {
+      public Builder mergeLogin(com.data.pbprotocol.ChatProtocol.LoginResponse value) {
         if (loginBuilder_ == null) {
           if (protocolCase_ == 11 &&
-              protocol_ != LoginResponse.getDefaultInstance()) {
-            protocol_ = LoginResponse.newBuilder((LoginResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.LoginResponse.newBuilder((com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -23465,7 +23720,7 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public LoginResponse.Builder getLoginBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LoginResponse.Builder getLoginBuilder() {
         return getLoginFieldBuilder().getBuilder();
       }
       /**
@@ -23475,14 +23730,14 @@ public final class ChatProtocol {
        *登录
        * </pre>
        */
-      public LoginResponseOrBuilder getLoginOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LoginResponseOrBuilder getLoginOrBuilder() {
         if ((protocolCase_ == 11) && (loginBuilder_ != null)) {
           return loginBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 11) {
-            return (LoginResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_;
           }
-          return LoginResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance();
         }
       }
       /**
@@ -23493,15 +23748,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          LoginResponse, LoginResponse.Builder, LoginResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.LoginResponse, com.data.pbprotocol.ChatProtocol.LoginResponse.Builder, com.data.pbprotocol.ChatProtocol.LoginResponseOrBuilder> 
           getLoginFieldBuilder() {
         if (loginBuilder_ == null) {
           if (!(protocolCase_ == 11)) {
-            protocol_ = LoginResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.LoginResponse.getDefaultInstance();
           }
           loginBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              LoginResponse, LoginResponse.Builder, LoginResponseOrBuilder>(
-                  (LoginResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.LoginResponse, com.data.pbprotocol.ChatProtocol.LoginResponse.Builder, com.data.pbprotocol.ChatProtocol.LoginResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.LoginResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -23511,7 +23766,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          LogoutResponse, LogoutResponse.Builder, LogoutResponseOrBuilder> logoutBuilder_;
+          com.data.pbprotocol.ChatProtocol.LogoutResponse, com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder, com.data.pbprotocol.ChatProtocol.LogoutResponseOrBuilder> logoutBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.LogoutResponse logout = 12;</code>
        *
@@ -23529,17 +23784,17 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public LogoutResponse getLogout() {
+      public com.data.pbprotocol.ChatProtocol.LogoutResponse getLogout() {
         if (logoutBuilder_ == null) {
           if (protocolCase_ == 12) {
-            return (LogoutResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_;
           }
-          return LogoutResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 12) {
             return logoutBuilder_.getMessage();
           }
-          return LogoutResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance();
         }
       }
       /**
@@ -23549,7 +23804,7 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public Builder setLogout(LogoutResponse value) {
+      public Builder setLogout(com.data.pbprotocol.ChatProtocol.LogoutResponse value) {
         if (logoutBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -23570,7 +23825,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setLogout(
-          LogoutResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder builderForValue) {
         if (logoutBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -23587,11 +23842,11 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public Builder mergeLogout(LogoutResponse value) {
+      public Builder mergeLogout(com.data.pbprotocol.ChatProtocol.LogoutResponse value) {
         if (logoutBuilder_ == null) {
           if (protocolCase_ == 12 &&
-              protocol_ != LogoutResponse.getDefaultInstance()) {
-            protocol_ = LogoutResponse.newBuilder((LogoutResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.LogoutResponse.newBuilder((com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -23636,7 +23891,7 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public LogoutResponse.Builder getLogoutBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder getLogoutBuilder() {
         return getLogoutFieldBuilder().getBuilder();
       }
       /**
@@ -23646,14 +23901,14 @@ public final class ChatProtocol {
        *退出
        * </pre>
        */
-      public LogoutResponseOrBuilder getLogoutOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.LogoutResponseOrBuilder getLogoutOrBuilder() {
         if ((protocolCase_ == 12) && (logoutBuilder_ != null)) {
           return logoutBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 12) {
-            return (LogoutResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_;
           }
-          return LogoutResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance();
         }
       }
       /**
@@ -23664,15 +23919,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          LogoutResponse, LogoutResponse.Builder, LogoutResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.LogoutResponse, com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder, com.data.pbprotocol.ChatProtocol.LogoutResponseOrBuilder> 
           getLogoutFieldBuilder() {
         if (logoutBuilder_ == null) {
           if (!(protocolCase_ == 12)) {
-            protocol_ = LogoutResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.LogoutResponse.getDefaultInstance();
           }
           logoutBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              LogoutResponse, LogoutResponse.Builder, LogoutResponseOrBuilder>(
-                  (LogoutResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.LogoutResponse, com.data.pbprotocol.ChatProtocol.LogoutResponse.Builder, com.data.pbprotocol.ChatProtocol.LogoutResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.LogoutResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -23682,7 +23937,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          PipeResponse, PipeResponse.Builder, PipeResponseOrBuilder> pipeBuilder_;
+          com.data.pbprotocol.ChatProtocol.PipeResponse, com.data.pbprotocol.ChatProtocol.PipeResponse.Builder, com.data.pbprotocol.ChatProtocol.PipeResponseOrBuilder> pipeBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.PipeResponse pipe = 13;</code>
        *
@@ -23700,17 +23955,17 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public PipeResponse getPipe() {
+      public com.data.pbprotocol.ChatProtocol.PipeResponse getPipe() {
         if (pipeBuilder_ == null) {
           if (protocolCase_ == 13) {
-            return (PipeResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_;
           }
-          return PipeResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 13) {
             return pipeBuilder_.getMessage();
           }
-          return PipeResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance();
         }
       }
       /**
@@ -23720,7 +23975,7 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public Builder setPipe(PipeResponse value) {
+      public Builder setPipe(com.data.pbprotocol.ChatProtocol.PipeResponse value) {
         if (pipeBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -23741,7 +23996,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setPipe(
-          PipeResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.PipeResponse.Builder builderForValue) {
         if (pipeBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -23758,11 +24013,11 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public Builder mergePipe(PipeResponse value) {
+      public Builder mergePipe(com.data.pbprotocol.ChatProtocol.PipeResponse value) {
         if (pipeBuilder_ == null) {
           if (protocolCase_ == 13 &&
-              protocol_ != PipeResponse.getDefaultInstance()) {
-            protocol_ = PipeResponse.newBuilder((PipeResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.PipeResponse.newBuilder((com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -23807,7 +24062,7 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public PipeResponse.Builder getPipeBuilder() {
+      public com.data.pbprotocol.ChatProtocol.PipeResponse.Builder getPipeBuilder() {
         return getPipeFieldBuilder().getBuilder();
       }
       /**
@@ -23817,14 +24072,14 @@ public final class ChatProtocol {
        *管道
        * </pre>
        */
-      public PipeResponseOrBuilder getPipeOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.PipeResponseOrBuilder getPipeOrBuilder() {
         if ((protocolCase_ == 13) && (pipeBuilder_ != null)) {
           return pipeBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 13) {
-            return (PipeResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_;
           }
-          return PipeResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance();
         }
       }
       /**
@@ -23835,15 +24090,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          PipeResponse, PipeResponse.Builder, PipeResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.PipeResponse, com.data.pbprotocol.ChatProtocol.PipeResponse.Builder, com.data.pbprotocol.ChatProtocol.PipeResponseOrBuilder> 
           getPipeFieldBuilder() {
         if (pipeBuilder_ == null) {
           if (!(protocolCase_ == 13)) {
-            protocol_ = PipeResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.PipeResponse.getDefaultInstance();
           }
           pipeBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              PipeResponse, PipeResponse.Builder, PipeResponseOrBuilder>(
-                  (PipeResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.PipeResponse, com.data.pbprotocol.ChatProtocol.PipeResponse.Builder, com.data.pbprotocol.ChatProtocol.PipeResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.PipeResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -23853,7 +24108,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          HeartbeatResponse, HeartbeatResponse.Builder, HeartbeatResponseOrBuilder> heartbeatBuilder_;
+          com.data.pbprotocol.ChatProtocol.HeartbeatResponse, com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder, com.data.pbprotocol.ChatProtocol.HeartbeatResponseOrBuilder> heartbeatBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.HeartbeatResponse heartbeat = 14;</code>
        *
@@ -23871,17 +24126,17 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public HeartbeatResponse getHeartbeat() {
+      public com.data.pbprotocol.ChatProtocol.HeartbeatResponse getHeartbeat() {
         if (heartbeatBuilder_ == null) {
           if (protocolCase_ == 14) {
-            return (HeartbeatResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_;
           }
-          return HeartbeatResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 14) {
             return heartbeatBuilder_.getMessage();
           }
-          return HeartbeatResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance();
         }
       }
       /**
@@ -23891,7 +24146,7 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public Builder setHeartbeat(HeartbeatResponse value) {
+      public Builder setHeartbeat(com.data.pbprotocol.ChatProtocol.HeartbeatResponse value) {
         if (heartbeatBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -23912,7 +24167,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setHeartbeat(
-          HeartbeatResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder builderForValue) {
         if (heartbeatBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -23929,11 +24184,11 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public Builder mergeHeartbeat(HeartbeatResponse value) {
+      public Builder mergeHeartbeat(com.data.pbprotocol.ChatProtocol.HeartbeatResponse value) {
         if (heartbeatBuilder_ == null) {
           if (protocolCase_ == 14 &&
-              protocol_ != HeartbeatResponse.getDefaultInstance()) {
-            protocol_ = HeartbeatResponse.newBuilder((HeartbeatResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.HeartbeatResponse.newBuilder((com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -23978,7 +24233,7 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public HeartbeatResponse.Builder getHeartbeatBuilder() {
+      public com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder getHeartbeatBuilder() {
         return getHeartbeatFieldBuilder().getBuilder();
       }
       /**
@@ -23988,14 +24243,14 @@ public final class ChatProtocol {
        *心跳
        * </pre>
        */
-      public HeartbeatResponseOrBuilder getHeartbeatOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.HeartbeatResponseOrBuilder getHeartbeatOrBuilder() {
         if ((protocolCase_ == 14) && (heartbeatBuilder_ != null)) {
           return heartbeatBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 14) {
-            return (HeartbeatResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_;
           }
-          return HeartbeatResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance();
         }
       }
       /**
@@ -24006,15 +24261,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          HeartbeatResponse, HeartbeatResponse.Builder, HeartbeatResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.HeartbeatResponse, com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder, com.data.pbprotocol.ChatProtocol.HeartbeatResponseOrBuilder> 
           getHeartbeatFieldBuilder() {
         if (heartbeatBuilder_ == null) {
           if (!(protocolCase_ == 14)) {
-            protocol_ = HeartbeatResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.HeartbeatResponse.getDefaultInstance();
           }
           heartbeatBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              HeartbeatResponse, HeartbeatResponse.Builder, HeartbeatResponseOrBuilder>(
-                  (HeartbeatResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.HeartbeatResponse, com.data.pbprotocol.ChatProtocol.HeartbeatResponse.Builder, com.data.pbprotocol.ChatProtocol.HeartbeatResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.HeartbeatResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -24024,7 +24279,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          FriendSyncResponse, FriendSyncResponse.Builder, FriendSyncResponseOrBuilder> friendSyncBuilder_;
+          com.data.pbprotocol.ChatProtocol.FriendSyncResponse, com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.FriendSyncResponseOrBuilder> friendSyncBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.FriendSyncResponse friend_sync = 15;</code>
        *
@@ -24042,17 +24297,17 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public FriendSyncResponse getFriendSync() {
+      public com.data.pbprotocol.ChatProtocol.FriendSyncResponse getFriendSync() {
         if (friendSyncBuilder_ == null) {
           if (protocolCase_ == 15) {
-            return (FriendSyncResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_;
           }
-          return FriendSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 15) {
             return friendSyncBuilder_.getMessage();
           }
-          return FriendSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance();
         }
       }
       /**
@@ -24062,7 +24317,7 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public Builder setFriendSync(FriendSyncResponse value) {
+      public Builder setFriendSync(com.data.pbprotocol.ChatProtocol.FriendSyncResponse value) {
         if (friendSyncBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -24083,7 +24338,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setFriendSync(
-          FriendSyncResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder builderForValue) {
         if (friendSyncBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -24100,11 +24355,11 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public Builder mergeFriendSync(FriendSyncResponse value) {
+      public Builder mergeFriendSync(com.data.pbprotocol.ChatProtocol.FriendSyncResponse value) {
         if (friendSyncBuilder_ == null) {
           if (protocolCase_ == 15 &&
-              protocol_ != FriendSyncResponse.getDefaultInstance()) {
-            protocol_ = FriendSyncResponse.newBuilder((FriendSyncResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.FriendSyncResponse.newBuilder((com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -24149,7 +24404,7 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public FriendSyncResponse.Builder getFriendSyncBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder getFriendSyncBuilder() {
         return getFriendSyncFieldBuilder().getBuilder();
       }
       /**
@@ -24159,14 +24414,14 @@ public final class ChatProtocol {
        *好友同步
        * </pre>
        */
-      public FriendSyncResponseOrBuilder getFriendSyncOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FriendSyncResponseOrBuilder getFriendSyncOrBuilder() {
         if ((protocolCase_ == 15) && (friendSyncBuilder_ != null)) {
           return friendSyncBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 15) {
-            return (FriendSyncResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_;
           }
-          return FriendSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance();
         }
       }
       /**
@@ -24177,15 +24432,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          FriendSyncResponse, FriendSyncResponse.Builder, FriendSyncResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.FriendSyncResponse, com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.FriendSyncResponseOrBuilder> 
           getFriendSyncFieldBuilder() {
         if (friendSyncBuilder_ == null) {
           if (!(protocolCase_ == 15)) {
-            protocol_ = FriendSyncResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.FriendSyncResponse.getDefaultInstance();
           }
           friendSyncBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              FriendSyncResponse, FriendSyncResponse.Builder, FriendSyncResponseOrBuilder>(
-                  (FriendSyncResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.FriendSyncResponse, com.data.pbprotocol.ChatProtocol.FriendSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.FriendSyncResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.FriendSyncResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -24195,7 +24450,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          MessageSyncResponse, MessageSyncResponse.Builder, MessageSyncResponseOrBuilder> messageSyncBuilder_;
+          com.data.pbprotocol.ChatProtocol.MessageSyncResponse, com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.MessageSyncResponseOrBuilder> messageSyncBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.MessageSyncResponse message_sync = 16;</code>
        *
@@ -24213,17 +24468,17 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public MessageSyncResponse getMessageSync() {
+      public com.data.pbprotocol.ChatProtocol.MessageSyncResponse getMessageSync() {
         if (messageSyncBuilder_ == null) {
           if (protocolCase_ == 16) {
-            return (MessageSyncResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_;
           }
-          return MessageSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 16) {
             return messageSyncBuilder_.getMessage();
           }
-          return MessageSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance();
         }
       }
       /**
@@ -24233,7 +24488,7 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public Builder setMessageSync(MessageSyncResponse value) {
+      public Builder setMessageSync(com.data.pbprotocol.ChatProtocol.MessageSyncResponse value) {
         if (messageSyncBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -24254,7 +24509,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setMessageSync(
-          MessageSyncResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder builderForValue) {
         if (messageSyncBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -24271,11 +24526,11 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public Builder mergeMessageSync(MessageSyncResponse value) {
+      public Builder mergeMessageSync(com.data.pbprotocol.ChatProtocol.MessageSyncResponse value) {
         if (messageSyncBuilder_ == null) {
           if (protocolCase_ == 16 &&
-              protocol_ != MessageSyncResponse.getDefaultInstance()) {
-            protocol_ = MessageSyncResponse.newBuilder((MessageSyncResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.MessageSyncResponse.newBuilder((com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -24320,7 +24575,7 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public MessageSyncResponse.Builder getMessageSyncBuilder() {
+      public com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder getMessageSyncBuilder() {
         return getMessageSyncFieldBuilder().getBuilder();
       }
       /**
@@ -24330,14 +24585,14 @@ public final class ChatProtocol {
        *消息同步
        * </pre>
        */
-      public MessageSyncResponseOrBuilder getMessageSyncOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.MessageSyncResponseOrBuilder getMessageSyncOrBuilder() {
         if ((protocolCase_ == 16) && (messageSyncBuilder_ != null)) {
           return messageSyncBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 16) {
-            return (MessageSyncResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_;
           }
-          return MessageSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance();
         }
       }
       /**
@@ -24348,15 +24603,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          MessageSyncResponse, MessageSyncResponse.Builder, MessageSyncResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.MessageSyncResponse, com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.MessageSyncResponseOrBuilder> 
           getMessageSyncFieldBuilder() {
         if (messageSyncBuilder_ == null) {
           if (!(protocolCase_ == 16)) {
-            protocol_ = MessageSyncResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.MessageSyncResponse.getDefaultInstance();
           }
           messageSyncBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              MessageSyncResponse, MessageSyncResponse.Builder, MessageSyncResponseOrBuilder>(
-                  (MessageSyncResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.MessageSyncResponse, com.data.pbprotocol.ChatProtocol.MessageSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.MessageSyncResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.MessageSyncResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -24366,7 +24621,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          UserSyncResponse, UserSyncResponse.Builder, UserSyncResponseOrBuilder> userSyncBuilder_;
+          com.data.pbprotocol.ChatProtocol.UserSyncResponse, com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.UserSyncResponseOrBuilder> userSyncBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.UserSyncResponse user_sync = 17;</code>
        *
@@ -24384,17 +24639,17 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public UserSyncResponse getUserSync() {
+      public com.data.pbprotocol.ChatProtocol.UserSyncResponse getUserSync() {
         if (userSyncBuilder_ == null) {
           if (protocolCase_ == 17) {
-            return (UserSyncResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_;
           }
-          return UserSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 17) {
             return userSyncBuilder_.getMessage();
           }
-          return UserSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance();
         }
       }
       /**
@@ -24404,7 +24659,7 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public Builder setUserSync(UserSyncResponse value) {
+      public Builder setUserSync(com.data.pbprotocol.ChatProtocol.UserSyncResponse value) {
         if (userSyncBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -24425,7 +24680,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setUserSync(
-          UserSyncResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder builderForValue) {
         if (userSyncBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -24442,11 +24697,11 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public Builder mergeUserSync(UserSyncResponse value) {
+      public Builder mergeUserSync(com.data.pbprotocol.ChatProtocol.UserSyncResponse value) {
         if (userSyncBuilder_ == null) {
           if (protocolCase_ == 17 &&
-              protocol_ != UserSyncResponse.getDefaultInstance()) {
-            protocol_ = UserSyncResponse.newBuilder((UserSyncResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.UserSyncResponse.newBuilder((com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -24491,7 +24746,7 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public UserSyncResponse.Builder getUserSyncBuilder() {
+      public com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder getUserSyncBuilder() {
         return getUserSyncFieldBuilder().getBuilder();
       }
       /**
@@ -24501,14 +24756,14 @@ public final class ChatProtocol {
        *用户同步
        * </pre>
        */
-      public UserSyncResponseOrBuilder getUserSyncOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.UserSyncResponseOrBuilder getUserSyncOrBuilder() {
         if ((protocolCase_ == 17) && (userSyncBuilder_ != null)) {
           return userSyncBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 17) {
-            return (UserSyncResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_;
           }
-          return UserSyncResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance();
         }
       }
       /**
@@ -24519,15 +24774,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          UserSyncResponse, UserSyncResponse.Builder, UserSyncResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.UserSyncResponse, com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.UserSyncResponseOrBuilder> 
           getUserSyncFieldBuilder() {
         if (userSyncBuilder_ == null) {
           if (!(protocolCase_ == 17)) {
-            protocol_ = UserSyncResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.UserSyncResponse.getDefaultInstance();
           }
           userSyncBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              UserSyncResponse, UserSyncResponse.Builder, UserSyncResponseOrBuilder>(
-                  (UserSyncResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.UserSyncResponse, com.data.pbprotocol.ChatProtocol.UserSyncResponse.Builder, com.data.pbprotocol.ChatProtocol.UserSyncResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.UserSyncResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -24537,7 +24792,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          FileUploadResponse, FileUploadResponse.Builder, FileUploadResponseOrBuilder> fileUploadBuilder_;
+          com.data.pbprotocol.ChatProtocol.FileUploadResponse, com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder, com.data.pbprotocol.ChatProtocol.FileUploadResponseOrBuilder> fileUploadBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.FileUploadResponse file_upload = 18;</code>
        *
@@ -24555,17 +24810,17 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public FileUploadResponse getFileUpload() {
+      public com.data.pbprotocol.ChatProtocol.FileUploadResponse getFileUpload() {
         if (fileUploadBuilder_ == null) {
           if (protocolCase_ == 18) {
-            return (FileUploadResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_;
           }
-          return FileUploadResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 18) {
             return fileUploadBuilder_.getMessage();
           }
-          return FileUploadResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance();
         }
       }
       /**
@@ -24575,7 +24830,7 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public Builder setFileUpload(FileUploadResponse value) {
+      public Builder setFileUpload(com.data.pbprotocol.ChatProtocol.FileUploadResponse value) {
         if (fileUploadBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -24596,7 +24851,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setFileUpload(
-          FileUploadResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder builderForValue) {
         if (fileUploadBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -24613,11 +24868,11 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public Builder mergeFileUpload(FileUploadResponse value) {
+      public Builder mergeFileUpload(com.data.pbprotocol.ChatProtocol.FileUploadResponse value) {
         if (fileUploadBuilder_ == null) {
           if (protocolCase_ == 18 &&
-              protocol_ != FileUploadResponse.getDefaultInstance()) {
-            protocol_ = FileUploadResponse.newBuilder((FileUploadResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.FileUploadResponse.newBuilder((com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -24662,7 +24917,7 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public FileUploadResponse.Builder getFileUploadBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder getFileUploadBuilder() {
         return getFileUploadFieldBuilder().getBuilder();
       }
       /**
@@ -24672,14 +24927,14 @@ public final class ChatProtocol {
        *文件上传
        * </pre>
        */
-      public FileUploadResponseOrBuilder getFileUploadOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.FileUploadResponseOrBuilder getFileUploadOrBuilder() {
         if ((protocolCase_ == 18) && (fileUploadBuilder_ != null)) {
           return fileUploadBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 18) {
-            return (FileUploadResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_;
           }
-          return FileUploadResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance();
         }
       }
       /**
@@ -24690,15 +24945,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          FileUploadResponse, FileUploadResponse.Builder, FileUploadResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.FileUploadResponse, com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder, com.data.pbprotocol.ChatProtocol.FileUploadResponseOrBuilder> 
           getFileUploadFieldBuilder() {
         if (fileUploadBuilder_ == null) {
           if (!(protocolCase_ == 18)) {
-            protocol_ = FileUploadResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.FileUploadResponse.getDefaultInstance();
           }
           fileUploadBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              FileUploadResponse, FileUploadResponse.Builder, FileUploadResponseOrBuilder>(
-                  (FileUploadResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.FileUploadResponse, com.data.pbprotocol.ChatProtocol.FileUploadResponse.Builder, com.data.pbprotocol.ChatProtocol.FileUploadResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.FileUploadResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -24708,7 +24963,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          CheckUsernameResponse, CheckUsernameResponse.Builder, CheckUsernameResponseOrBuilder> checkUsernameBuilder_;
+          com.data.pbprotocol.ChatProtocol.CheckUsernameResponse, com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder, com.data.pbprotocol.ChatProtocol.CheckUsernameResponseOrBuilder> checkUsernameBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.CheckUsernameResponse check_username = 19;</code>
        *
@@ -24726,17 +24981,17 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public CheckUsernameResponse getCheckUsername() {
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameResponse getCheckUsername() {
         if (checkUsernameBuilder_ == null) {
           if (protocolCase_ == 19) {
-            return (CheckUsernameResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_;
           }
-          return CheckUsernameResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 19) {
             return checkUsernameBuilder_.getMessage();
           }
-          return CheckUsernameResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance();
         }
       }
       /**
@@ -24746,7 +25001,7 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public Builder setCheckUsername(CheckUsernameResponse value) {
+      public Builder setCheckUsername(com.data.pbprotocol.ChatProtocol.CheckUsernameResponse value) {
         if (checkUsernameBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -24767,7 +25022,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setCheckUsername(
-          CheckUsernameResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder builderForValue) {
         if (checkUsernameBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -24784,11 +25039,11 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public Builder mergeCheckUsername(CheckUsernameResponse value) {
+      public Builder mergeCheckUsername(com.data.pbprotocol.ChatProtocol.CheckUsernameResponse value) {
         if (checkUsernameBuilder_ == null) {
           if (protocolCase_ == 19 &&
-              protocol_ != CheckUsernameResponse.getDefaultInstance()) {
-            protocol_ = CheckUsernameResponse.newBuilder((CheckUsernameResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.newBuilder((com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -24833,7 +25088,7 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public CheckUsernameResponse.Builder getCheckUsernameBuilder() {
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder getCheckUsernameBuilder() {
         return getCheckUsernameFieldBuilder().getBuilder();
       }
       /**
@@ -24843,14 +25098,14 @@ public final class ChatProtocol {
        *检查用户名
        * </pre>
        */
-      public CheckUsernameResponseOrBuilder getCheckUsernameOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.CheckUsernameResponseOrBuilder getCheckUsernameOrBuilder() {
         if ((protocolCase_ == 19) && (checkUsernameBuilder_ != null)) {
           return checkUsernameBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 19) {
-            return (CheckUsernameResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_;
           }
-          return CheckUsernameResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance();
         }
       }
       /**
@@ -24861,15 +25116,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          CheckUsernameResponse, CheckUsernameResponse.Builder, CheckUsernameResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.CheckUsernameResponse, com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder, com.data.pbprotocol.ChatProtocol.CheckUsernameResponseOrBuilder> 
           getCheckUsernameFieldBuilder() {
         if (checkUsernameBuilder_ == null) {
           if (!(protocolCase_ == 19)) {
-            protocol_ = CheckUsernameResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.getDefaultInstance();
           }
           checkUsernameBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              CheckUsernameResponse, CheckUsernameResponse.Builder, CheckUsernameResponseOrBuilder>(
-                  (CheckUsernameResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.CheckUsernameResponse, com.data.pbprotocol.ChatProtocol.CheckUsernameResponse.Builder, com.data.pbprotocol.ChatProtocol.CheckUsernameResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.CheckUsernameResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -24879,7 +25134,7 @@ public final class ChatProtocol {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          SendMessageResponse, SendMessageResponse.Builder, SendMessageResponseOrBuilder> sendMessageBuilder_;
+          com.data.pbprotocol.ChatProtocol.SendMessageResponse, com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder, com.data.pbprotocol.ChatProtocol.SendMessageResponseOrBuilder> sendMessageBuilder_;
       /**
        * <code>optional .com.data.pbprotocol.SendMessageResponse send_message = 20;</code>
        *
@@ -24897,17 +25152,17 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public SendMessageResponse getSendMessage() {
+      public com.data.pbprotocol.ChatProtocol.SendMessageResponse getSendMessage() {
         if (sendMessageBuilder_ == null) {
           if (protocolCase_ == 20) {
-            return (SendMessageResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_;
           }
-          return SendMessageResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance();
         } else {
           if (protocolCase_ == 20) {
             return sendMessageBuilder_.getMessage();
           }
-          return SendMessageResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance();
         }
       }
       /**
@@ -24917,7 +25172,7 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public Builder setSendMessage(SendMessageResponse value) {
+      public Builder setSendMessage(com.data.pbprotocol.ChatProtocol.SendMessageResponse value) {
         if (sendMessageBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -24938,7 +25193,7 @@ public final class ChatProtocol {
        * </pre>
        */
       public Builder setSendMessage(
-          SendMessageResponse.Builder builderForValue) {
+          com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder builderForValue) {
         if (sendMessageBuilder_ == null) {
           protocol_ = builderForValue.build();
           onChanged();
@@ -24955,11 +25210,11 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public Builder mergeSendMessage(SendMessageResponse value) {
+      public Builder mergeSendMessage(com.data.pbprotocol.ChatProtocol.SendMessageResponse value) {
         if (sendMessageBuilder_ == null) {
           if (protocolCase_ == 20 &&
-              protocol_ != SendMessageResponse.getDefaultInstance()) {
-            protocol_ = SendMessageResponse.newBuilder((SendMessageResponse) protocol_)
+              protocol_ != com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance()) {
+            protocol_ = com.data.pbprotocol.ChatProtocol.SendMessageResponse.newBuilder((com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_)
                 .mergeFrom(value).buildPartial();
           } else {
             protocol_ = value;
@@ -25004,7 +25259,7 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public SendMessageResponse.Builder getSendMessageBuilder() {
+      public com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder getSendMessageBuilder() {
         return getSendMessageFieldBuilder().getBuilder();
       }
       /**
@@ -25014,14 +25269,14 @@ public final class ChatProtocol {
        *发消息
        * </pre>
        */
-      public SendMessageResponseOrBuilder getSendMessageOrBuilder() {
+      public com.data.pbprotocol.ChatProtocol.SendMessageResponseOrBuilder getSendMessageOrBuilder() {
         if ((protocolCase_ == 20) && (sendMessageBuilder_ != null)) {
           return sendMessageBuilder_.getMessageOrBuilder();
         } else {
           if (protocolCase_ == 20) {
-            return (SendMessageResponse) protocol_;
+            return (com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_;
           }
-          return SendMessageResponse.getDefaultInstance();
+          return com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance();
         }
       }
       /**
@@ -25032,15 +25287,15 @@ public final class ChatProtocol {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          SendMessageResponse, SendMessageResponse.Builder, SendMessageResponseOrBuilder>
+          com.data.pbprotocol.ChatProtocol.SendMessageResponse, com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder, com.data.pbprotocol.ChatProtocol.SendMessageResponseOrBuilder> 
           getSendMessageFieldBuilder() {
         if (sendMessageBuilder_ == null) {
           if (!(protocolCase_ == 20)) {
-            protocol_ = SendMessageResponse.getDefaultInstance();
+            protocol_ = com.data.pbprotocol.ChatProtocol.SendMessageResponse.getDefaultInstance();
           }
           sendMessageBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              SendMessageResponse, SendMessageResponse.Builder, SendMessageResponseOrBuilder>(
-                  (SendMessageResponse) protocol_,
+              com.data.pbprotocol.ChatProtocol.SendMessageResponse, com.data.pbprotocol.ChatProtocol.SendMessageResponse.Builder, com.data.pbprotocol.ChatProtocol.SendMessageResponseOrBuilder>(
+                  (com.data.pbprotocol.ChatProtocol.SendMessageResponse) protocol_,
                   getParentForChildren(),
                   isClean());
           protocol_ = null;
@@ -25198,7 +25453,7 @@ public final class ChatProtocol {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\022ChatProtocol.proto\022\023com.data.pbprotoco" +
       "l\"N\n\rRegistRequest\022\020\n\010username\030\001 \001(\t\022\020\n\010" +
       "password\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\013\n\003key\030\004 \001(" +
@@ -25237,44 +25492,45 @@ public final class ChatProtocol {
       "_suff\030\003 \001(\t\"-\n\022FileUploadResponse\022\n\n\002id\030" +
       "\001 \001(\003\022\013\n\003url\030\002 \001(\t\"A\n\022SendMessageRequest" +
       "\022\017\n\007chat_id\030\001 \001(\003\022\014\n\004type\030\002 \001(\005\022\014\n\004text\030" +
-      "\003 \001(\t\"\025\n\023SendMessageResponse\"\320\005\n\007Request" +
-      "\022\022\n\nsession_id\030\001 \001(\t\022\017\n\007user_id\030\002 \001(\003\022<\n",
-      "\016regist_request\030\n \001(\0132\".com.data.pbproto" +
-      "col.RegistRequestH\000\0222\n\005login\030\013 \001(\0132!.com" +
-      ".data.pbprotocol.LoginRequestH\000\0224\n\006logou" +
-      "t\030\014 \001(\0132\".com.data.pbprotocol.LogoutRequ" +
-      "estH\000\0220\n\004pipe\030\r \001(\0132 .com.data.pbprotoco" +
-      "l.PipeRequestH\000\022:\n\theartbeat\030\016 \001(\0132%.com" +
-      ".data.pbprotocol.HeartbeatRequestH\000\022=\n\013f" +
-      "riend_sync\030\017 \001(\0132&.com.data.pbprotocol.F" +
-      "riendSyncRequestH\000\022?\n\014message_sync\030\020 \001(\013" +
-      "2\'.com.data.pbprotocol.MessageSyncReques",
-      "tH\000\0229\n\tuser_sync\030\021 \001(\0132$.com.data.pbprot" +
-      "ocol.UserSyncRequestH\000\022=\n\013file_upload\030\022 " +
-      "\001(\0132&.com.data.pbprotocol.FileUploadRequ" +
-      "estH\000\022C\n\016check_username\030\023 \001(\0132).com.data" +
-      ".pbprotocol.CheckUsernameRequestH\000\022?\n\014se" +
-      "nd_message\030\024 \001(\0132\'.com.data.pbprotocol.S" +
-      "endMessageRequestH\000B\n\n\010protocol\"\342\005\n\010Resp" +
-      "onse\022\022\n\nerror_code\030\001 \001(\005\022\025\n\rerror_messag" +
-      "e\030\002 \001(\t\022=\n\016regist_request\030\n \001(\0132#.com.da" +
-      "ta.pbprotocol.RegistResponseH\000\0223\n\005login\030",
-      "\013 \001(\0132\".com.data.pbprotocol.LoginRespons" +
-      "eH\000\0225\n\006logout\030\014 \001(\0132#.com.data.pbprotoco" +
-      "l.LogoutResponseH\000\0221\n\004pipe\030\r \001(\0132!.com.d" +
-      "ata.pbprotocol.PipeResponseH\000\022;\n\theartbe" +
-      "at\030\016 \001(\0132&.com.data.pbprotocol.Heartbeat" +
-      "ResponseH\000\022>\n\013friend_sync\030\017 \001(\0132\'.com.da" +
-      "ta.pbprotocol.FriendSyncResponseH\000\022@\n\014me" +
-      "ssage_sync\030\020 \001(\0132(.com.data.pbprotocol.M" +
-      "essageSyncResponseH\000\022:\n\tuser_sync\030\021 \001(\0132" +
-      "%.com.data.pbprotocol.UserSyncResponseH\000",
-      "\022>\n\013file_upload\030\022 \001(\0132\'.com.data.pbproto" +
-      "col.FileUploadResponseH\000\022D\n\016check_userna" +
-      "me\030\023 \001(\0132*.com.data.pbprotocol.CheckUser" +
-      "nameResponseH\000\022@\n\014send_message\030\024 \001(\0132(.c" +
-      "om.data.pbprotocol.SendMessageResponseH\000" +
-      "B\n\n\010protocol"
+      "\003 \001(\t\"E\n\023SendMessageResponse\022.\n\010messages" +
+      "\030\001 \001(\0132\034.com.data.pbprotocol.Message\"\320\005\n",
+      "\007Request\022\022\n\nsession_id\030\001 \001(\t\022\017\n\007user_id\030" +
+      "\002 \001(\003\022<\n\016regist_request\030\n \001(\0132\".com.data" +
+      ".pbprotocol.RegistRequestH\000\0222\n\005login\030\013 \001" +
+      "(\0132!.com.data.pbprotocol.LoginRequestH\000\022" +
+      "4\n\006logout\030\014 \001(\0132\".com.data.pbprotocol.Lo" +
+      "goutRequestH\000\0220\n\004pipe\030\r \001(\0132 .com.data.p" +
+      "bprotocol.PipeRequestH\000\022:\n\theartbeat\030\016 \001" +
+      "(\0132%.com.data.pbprotocol.HeartbeatReques" +
+      "tH\000\022=\n\013friend_sync\030\017 \001(\0132&.com.data.pbpr" +
+      "otocol.FriendSyncRequestH\000\022?\n\014message_sy",
+      "nc\030\020 \001(\0132\'.com.data.pbprotocol.MessageSy" +
+      "ncRequestH\000\0229\n\tuser_sync\030\021 \001(\0132$.com.dat" +
+      "a.pbprotocol.UserSyncRequestH\000\022=\n\013file_u" +
+      "pload\030\022 \001(\0132&.com.data.pbprotocol.FileUp" +
+      "loadRequestH\000\022C\n\016check_username\030\023 \001(\0132)." +
+      "com.data.pbprotocol.CheckUsernameRequest" +
+      "H\000\022?\n\014send_message\030\024 \001(\0132\'.com.data.pbpr" +
+      "otocol.SendMessageRequestH\000B\n\n\010protocol\"" +
+      "\342\005\n\010Response\022\022\n\nerror_code\030\001 \001(\005\022\025\n\rerro" +
+      "r_message\030\002 \001(\t\022=\n\016regist_request\030\n \001(\0132",
+      "#.com.data.pbprotocol.RegistResponseH\000\0223" +
+      "\n\005login\030\013 \001(\0132\".com.data.pbprotocol.Logi" +
+      "nResponseH\000\0225\n\006logout\030\014 \001(\0132#.com.data.p" +
+      "bprotocol.LogoutResponseH\000\0221\n\004pipe\030\r \001(\013" +
+      "2!.com.data.pbprotocol.PipeResponseH\000\022;\n" +
+      "\theartbeat\030\016 \001(\0132&.com.data.pbprotocol.H" +
+      "eartbeatResponseH\000\022>\n\013friend_sync\030\017 \001(\0132" +
+      "\'.com.data.pbprotocol.FriendSyncResponse" +
+      "H\000\022@\n\014message_sync\030\020 \001(\0132(.com.data.pbpr" +
+      "otocol.MessageSyncResponseH\000\022:\n\tuser_syn",
+      "c\030\021 \001(\0132%.com.data.pbprotocol.UserSyncRe" +
+      "sponseH\000\022>\n\013file_upload\030\022 \001(\0132\'.com.data" +
+      ".pbprotocol.FileUploadResponseH\000\022D\n\016chec" +
+      "k_username\030\023 \001(\0132*.com.data.pbprotocol.C" +
+      "heckUsernameResponseH\000\022@\n\014send_message\030\024" +
+      " \001(\0132(.com.data.pbprotocol.SendMessageRe" +
+      "sponseH\000B\n\n\010protocol"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -25293,157 +25549,157 @@ public final class ChatProtocol {
     internal_static_com_data_pbprotocol_RegistRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_RegistRequest_descriptor,
-        new String[] { "Username", "Password", "Code", "Key", });
+        new java.lang.String[] { "Username", "Password", "Code", "Key", });
     internal_static_com_data_pbprotocol_RegistResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_com_data_pbprotocol_RegistResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_RegistResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_com_data_pbprotocol_CheckUsernameRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_CheckUsernameRequest_descriptor,
-        new String[] { "Username", });
+        new java.lang.String[] { "Username", });
     internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_com_data_pbprotocol_CheckUsernameResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_CheckUsernameResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_com_data_pbprotocol_LoginRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_com_data_pbprotocol_LoginRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_LoginRequest_descriptor,
-        new String[] { "Username", "Password", "CurrentVersion", "DeviceId", });
+        new java.lang.String[] { "Username", "Password", "CurrentVersion", "DeviceId", });
     internal_static_com_data_pbprotocol_LoginResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_com_data_pbprotocol_LoginResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_LoginResponse_descriptor,
-        new String[] { "SessionId", "UserId", "ServerTime", "NewVersion", "VersionTips", "DownloadUrl", });
+        new java.lang.String[] { "SessionId", "UserId", "ServerTime", "NewVersion", "VersionTips", "DownloadUrl", });
     internal_static_com_data_pbprotocol_LogoutRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_com_data_pbprotocol_LogoutRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_LogoutRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_com_data_pbprotocol_LogoutResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_com_data_pbprotocol_LogoutResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_LogoutResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_com_data_pbprotocol_HeartbeatRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_HeartbeatRequest_descriptor,
-        new String[] { "CurrentVersion", });
+        new java.lang.String[] { "CurrentVersion", });
     internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_com_data_pbprotocol_HeartbeatResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_HeartbeatResponse_descriptor,
-        new String[] { "FriendChanged", "MessageChanged", });
+        new java.lang.String[] { "FriendChanged", "MessageChanged", });
     internal_static_com_data_pbprotocol_PipeRequest_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_com_data_pbprotocol_PipeRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_PipeRequest_descriptor,
-        new String[] { "Code", "Request", });
+        new java.lang.String[] { "Code", "Request", });
     internal_static_com_data_pbprotocol_PipeResponse_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_com_data_pbprotocol_PipeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_PipeResponse_descriptor,
-        new String[] { "Code", "Response", });
+        new java.lang.String[] { "Code", "Response", });
     internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_com_data_pbprotocol_FriendSyncRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_FriendSyncRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_com_data_pbprotocol_FriendSyncResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_FriendSyncResponse_descriptor,
-        new String[] { "SyncType", "Friends", "RemoveFriends", });
+        new java.lang.String[] { "SyncType", "Friends", "RemoveFriends", });
     internal_static_com_data_pbprotocol_Friend_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_com_data_pbprotocol_Friend_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_Friend_descriptor,
-        new String[] { "Id", "Name", "Type", "Photo", "MangerIds", "Members", });
+        new java.lang.String[] { "Id", "Name", "Type", "Photo", "MangerIds", "Members", });
     internal_static_com_data_pbprotocol_Message_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_com_data_pbprotocol_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_Message_descriptor,
-        new String[] { "Id", "Text", "Type", "TopView", "RevFlag", "MsgDate", "ChatId", "SenderId", });
+        new java.lang.String[] { "Id", "Text", "Type", "TopView", "RevFlag", "MsgDate", "ChatId", "SenderId", });
     internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_com_data_pbprotocol_MessageSyncRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_MessageSyncRequest_descriptor,
-        new String[] { "LastId", });
+        new java.lang.String[] { "LastId", });
     internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_com_data_pbprotocol_MessageSyncResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_MessageSyncResponse_descriptor,
-        new String[] { "SyncType", "Messages", });
+        new java.lang.String[] { "SyncType", "Messages", });
     internal_static_com_data_pbprotocol_UserSyncRequest_descriptor =
       getDescriptor().getMessageTypes().get(18);
     internal_static_com_data_pbprotocol_UserSyncRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_UserSyncRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_com_data_pbprotocol_UserSyncResponse_descriptor =
       getDescriptor().getMessageTypes().get(19);
     internal_static_com_data_pbprotocol_UserSyncResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_UserSyncResponse_descriptor,
-        new String[] { "UserId", "Name", "Photo", "Sound", "Username", });
+        new java.lang.String[] { "UserId", "Name", "Photo", "Sound", "Username", });
     internal_static_com_data_pbprotocol_FileUploadRequest_descriptor =
       getDescriptor().getMessageTypes().get(20);
     internal_static_com_data_pbprotocol_FileUploadRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_FileUploadRequest_descriptor,
-        new String[] { "Content", "Type", "FileSuff", });
+        new java.lang.String[] { "Content", "Type", "FileSuff", });
     internal_static_com_data_pbprotocol_FileUploadResponse_descriptor =
       getDescriptor().getMessageTypes().get(21);
     internal_static_com_data_pbprotocol_FileUploadResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_FileUploadResponse_descriptor,
-        new String[] { "Id", "Url", });
+        new java.lang.String[] { "Id", "Url", });
     internal_static_com_data_pbprotocol_SendMessageRequest_descriptor =
       getDescriptor().getMessageTypes().get(22);
     internal_static_com_data_pbprotocol_SendMessageRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_SendMessageRequest_descriptor,
-        new String[] { "ChatId", "Type", "Text", });
+        new java.lang.String[] { "ChatId", "Type", "Text", });
     internal_static_com_data_pbprotocol_SendMessageResponse_descriptor =
       getDescriptor().getMessageTypes().get(23);
     internal_static_com_data_pbprotocol_SendMessageResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_SendMessageResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { "Messages", });
     internal_static_com_data_pbprotocol_Request_descriptor =
       getDescriptor().getMessageTypes().get(24);
     internal_static_com_data_pbprotocol_Request_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_Request_descriptor,
-        new String[] { "SessionId", "UserId", "RegistRequest", "Login", "Logout", "Pipe", "Heartbeat", "FriendSync", "MessageSync", "UserSync", "FileUpload", "CheckUsername", "SendMessage", "Protocol", });
+        new java.lang.String[] { "SessionId", "UserId", "RegistRequest", "Login", "Logout", "Pipe", "Heartbeat", "FriendSync", "MessageSync", "UserSync", "FileUpload", "CheckUsername", "SendMessage", "Protocol", });
     internal_static_com_data_pbprotocol_Response_descriptor =
       getDescriptor().getMessageTypes().get(25);
     internal_static_com_data_pbprotocol_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_data_pbprotocol_Response_descriptor,
-        new String[] { "ErrorCode", "ErrorMessage", "RegistRequest", "Login", "Logout", "Pipe", "Heartbeat", "FriendSync", "MessageSync", "UserSync", "FileUpload", "CheckUsername", "SendMessage", "Protocol", });
+        new java.lang.String[] { "ErrorCode", "ErrorMessage", "RegistRequest", "Login", "Logout", "Pipe", "Heartbeat", "FriendSync", "MessageSync", "UserSync", "FileUpload", "CheckUsername", "SendMessage", "Protocol", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

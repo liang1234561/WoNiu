@@ -41,8 +41,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONObject;
+import com.data.data.GlobObject;
 import com.data.data.NewMessage;
 import com.data.data.UpdataGroupUser;
+import com.data.data.bean.MsgBean;
 import com.data.db.Friend;
 import com.data.db.Message;
 import com.data.db.User;
@@ -1081,8 +1083,29 @@ public class ChatActivity extends Activity implements OnClickListener {
                         ChatProtocol.Response response = ChatProtocol.Response.parseFrom(protocol.getBodyBuffer());
                         Log.e("abc", response.toString());
                         if (response.getErrorCode() == 0) {
-
-
+                            ChatProtocol.SendMessageResponse sendMessageResponse = response.getSendMessage();
+                            ChatProtocol.Message pbmessage = sendMessageResponse.getMessages();
+                            Message message = new Message();
+                            long chatid = pbmessage.getChatId();
+                            message.setMessageId(pbmessage.getId());
+                            message.setChat_id(pbmessage.getChatId());
+                            message.setMsg_date(pbmessage.getMsgDate());
+                            message.setRev_flag(pbmessage.getRevFlag());
+                            message.setSender_id(pbmessage.getSenderId());
+                            message.setText(pbmessage.getText());
+                            message.setType(pbmessage.getType());
+                            message.setTop_view(pbmessage.getTopView());
+                            message.setDirect(2);
+                            message.saveOrUpdate("messageId = ?",""+message.getMessageId());
+                            MsgBean a = new MsgBean();
+                            a.setMessage(message);
+                            a.setIsnew(false);
+                            a.setChat_id(chatid);
+                            if(GlobObject.friendMap.get(chatid)!=null){
+                                a.setFriend(GlobObject.friendMap.get(chatid));
+                                GlobObject.msgMap.put(chatid,a);
+                            }
+                            EventBus.getDefault().post(new NewMessage());
                         } else {
                             TT.show(ChatActivity.this, "" + response.getErrorMessage());
                         }
