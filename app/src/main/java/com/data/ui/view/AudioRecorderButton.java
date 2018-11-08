@@ -23,6 +23,7 @@ public class AudioRecorderButton extends Button implements AudioManager.AudioSta
     private static final int STATE_NORMAL = 1;
     private static final int STATE_RECORDING = 2;
     private static final int STATE_WANT_TO_CANCEL = 3;
+    private static final int STATE_START = 4;
 
     private int mCurSate = STATE_NORMAL;
     //已经开始录音
@@ -134,6 +135,7 @@ public class AudioRecorderButton extends Button implements AudioManager.AudioSta
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 changeState(STATE_RECORDING);
+                mDialogManager.start();
                 break;
             case MotionEvent.ACTION_UP:
                 //未触发onlongclick,此时默认为不处理
@@ -226,6 +228,9 @@ public class AudioRecorderButton extends Button implements AudioManager.AudioSta
                     setBackgroundResource(R.drawable.btn_recording);
                     setText(R.string.str_recorder_want_cancel);
                     mDialogManager.wantToCancel();
+                    break;
+                case STATE_START:
+                    mDialogManager.start();
                     break;
             }
         }

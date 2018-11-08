@@ -2,6 +2,7 @@ package com.data.ui.view;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.drawable.AnimationDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,11 +19,11 @@ public class DialogManager {
 
     private Dialog mDialog;
 
-    private ImageView mIcon;
     private ImageView mVoice;
     private TextView mLabel;
 
     private Context mContext;
+    private AnimationDrawable animationDrawable;
 
     public DialogManager(Context context) {
         mContext = context;
@@ -34,31 +35,34 @@ public class DialogManager {
         View view = inflater.inflate(R.layout.dialog_main, null);
         mDialog.setContentView(view);
 
-        mIcon = (ImageView) mDialog.findViewById(R.id.id_recorder_dialog_icon);
         mVoice = (ImageView) mDialog.findViewById(R.id.id_recorder_dialog_voice);
         mLabel = (TextView) mDialog.findViewById(R.id.id_recorder_dialog_label);
+
+        animationDrawable = (AnimationDrawable) mVoice.getBackground();
+        animationDrawable.setOneShot(false);
 
         mDialog.show();
     }
 
+    public void start() {
+        if (mDialog != null && mDialog.isShowing()&&!animationDrawable.isRunning()) {
+            animationDrawable.start();
+            mLabel.setText("手指上滑，取消发送");
+        }
+    }
+
     public void recording() {
         if (mDialog != null && mDialog.isShowing()) {
-            mIcon.setVisibility(View.VISIBLE);
-            mVoice.setVisibility(View.VISIBLE);
-            mLabel.setVisibility(View.VISIBLE);
-
-            mIcon.setImageResource(R.drawable.recorder);
+            animationDrawable.stop();
             mLabel.setText("手指上滑，取消发送");
         }
     }
 
     public void wantToCancel() {
         if (mDialog != null && mDialog.isShowing()) {
-            mIcon.setVisibility(View.VISIBLE);
-            mVoice.setVisibility(View.VISIBLE);
-            mLabel.setVisibility(View.VISIBLE);
-
-            mIcon.setImageResource(R.drawable.cancel);
+            if (animationDrawable.isRunning()) {
+                animationDrawable.stop();
+            }
             mLabel.setText("松开手指，取消发送");
         }
 
@@ -66,11 +70,9 @@ public class DialogManager {
 
     public void toShort() {
         if (mDialog != null && mDialog.isShowing()) {
-            mIcon.setVisibility(View.VISIBLE);
-            mVoice.setVisibility(View.VISIBLE);
-            mLabel.setVisibility(View.VISIBLE);
-
-            mIcon.setImageResource(R.drawable.voice_to_short);
+            if (animationDrawable.isRunning()) {
+                animationDrawable.stop();
+            }
             mLabel.setText("录音时间过短");
         }
 
@@ -89,7 +91,6 @@ public class DialogManager {
      * @param level
      */
     public void updateVoiceLevel(int level) {
-        int resId = mContext.getResources().getIdentifier("v" + level,"drawable", mContext.getPackageName());
-        mVoice.setImageResource(resId);
+        start();
     }
 }
