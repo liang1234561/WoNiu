@@ -105,7 +105,7 @@ public class BeanMessageHandler extends Handler {
                 break;
             case USERSYN:
                 handleNewFriend();
-                sendEmptyMessageDelayed(MESSAGESYSNC,2000);
+                sendEmptyMessageDelayed(MESSAGESYSNC,4000);
                 getUserSyncRequest();
                 break;
             default:
@@ -295,6 +295,14 @@ public class BeanMessageHandler extends Handler {
     private void handleNewMessage() {
         if (!App.isOnline()) {
             return;
+        }
+        if(userId == 0){
+            User user = DataSupport.findFirst(User.class);
+            if (user != null){
+                userId = user.getUser_id();
+            }else {
+                return;
+            }
         }
         removeMessages(MESSAGESYSNC);
         long id = DataSupport.max(Message.class,"messageId",long.class);
