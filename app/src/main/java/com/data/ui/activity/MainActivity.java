@@ -212,8 +212,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
                     }, 3000);
                     break;
                 case 1:
-                    EMChatManager.getInstance().logout();// 退出环信聊天
-                    App.getInstance2().exit();
+//                    EMChatManager.getInstance().logout();// 退出环信聊天
+//                    App.getInstance2().exit();
                     finish();
                     overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
                     break;

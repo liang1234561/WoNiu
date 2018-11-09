@@ -1,12 +1,17 @@
 package com.data.operation;
 
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.data.data.AddFriend;
@@ -19,6 +24,7 @@ import com.data.db.Message;
 import com.data.db.User;
 import com.data.pbprotocol.ChatProtocol;
 import com.data.pbprotocol.ChatProtocol.Response;
+import com.data.ui.activity.MainActivity;
 import com.data.util.MobileSystemUtil;
 import com.data.util.net.NettyClient;
 import com.data.util.net.OnServerConnectListener;
@@ -27,9 +33,8 @@ import com.data.util.net.RequestParamTools;
 import com.data.util.net.RsProtocolContext;
 import com.data.util.net.bean.ProtocolContext;
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.data.MyApplication;
 import com.juns.wechat.App;
-
+import com.juns.wechat.R;
 
 import org.litepal.crud.DataSupport;
 
@@ -54,11 +59,14 @@ public class BeanMessageHandler extends Handler {
     public static int PORT = 9135;
     public static NettyClient appClient;
     public static long userId = 0;
+    private NotificationManager notifyMgr;
+    private int countNotification = 1;
 
     public BeanMessageHandler(Looper looper, Context context) {
         super(looper);
         this.mContext = context;
         userId =  PreferenceHelper.getLong("USERID",context);
+        notifyMgr = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
     }
 
     public synchronized boolean waitQuit() throws InterruptedException {
@@ -321,6 +329,7 @@ public class BeanMessageHandler extends Handler {
                         if(messageList.size()>0){
                             for (int i =0 ;i<messageList.size();i++){
                                 Message message = new Message();
+                                MsgBean a = new MsgBean();
                                 long chatid = messageList.get(i).getChatId();
                                 message.setMessageId(messageList.get(i).getId());
                                 message.setChat_id(messageList.get(i).getChatId());
@@ -332,13 +341,15 @@ public class BeanMessageHandler extends Handler {
                                 message.setTop_view(messageList.get(i).getTopView());
                                 if(messageList.get(i).getSenderId() == userId){
                                     message.setDirect(2);
+                                    a.setIsnew(false);
                                 }else{
                                     message.setDirect(1);
+                                    messageNotify(message);
+                                    a.setIsnew(true);
                                 }
                                 message.saveOrUpdate("messageId = ?",""+message.getMessageId());
-                                MsgBean a = new MsgBean();
                                 a.setMessage(message);
-                                a.setIsnew(true);
+
                                 if(messageList.get(i).getSenderId() == userId){
                                     a.setChat_id(chatid);
                                     if(GlobObject.friendMap.get(chatid)!=null){
@@ -408,6 +419,33 @@ public class BeanMessageHandler extends Handler {
             });
         } else {
 
+        }
+    }
+
+
+    private void messageNotify(Message info) {
+        if (notifyMgr != null) {
+            Intent intent = new Intent(mContext, MainActivity.class);
+            PendingIntent contentIntent = PendingIntent.getActivity(mContext, countNotification++, intent, 0);
+            //实例化NotificationCompat.Builde并设置相关属性
+            String titleName = "";
+            titleName = "计算器";
+
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext)
+                    //设置小图标
+                    .setSmallIcon(R.drawable.icon)
+                    //设置通知标题
+                    .setContentTitle(titleName)
+                    //设置通知内容
+                    .setContentText(info.getText())
+                    .setSound(Uri.parse("android.resource://" + mContext.getPackageName() + "/" + R.raw.beep))
+                    .setContentIntent(contentIntent);
+            //设置通知时间，默认为系统发出通知的时间，通常不用设置
+//	                .setWhen(System.currentTimeMillis());
+            //通过builder.build()方法生成Notification对象,并发送通知,id=1
+            android.app.Notification notification = builder.build();
+            notification.flags |= android.app.Notification.FLAG_AUTO_CANCEL;
+            notifyMgr.notify(countNotification++, notification);
         }
     }
 
