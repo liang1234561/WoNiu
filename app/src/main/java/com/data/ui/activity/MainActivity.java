@@ -268,7 +268,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
                 GlobObject.friendMap.put(id,GlobObject.friendList.get(i));
                 Message messages = null;
                 if(id>0){
-                    messages = DataSupport.where("chat_id = ? or sender_id = ?", id+"", id+"").findLast(Message.class);
+                    messages = DataSupport.where("(chat_id = ? or sender_id = ?) and chat_id > 0", id+"", id+"").findLast(Message.class);
                 }else{
                     messages = DataSupport.where("chat_id = ?", id+"").findLast(Message.class);
                 }

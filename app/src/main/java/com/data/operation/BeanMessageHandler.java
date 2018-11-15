@@ -351,17 +351,24 @@ public class BeanMessageHandler extends Handler {
                                 message.saveOrUpdate("messageId = ?",""+message.getMessageId());
                                 a.setMessage(message);
 
-                                if(messageList.get(i).getSenderId() == userId){
-                                    a.setChat_id(chatid);
+                                if(message.getChat_id()<0){
                                     if(GlobObject.friendMap.get(chatid)!=null){
                                         a.setFriend(GlobObject.friendMap.get(chatid));
                                         GlobObject.msgMap.put(chatid,a);
                                     }
-                                }else{
-                                    a.setChat_id(messageList.get(i).getSenderId());
-                                    if(GlobObject.friendMap.get(messageList.get(i).getSenderId())!=null){
-                                        a.setFriend(GlobObject.friendMap.get(messageList.get(i).getSenderId()));
-                                        GlobObject.msgMap.put(messageList.get(i).getSenderId(),a);
+                                }else {
+                                    if(messageList.get(i).getSenderId() == userId){
+                                        a.setChat_id(chatid);
+                                        if(GlobObject.friendMap.get(chatid)!=null){
+                                            a.setFriend(GlobObject.friendMap.get(chatid));
+                                            GlobObject.msgMap.put(chatid,a);
+                                        }
+                                    }else{
+                                        a.setChat_id(messageList.get(i).getSenderId());
+                                        if(GlobObject.friendMap.get(messageList.get(i).getSenderId())!=null){
+                                            a.setFriend(GlobObject.friendMap.get(messageList.get(i).getSenderId()));
+                                            GlobObject.msgMap.put(messageList.get(i).getSenderId(),a);
+                                        }
                                     }
                                 }
                             }
