@@ -61,6 +61,7 @@ public class BeanMessageHandler extends Handler {
     public static long userId = 0;
     private NotificationManager notifyMgr;
     private int countNotification = 1;
+    private Uri uri;
 
     public BeanMessageHandler(Looper looper, Context context) {
         super(looper);
@@ -424,12 +425,23 @@ public class BeanMessageHandler extends Handler {
 
 
     private void messageNotify(Message info) {
+
+
         if (notifyMgr != null) {
             Intent intent = new Intent(mContext, MainActivity.class);
             PendingIntent contentIntent = PendingIntent.getActivity(mContext, countNotification++, intent, 0);
             //实例化NotificationCompat.Builde并设置相关属性
             String titleName = "";
             titleName = "计算器";
+
+            if(uri == null){
+                User user = DataSupport.findFirst(User.class);
+                if (user != null){
+                    uri = Uri.parse(user.getSound());
+                }else {
+                    uri = Uri.parse("android.resource://" + mContext.getPackageName() + "/" + R.raw.sound_lingling);
+                }
+            }
 
             NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext)
                     //设置小图标
@@ -438,7 +450,7 @@ public class BeanMessageHandler extends Handler {
                     .setContentTitle(titleName)
                     //设置通知内容
                     .setContentText(info.getText())
-                    .setSound(Uri.parse("android.resource://" + mContext.getPackageName() + "/" + R.raw.beep))
+                    .setSound(uri)
                     .setContentIntent(contentIntent);
             //设置通知时间，默认为系统发出通知的时间，通常不用设置
 //	                .setWhen(System.currentTimeMillis());
