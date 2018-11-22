@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.data.data.GlobObject;
 import com.data.data.NewMessage;
+import com.data.data.OutLogin;
 import com.data.data.UpdataUser;
 import com.data.db.Friend;
 import com.data.db.Message;
@@ -20,8 +21,11 @@ import com.data.db.User;
 import com.data.operation.BeanMessageHandler;
 import com.data.pbprotocol.ChatProtocol;
 import com.data.ui.activity.LoginActivity;
+import com.data.ui.activity.MainActivity;
+import com.data.ui.activity.set.QueryListActivity;
 import com.data.ui.activity.set.UpdataImageActivity;
 import com.data.ui.view.TT;
+import com.data.util.MobileSystemUtil;
 import com.data.util.image.SmartImageView;
 import com.data.util.net.PbAsyncTcpResponse;
 import com.data.util.net.RequestParamTools;
@@ -93,6 +97,8 @@ public class Fragment_Profile extends Fragment implements OnClickListener {
         layout.findViewById(R.id.txt_smail).setOnClickListener(this);
         layout.findViewById(R.id.txt_setting).setOnClickListener(this);
         layout.findViewById(R.id.btn_outlogin).setOnClickListener(this);
+        layout.findViewById(R.id.btn_update).setOnClickListener(this);
+        layout.findViewById(R.id.btn_query).setOnClickListener(this);
     }
 
     private void initData() {
@@ -119,15 +125,11 @@ public class Fragment_Profile extends Fragment implements OnClickListener {
             case R.id.btn_outlogin:// 退出
                 logoutRequest();
                 break;
-            case R.id.txt_collect:// 收藏
-                Utils.start_Activity(getActivity(), PublicActivity.class,
-                        new BasicNameValuePair(Constants.NAME,
-                                getString(R.string.collection)));
+            case R.id.btn_update:// 查看版本
+                ((MainActivity)getActivity()).get("http://chat.tytools.cn/common/checkVersion.json?type=1&version="+ MobileSystemUtil.getVersion(getContext()),true);
                 break;
-            case R.id.txt_money:// 钱包
-                Utils.start_Activity(getActivity(), PublicActivity.class,
-                        new BasicNameValuePair(Constants.NAME,
-                                getString(R.string.wallet)));
+            case R.id.btn_query:// 查点数
+                Utils.start_Activity(getActivity(), QueryListActivity.class);
                 break;
             case R.id.txt_card:// 相册
                 Utils.start_Activity(getActivity(), PublicActivity.class,
@@ -160,13 +162,7 @@ public class Fragment_Profile extends Fragment implements OnClickListener {
                         ChatProtocol.Response response = ChatProtocol.Response.parseFrom(protocol.getBodyBuffer());
                         Log.e("abc", response.toString());
                         if (response.getErrorCode() == 0 || response.getErrorCode() == 300) {
-                            DataSupport.deleteAll(Friend.class);
-                            DataSupport.deleteAll(Message.class);
-                            DataSupport.deleteAll(User.class);
-                            GlobObject.clear();
-                            Utils.putBooleanValue(getActivity(),
-                                    Constants.LoginState, false);
-                            Utils.start_Activity(getActivity(), LoginActivity.class);
+                            logout();
                         } else {
                             TT.show(getActivity(), "" + response.getErrorMessage());
                         }
@@ -186,8 +182,22 @@ public class Fragment_Profile extends Fragment implements OnClickListener {
         }
     }
 
+    private void logout(){
+        DataSupport.deleteAll(Friend.class);
+        DataSupport.deleteAll(Message.class);
+        DataSupport.deleteAll(User.class);
+        GlobObject.clear();
+        Utils.putBooleanValue(getActivity(),
+                Constants.LoginState, false);
+        Utils.start_Activity(getActivity(), LoginActivity.class);
+    }
+
     public void onEventMainThread(UpdataUser updataUser){
         initData();
+    }
+
+    public void onEventMainThread(OutLogin outLogin){
+        logout();
     }
 
 }

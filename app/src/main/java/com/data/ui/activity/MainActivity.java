@@ -1,5 +1,6 @@
 package com.data.ui.activity;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,10 +13,13 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSONObject;
 import com.data.data.GlobObject;
 import com.data.data.bean.MsgBean;
 import com.data.db.Friend;
@@ -24,7 +28,7 @@ import com.data.ui.activity.group.CreateGroupChatActivity;
 import com.data.ui.fragment.Fragment_Friends;
 import com.data.ui.fragment.Fragment_Msg;
 import com.data.ui.fragment.Fragment_Profile;
-import com.easemob.chat.EMChatManager;
+import com.data.util.MobileSystemUtil;
 import com.juns.wechat.App;
 import com.juns.wechat.Constants;
 import com.juns.wechat.R;
@@ -36,9 +40,15 @@ import com.juns.wechat.dialog.WarnTipDialog;
 import org.apache.http.message.BasicNameValuePair;
 import org.litepal.crud.DataSupport;
 
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.Callable;
+import java.util.concurrent.FutureTask;
 
 public class MainActivity extends FragmentActivity implements OnClickListener {
     private TextView txt_title;
@@ -72,6 +82,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
                 initTabView();
                 initPopWindow();
                 setOnListener();
+                get("http://chat.tytools.cn/common/checkVersion.json?type=1&version="+ MobileSystemUtil.getVersion(getApplicationContext()),false);
             }
         });
     }
@@ -281,6 +292,84 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
                     GlobObject.msgMap.put(id,a);
                 }
             }
+        }
+    }
+
+
+    public void showVersionNoUpdate(String str,boolean click) {
+        JSONObject jsonObject = JSONObject.parseObject(str);
+        String url = "未发现新版本，当前安装的已是最新版本";
+        if(jsonObject.get("code").equals("200")){
+            if (jsonObject.get("url")!=null){
+                click = true;
+                url = jsonObject.getString("url");
+            }
+        }
+        final AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this, R.style.alertDialogStyle).create();
+        alertDialog.setCanceledOnTouchOutside(false);
+        if(click){
+            alertDialog.show();
+        }
+        Window window = alertDialog.getWindow();
+        window.setContentView(R.layout.upgrade_app);
+        alertDialog.setCanceledOnTouchOutside(true);
+        ((TextView) window.findViewById(R.id.upgrade_app_text)).setText("提示");
+        ((TextView) window.findViewById(R.id.upgrade_app_text_info)).setText(url);
+        ((Button) window.findViewById(R.id.upgrade_app_commit)).setText("确定");
+        ((Button) window.findViewById(R.id.upgrade_app_commit)).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
+            }
+        });
+    }
+
+    public void get(final String url,boolean click) {
+        Log.e(TAG, "getData: "+ url);
+        final StringBuilder sb = new StringBuilder();
+        FutureTask<String> task = new FutureTask<String>(new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                BufferedReader br = null;
+                InputStreamReader isr = null;
+                URLConnection conn;
+                try {
+                    URL geturl = new URL(url);
+                    conn = geturl.openConnection();//创建连接
+                    conn.connect();//get连接
+                    isr = new InputStreamReader(conn.getInputStream());//输入流
+                    br = new BufferedReader(isr);
+                    String line = null;
+                    while ((line = br.readLine()) != null) {
+                        sb.append(line);//获取输入流数据
+                    }
+                    System.out.println(sb.toString());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    if (br != null) {
+                        try {
+                            if (br != null) {
+                                br.close();
+                            }
+                            if (isr != null) {
+                                isr.close();
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                return sb.toString();
+            }
+        });
+        new Thread(task).start();
+        String s = null;
+        try {
+            s = task.get();
+            showVersionNoUpdate(s,click);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

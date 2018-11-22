@@ -10,7 +10,7 @@
 		android:layout_height="60.0dip"
 		android:background="@drawable/setting_item_selector"
 		android:paddingLeft="10dip">
-		<ImageView
+		<com.data.util.image.SmartImageView
 		    android:id="@+id/img_photo"
 			android:layout_width="45dip"
 			android:layout_height="45dip"

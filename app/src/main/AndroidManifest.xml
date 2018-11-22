@@ -90,6 +90,10 @@
         <activity
             android:name="com.data.ui.activity.set.UpdataNameActivity"
             android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.data.ui.activity.set.QueryListActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.data.ui.activity.friend.AddFriendAcyivity"
             android:screenOrientation="portrait"></activity>

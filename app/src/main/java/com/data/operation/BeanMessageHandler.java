@@ -17,6 +17,7 @@ import android.util.Log;
 import com.data.data.AddFriend;
 import com.data.data.GlobObject;
 import com.data.data.NewMessage;
+import com.data.data.OutLogin;
 import com.data.data.UpdataUser;
 import com.data.data.bean.MsgBean;
 import com.data.db.Friend;
@@ -167,6 +168,8 @@ public class BeanMessageHandler extends Handler {
                     }
 
                 }
+            } if(response.getErrorCode() == 900){
+                EventBus.getDefault().post(new OutLogin());
             }else{
                 Log.e("abc","sendHeartBeat  getErrorMessage:"+response.getErrorMessage().toString());
             }

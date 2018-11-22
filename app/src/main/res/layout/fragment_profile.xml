@@ -211,6 +211,29 @@
                 android:background="@color/black2" />
         </LinearLayout>
     </ScrollView>
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/setting_item_selector"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="查看点数"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/setting_item_selector"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="检查更新"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btn_outlogin"
@@ -218,7 +241,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/btn_bg_red2"
-        android:onClick="exitGroup"
         android:paddingBottom="7dp"
         android:paddingTop="7dp"
         android:text="退出"
