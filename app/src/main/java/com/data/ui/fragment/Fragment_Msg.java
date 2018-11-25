@@ -195,7 +195,6 @@ public class Fragment_Msg extends Fragment implements OnClickListener,
     }
 
     public void onEventMainThread(AddFriend friend) {
-
         for (int i = 0; i < GlobObject.friendList.size(); i++) {
             Long  id = GlobObject.friendList.get(i).getFriendId();
             GlobObject.friendMap.put(id,GlobObject.friendList.get(i));

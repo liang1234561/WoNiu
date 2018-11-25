@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
@@ -8,15 +8,27 @@
         android:id="@+id/layout_title"
         layout="@layout/layout_title" />
 
-    <com.data.util.list.CustomListView
-        android:id="@+id/clv_query"
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_base"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/layout_title"
-        android:divider="#00000000"
-        android:dividerHeight="0dp"
-        android:listSelector="#00000000"
-        android:scrollbars="none" />
+        android:layout_marginTop="10px"
+        android:background="#f6f7fa"
+        android:orientation="vertical">
+
+        <com.data.util.list.PullToRefreshMenuView
+            android:id="@+id/pull_base"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/white"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:requiresFadingEdge="none" />
+    </com.zhy.autolayout.AutoLinearLayout>
 
     <TextView
         android:id="@+id/tv_query"
@@ -29,4 +41,4 @@
         android:textColor="@color/black1"
         android:textSize="16sp"
         android:visibility="gone" />
-</RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

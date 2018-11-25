@@ -6,6 +6,7 @@ public interface Constants {
 	public static final String NEW_FRIENDS_USERNAME = "item_new_friends";
 	String isFriend = "isFriend";
 	String LoginState = "LoginState";
+	String Conn = "conn";
 	String UserInfo = "UserInfo";
 	String URL = "URL";
 	String Title = "Title";

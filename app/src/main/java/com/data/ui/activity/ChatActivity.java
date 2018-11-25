@@ -204,8 +204,12 @@ public class ChatActivity extends Activity implements OnClickListener {
             messages = DataSupport.order("msg_date desc").where("chat_id = ?", ""+chatId)
                     .offset(messagelist.size()).limit(10)
                     .find(Message.class);
-        }else{
+        }else if(chatId>10000){
             messages = DataSupport.order("msg_date desc").where("(chat_id = ? or sender_id = ?) and chat_id > 0", ""+chatId,""+chatId)
+                    .offset(messagelist.size()).limit(10)
+                    .find(Message.class);
+        }else{
+            messages = DataSupport.order("msg_date desc").where("chat_id = ?", ""+chatId)
                     .offset(messagelist.size()).limit(10)
                     .find(Message.class);
         }
@@ -226,6 +230,10 @@ public class ChatActivity extends Activity implements OnClickListener {
                 isManager = false;
             }
             txt_title.setText(friends.get(0).getName());
+        }else{
+            friend = new Friend(chatId,"系统管理员");
+            id = friend.getFriendId();
+            txt_title.setText(friend.getName());
         }
         Collections.reverse(messages);
         if (messages.size() > 0) {
@@ -985,8 +993,12 @@ public class ChatActivity extends Activity implements OnClickListener {
                                 messages = DataSupport.order("msg_date desc").where("chat_id = ?", ""+chatId)
                                         .offset(messagelist.size()).limit(20)
                                         .find(Message.class);
-                            }else {
+                            }else if(chatId >10000){
                                 messages = DataSupport.order("msg_date desc").where("(chat_id = ? or sender_id = ?) and chat_id > 0", ""+chatId,""+chatId)
+                                        .offset(messagelist.size()).limit(20)
+                                        .find(Message.class);
+                            }else{
+                                messages = DataSupport.order("msg_date desc").where("chat_id = ?", ""+chatId)
                                         .offset(messagelist.size()).limit(20)
                                         .find(Message.class);
                             }
@@ -1146,8 +1158,10 @@ public class ChatActivity extends Activity implements OnClickListener {
         List<Message> messages = null;
         if(chatId <0 ){
             messages = DataSupport.where("chat_id = ? and msg_date > ?",chatId + "", messagesMaxId + "").find(Message.class);
-        }else{
+        }else if(chatId>10000){
             messages = DataSupport.where("(chat_id = ? or sender_id = ?) and msg_date > ? and chat_id > 0", chatId + "", chatId + "", messagesMaxId + "").find(Message.class);
+        }else {
+            messages = DataSupport.where("chat_id = ? and msg_date > ?",chatId + "", messagesMaxId + "").find(Message.class);
         }
         if (messages.size() > 0) {
             Collections.reverse(messages);

@@ -1,6 +1,7 @@
 package com.data.operation;
 
 
+import android.app.Application;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -25,7 +26,9 @@ import com.data.db.Message;
 import com.data.db.User;
 import com.data.pbprotocol.ChatProtocol;
 import com.data.pbprotocol.ChatProtocol.Response;
+import com.data.ui.activity.LoginActivity;
 import com.data.ui.activity.MainActivity;
+import com.data.ui.activity.SplashActivity;
 import com.data.util.MobileSystemUtil;
 import com.data.util.net.NettyClient;
 import com.data.util.net.OnServerConnectListener;
@@ -35,7 +38,9 @@ import com.data.util.net.RsProtocolContext;
 import com.data.util.net.bean.ProtocolContext;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.juns.wechat.App;
+import com.juns.wechat.Constants;
 import com.juns.wechat.R;
+import com.juns.wechat.common.Utils;
 
 import org.litepal.crud.DataSupport;
 
@@ -168,7 +173,7 @@ public class BeanMessageHandler extends Handler {
                     }
 
                 }
-            } if(response.getErrorCode() == 900){
+            }else if(response.getErrorCode() == 900||response.getErrorCode() == 400){
                 EventBus.getDefault().post(new OutLogin());
             }else{
                 Log.e("abc","sendHeartBeat  getErrorMessage:"+response.getErrorMessage().toString());
@@ -186,14 +191,14 @@ public class BeanMessageHandler extends Handler {
                     new Handler(Looper.getMainLooper()).post(new Runnable() {
                         @Override
                         public void run() {
-
+                            Utils.putBooleanValue(App.getInstance(), Constants.Conn, true);
                         }
                     });
                 }
 
                 @Override
                 public void onConnectFailed(Throwable cause) {
-
+                    Utils.putBooleanValue(App.getInstance(), Constants.Conn, false);
                 }
             });
             try {
@@ -205,7 +210,7 @@ public class BeanMessageHandler extends Handler {
         return appClient;
     }
 
-    private void init(Context context) {
+    private void init(final Context context) {
         Log.e("JerryZhu", "init");
         appClient = new NettyClient(new InetSocketAddress(HOST, PORT), 30 * 1000, new OnServerConnectListener() {
             @Override
@@ -214,6 +219,7 @@ public class BeanMessageHandler extends Handler {
                     @Override
                     public void run() {
                         sendEmptyMessageDelayed(HEAT, 60 * 1000);
+                        Utils.putBooleanValue(context, Constants.Conn, true);
                         Log.e("abc", "onConnectSuccess: =============== ");
                     }
                 });
@@ -222,6 +228,7 @@ public class BeanMessageHandler extends Handler {
             @Override
             public void onConnectFailed(Throwable cause) {
                 Log.e("abc", "onConnectFailed: =============== ");
+                Utils.putBooleanValue(context, Constants.Conn, false);
                 removeMessages(STARTCONN);
                 sendEmptyMessageDelayed(STARTCONN, 10 * 1000);
             }
@@ -357,9 +364,10 @@ public class BeanMessageHandler extends Handler {
                                 if(message.getChat_id()<0){
                                     if(GlobObject.friendMap.get(chatid)!=null){
                                         a.setFriend(GlobObject.friendMap.get(chatid));
+                                        a.setChat_id(chatid);
                                         GlobObject.msgMap.put(chatid,a);
                                     }
-                                }else {
+                                }else if(message.getChat_id()>10000){
                                     if(messageList.get(i).getSenderId() == userId){
                                         a.setChat_id(chatid);
                                         if(GlobObject.friendMap.get(chatid)!=null){
@@ -373,6 +381,10 @@ public class BeanMessageHandler extends Handler {
                                             GlobObject.msgMap.put(messageList.get(i).getSenderId(),a);
                                         }
                                     }
+                                }else{
+                                    a.setFriend(new Friend(chatid,"系统管理员"));
+                                    a.setChat_id(chatid);
+                                    GlobObject.msgMap.put(chatid,a);
                                 }
                             }
                             EventBus.getDefault().post(new NewMessage());

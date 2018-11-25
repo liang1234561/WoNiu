@@ -8,16 +8,7 @@ import java.io.OutputStream;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
-/**
- * *****************************************************************************
- * 版权信息：博睿宏远科技发展有限公司 Copyright: Copyright (c) 2007博睿宏远科技发展有限公司,Inc.All Rights Reserved.
- *
- * @Title: CompressUtil.java
- * @Package com.bonree.util
- * @Description: 解压缩工具类
- * @version: 1.0
- * ****************************************************************************
- */
+
 public class CompressUtil {
 
     public static final int BUFFER = 1024;

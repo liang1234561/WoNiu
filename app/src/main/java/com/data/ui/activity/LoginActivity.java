@@ -162,6 +162,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
                     @Override
                     protected void onFailed(int type) {
                         dismissDialog();
+                        Utils.showLongToast(LoginActivity.this, "连接服务器异常");
                     }
                 });
             } else {

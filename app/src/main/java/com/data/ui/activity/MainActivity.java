@@ -45,6 +45,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.Callable;
@@ -272,15 +273,29 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
     private void getData(){
         if(GlobObject.friendMap.isEmpty()){
+            List<Message> messageList= DataSupport.where("chat_id > 0 and chat_id <10000 group by chat_id").find(Message.class);
+            for (int i = 0; i < messageList.size(); i++) {
+                Message message = DataSupport.where("chat_id = ?", messageList.get(i).getChat_id()+"").findLast(Message.class);
+                if(message != null){
+                    MsgBean a = new MsgBean();
+                    a.setChat_id(messageList.get(i).getChat_id());
+                    a.setFriend(new Friend(messageList.get(i).getChat_id(),"系统管理员"));
+                    a.setMessage(message);
+                    a.setIsnew(false);
+                    GlobObject.msgMap.put(messageList.get(i).getChat_id(),a);
+                }
+            }
+
+
             GlobObject.friendList = DataSupport.findAll(Friend.class);
             for (int i = 0; i < GlobObject.friendList.size(); i++) {
                 Log.e(TAG, "getData: "+ GlobObject.friendList.get(i).toString());
                 Long  id = GlobObject.friendList.get(i).getFriendId();
                 GlobObject.friendMap.put(id,GlobObject.friendList.get(i));
                 Message messages = null;
-                if(id>0){
+                if(id>=10000){
                     messages = DataSupport.where("(chat_id = ? or sender_id = ?) and chat_id > 0", id+"", id+"").findLast(Message.class);
-                }else{
+                }else if(id<0){
                     messages = DataSupport.where("chat_id = ?", id+"").findLast(Message.class);
                 }
                 if(messages != null){

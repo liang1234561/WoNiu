@@ -10,6 +10,14 @@ public class Friend extends DataSupport{
     private String manger_ids;//管理id
     private String members;//群友[Friend]z
 
+    public Friend() {
+    }
+
+    public Friend(long friendId, String name) {
+        this.friendId = friendId;
+        this.name = name;
+    }
+
     public long getFriendId() {
         return friendId;
     }

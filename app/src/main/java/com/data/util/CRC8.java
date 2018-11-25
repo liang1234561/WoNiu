@@ -6,41 +6,12 @@ public class CRC8 {
             (byte) 179, (byte) 81, (byte) 15, (byte) 78, (byte) 16, (byte) 242, (byte) 172, (byte) 47, (byte) 113, (byte) 147, (byte) 205, (byte) 17, (byte) 79, (byte) 173, (byte) 243, (byte) 112, (byte) 46, (byte) 204, (byte) 146, (byte) 211, (byte) 141, (byte) 111, (byte) 49, (byte) 178, (byte) 236, (byte) 14, (byte) 80, (byte) 175, (byte) 241, (byte) 19, (byte) 77, (byte) 206, (byte) 144, (byte) 114, (byte) 44, (byte) 109, (byte) 51, (byte) 209, (byte) 143, (byte) 12, (byte) 82, (byte) 176, (byte) 238, (byte) 50, (byte) 108, (byte) 142, (byte) 208, (byte) 83, (byte) 13, (byte) 239, (byte) 177, (byte) 240, (byte) 174, (byte) 76, (byte) 18, (byte) 145, (byte) 207, (byte) 45, (byte) 115, (byte) 202, (byte) 148, (byte) 118, (byte) 40, (byte) 171, (byte) 245, (byte) 23, (byte) 73, (byte) 8,
             (byte) 86, (byte) 180, (byte) 234, (byte) 105, (byte) 55, (byte) 213, (byte) 139, (byte) 87, (byte) 9, (byte) 235, (byte) 181, (byte) 54, (byte) 104, (byte) 138, (byte) 212, (byte) 149, (byte) 203, (byte) 41, (byte) 119, (byte) 244, (byte) 170, (byte) 72, (byte) 22, (byte) 233, (byte) 183, (byte) 85, (byte) 11, (byte) 136, (byte) 214, (byte) 52, (byte) 106, (byte) 43, (byte) 117, (byte) 151, (byte) 201, (byte) 74, (byte) 20, (byte) 246, (byte) 168, (byte) 116, (byte) 42, (byte) 200, (byte) 150, (byte) 21, (byte) 75, (byte) 169, (byte) 247, (byte) 182, (byte) 232, (byte) 10, (byte) 84, (byte) 215, (byte) 137, (byte) 107, 53};
 
-    /**
-     * *****************************************************************************
-     * 版权信息：博睿宏远科技发展有限公司
-     * Copyright: Copyright (c) 2007-2016博睿宏远科技发展有限公司,Inc.All Rights Reserved.
-     *
-     * @param @param  data
-     * @param @param  offset
-     * @param @param  len
-     * @param @return 设定文件
-     * @return byte    返回类型
-     * @throws *****************************************************************************
-     * @Title: calcCrc8
-     * @Description: 计算CRC8校验值
-     * @author 王明超 wangmc@bonree.com
-     */
+
     public static byte calcCrc8(byte[] data, int offset, int len) {
         return calcCrc8(data, offset, len, (byte) 0);
     }
 
-    /**
-     * *****************************************************************************
-     * 版权信息：博睿宏远科技发展有限公司
-     * Copyright: Copyright (c) 2007-2016博睿宏远科技发展有限公司,Inc.All Rights Reserved.
-     *
-     * @param @param  data
-     * @param @param  offset
-     * @param @param  len
-     * @param @param  preval
-     * @param @return 设定文件
-     * @return byte    返回类型
-     * @throws *****************************************************************************
-     * @Title: calcCrc8
-     * @Description: 计算CRC8校验值
-     * @author 王明超 wangmc@bonree.com
-     */
+
     public static byte calcCrc8(byte[] data, int offset, int len, byte preval) {
         byte ret = preval;
         for (int i = offset; i < (offset + len); ++i) {
@@ -54,19 +25,7 @@ public class CRC8 {
         System.out.println("" + Integer.toHexString(0x00ff & crc));
     }
 
-    /**
-     * *****************************************************************************
-     * 版权信息：博睿宏远科技发展有限公司
-     * Copyright: Copyright (c) 2007-2016博睿宏远科技发展有限公司,Inc.All Rights Reserved.
-     *
-     * @param @param  data
-     * @param @return 设定文件
-     * @return byte    返回类型
-     * @throws *****************************************************************************
-     * @Title: calcCrc8
-     * @Description: 计算数组的CRC8校验值
-     * @author 王明超 wangmc@bonree.com
-     */
+
     public static byte calcCrc8(byte[] data) {
         return calcCrc8(data, 0, data.length, (byte) 0);
     }

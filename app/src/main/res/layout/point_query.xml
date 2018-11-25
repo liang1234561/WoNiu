@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10px"
             android:gravity="center"
-            android:text="类型"
+            android:text=""
             android:textColor="@color/black" />
     </LinearLayout>
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10px"
             android:gravity="center"
-            android:text="类型"
+            android:text="点数"
             android:textColor="@color/black" />
 
         <TextView
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10px"
             android:gravity="center"
-            android:text="类型"
+            android:text=""
             android:textColor="@color/black" />
     </LinearLayout>
 
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10px"
             android:gravity="center"
-            android:text="类型"
+            android:text="时间"
             android:textColor="@color/black" />
 
         <TextView
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10px"
             android:gravity="center"
-            android:text="类型"
+            android:text=""
             android:textColor="@color/black" />
     </LinearLayout>
 

@@ -44,7 +44,7 @@ public class MobileSystemUtil {
         if (!PROFILEDIR.equals(""))
             return PROFILEDIR;
         else if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            PROFILEDIR = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "bonree";
+            PROFILEDIR = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "wx";
             return PROFILEDIR;
         } else {
             PROFILEDIR = context.getFilesDir().getAbsolutePath();

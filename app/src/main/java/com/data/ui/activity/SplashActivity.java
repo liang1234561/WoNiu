@@ -86,17 +86,24 @@ public class SplashActivity extends Activity implements EasyPermissions.Permissi
 			post(new Runnable() {
 				@Override
 				public void run() {
-					Boolean isLogin = Utils.getBooleanValue(SplashActivity.this,
-							Constants.LoginState);
-					Intent intent = new Intent();
-					if (isLogin) {
-						intent.setClass(SplashActivity.this, MainActivity.class);
-					} else {
-						intent.setClass(SplashActivity.this, LoginActivity.class);
+					if(Utils.getBooleanValue(SplashActivity.this,
+							Constants.Conn)){
+						Boolean isLogin = Utils.getBooleanValue(SplashActivity.this,
+								Constants.LoginState);
+						Intent intent = new Intent();
+						if (isLogin) {
+							intent.setClass(SplashActivity.this, MainActivity.class);
+						} else {
+							intent.setClass(SplashActivity.this, LoginActivity.class);
+						}
+						startActivity(intent);
+						overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
+						finish();
+					}else{
+						Utils.showLongToast(SplashActivity.this,"服务器连接不上");
+						finish();
 					}
-					startActivity(intent);
-					overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
-					finish();
+
 				}
 			});
 		}

@@ -10,11 +10,7 @@ import java.lang.reflect.Method;
 import java.util.Set;
 
 
-/**
- * SharedPreferences的基类
- *
- * @author ljc
- */
+
 public class BasePreferenceHelper {
     private static final String PREFERENCE = "preference"; //使用SharedPreferences保存数据 文件名
 
