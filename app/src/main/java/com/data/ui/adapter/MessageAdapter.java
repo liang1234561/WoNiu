@@ -372,7 +372,11 @@ public class MessageAdapter extends BaseAdapter {
 
     private void setSendName(ViewHolder viewHolder) {
         if (user != null) {
-            viewHolder.head_iv.setImageUrl(user.getPhoto());
+            if (user.getPhoto() == null) {
+                viewHolder.head_iv.setImageResource(R.drawable.webdefault);
+            }else {
+                viewHolder.head_iv.setImageUrl(user.getPhoto());
+            }
         }
     }
 

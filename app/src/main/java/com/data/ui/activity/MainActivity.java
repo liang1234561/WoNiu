@@ -279,7 +279,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
                 if(message != null){
                     MsgBean a = new MsgBean();
                     a.setChat_id(messageList.get(i).getChat_id());
-                    a.setFriend(new Friend(messageList.get(i).getChat_id(),"系统管理员"));
+                    Friend friend = DataSupport.where("friendId = ?", messageList.get(i).getChat_id() + "").findLast(Friend.class);
+                    if (friend == null) {
+                        a.setFriend(new Friend(messageList.get(i).getChat_id(),"系统管理员"));
+                    }else{
+                        a.setFriend(friend);
+                    }
                     a.setMessage(message);
                     a.setIsnew(false);
                     GlobObject.msgMap.put(messageList.get(i).getChat_id(),a);

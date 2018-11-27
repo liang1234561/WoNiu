@@ -94,7 +94,11 @@ public class NewMsgAdpter extends BaseAdapter {
 			return convertView;
 		}
 		txt_name.setText(conversation.getFriend().getName());
-		img_avar.setImageUrl(conversation.getFriend().getPhoto());
+		if (conversation.getFriend().getPhoto() == null) {
+			img_avar.setImageResource(R.drawable.webdefault);
+		}else{
+			img_avar.setImageUrl(conversation.getFriend().getPhoto());
+		}
 
 		if(conversation.isIsnew()){
 			unreadLabel.setVisibility(View.VISIBLE);
