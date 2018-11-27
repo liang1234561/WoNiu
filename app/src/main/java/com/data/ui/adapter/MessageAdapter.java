@@ -390,6 +390,9 @@ public class MessageAdapter extends BaseAdapter {
                     viewHolder.head_iv.setImageUrl(friend.getPhoto());
                 }
                 viewHolder.tv_userId.setText(friend.getName());
+            }else{
+                viewHolder.tv_userId.setText("系统管理员");
+                viewHolder.head_iv.setImageResource(R.drawable.webdefault);
             }
         }else{
             if (friend != null) {
