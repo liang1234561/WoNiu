@@ -17,6 +17,7 @@ import android.os.StrictMode;
 import android.text.TextUtils;
 
 import com.baidu.frontia.FrontiaApplication;
+import com.data.ExceptionHandler;
 import com.data.util.MobileSystemUtil;
 import com.easemob.chat.EMChat;
 import com.easemob.chat.EMChatManager;
@@ -43,6 +44,8 @@ public class App extends FrontiaApplication {
         super.onCreate();
         LitePal.initialize(this);
         _context = getApplicationContext();
+        ExceptionHandler exceptionHandler = ExceptionHandler.getInstance();
+        exceptionHandler.init(this);
         initEMChat();
         EMChat.getInstance().init(_context);
         EMChat.getInstance().setDebugMode(true);

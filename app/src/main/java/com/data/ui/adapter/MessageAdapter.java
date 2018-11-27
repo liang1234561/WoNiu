@@ -384,12 +384,20 @@ public class MessageAdapter extends BaseAdapter {
         if(map.size()>0){
             if(map.containsKey(message.getSender_id())){
                 Friend friend = map.get(message.getSender_id());
-                viewHolder.head_iv.setImageUrl(friend.getPhoto());
+                if (friend.getPhoto() == null) {
+                    viewHolder.head_iv.setImageResource(R.drawable.webdefault);
+                }else {
+                    viewHolder.head_iv.setImageUrl(friend.getPhoto());
+                }
                 viewHolder.tv_userId.setText(friend.getName());
             }
         }else{
             if (friend != null) {
-                viewHolder.head_iv.setImageUrl(friend.getPhoto());
+                if (friend.getPhoto() == null) {
+                    viewHolder.head_iv.setImageResource(R.drawable.webdefault);
+                }else {
+                    viewHolder.head_iv.setImageUrl(friend.getPhoto());
+                }
                 viewHolder.tv_userId.setText(friend.getName());
             }
         }
