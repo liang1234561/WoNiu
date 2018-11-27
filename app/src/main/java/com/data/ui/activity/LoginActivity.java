@@ -134,6 +134,9 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
                                 if (loginResponse.hasUserId()) {
                                     user.setUser_id(loginResponse.getUserId());
                                     PreferenceHelper.setLong("USERID",loginResponse.getUserId(),LoginActivity.this);
+                                    BeanMessageHandler.userId = loginResponse.getUserId();
+                                }else{
+                                    BeanMessageHandler.userId = 0;
                                 }
                                 user.save();
                                 EventBus.getDefault().post(new UserSyn());

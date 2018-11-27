@@ -72,7 +72,6 @@ public class BeanMessageHandler extends Handler {
     public BeanMessageHandler(Looper looper, Context context) {
         super(looper);
         this.mContext = context;
-        userId =  PreferenceHelper.getLong("USERID",context);
         notifyMgr = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
     }
 
