@@ -2,6 +2,7 @@ package com.data.ui.activity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.data.data.ExitGroup;
 import com.data.data.UpdataGroupUser;
 import com.data.db.Friend;
 import com.data.db.User;
@@ -177,6 +179,11 @@ public class GroupSettingActivity extends BaseActivity implements
         if(user != null){
             tv_groupname.setText(user.getName());
         }
+    }
+
+    public void onEventMainThread(ExitGroup user){
+        Log.e("abc","已经退群：");
+        GroupSettingActivity.this.finish();
     }
 
     @Override

@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.data.data.AddFriend;
 import com.data.data.GlobObject;
 import com.data.db.Friend;
 import com.data.ui.activity.BaseActivity;
@@ -21,16 +22,20 @@ import org.apache.http.message.BasicNameValuePair;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.greenrobot.event.EventBus;
+
 //群聊列表
 public class GroupListActivity extends BaseActivity implements OnClickListener {
 	private TextView txt_title;
 	private ImageView img_back, img_right;
 	private ListView mlistview;
 	private List<Friend> friends;
+	private MyGroupAdpter adapter;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_listview);
+		EventBus.getDefault().register(this);
 		super.onCreate(savedInstanceState);
 	}
 
@@ -61,7 +66,8 @@ public class GroupListActivity extends BaseActivity implements OnClickListener {
 			}
 
 			if (friends != null && friends.size() > 0) {
-				mlistview.setAdapter(new MyGroupAdpter(this, friends));
+				adapter = new MyGroupAdpter(this, friends);
+				mlistview.setAdapter(adapter);
 			} else {
 				TextView txt_nodata = (TextView) findViewById(R.id.txt_nochat);
 				txt_nodata.setText("暂时没有群聊");
@@ -98,4 +104,19 @@ public class GroupListActivity extends BaseActivity implements OnClickListener {
 		}
 	}
 
+	@Override
+	protected void onDestroy() {
+		EventBus.getDefault().unregister(this);
+		super.onDestroy();
+	}
+
+	public void onEventMainThread(AddFriend friend){
+		friends.clear();
+		for (int i = 0; i < GlobObject.friendList.size(); i++) {
+			if (GlobObject.friendList.get(i).getType() == 2) {
+				friends.add(GlobObject.friendList.get(i));
+			}
+		}
+		adapter.notifyDataSetChanged();
+	}
 }

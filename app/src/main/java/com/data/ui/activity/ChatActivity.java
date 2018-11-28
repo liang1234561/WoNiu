@@ -41,6 +41,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONObject;
+import com.data.data.ExitGroup;
 import com.data.data.GlobObject;
 import com.data.data.NewMessage;
 import com.data.data.UpdataGroupUser;
@@ -1182,4 +1183,8 @@ public class ChatActivity extends Activity implements OnClickListener {
         }
     }
 
+    public void onEventMainThread(ExitGroup user){
+        Log.e("abc","已经退群：");
+        ChatActivity.this.finish();
+    }
 }

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSONObject;
+import com.data.data.ExitGroup;
 import com.data.operation.BeanMessageHandler;
 import com.data.pbprotocol.ChatProtocol;
 import com.data.ui.activity.BaseActivity;
@@ -20,6 +21,8 @@ import com.google.protobuf.InvalidProtocolBufferException;
 import com.juns.wechat.App;
 import com.juns.wechat.R;
 import com.juns.wechat.common.Utils;
+
+import de.greenrobot.event.EventBus;
 
 public class ExitGroupAcyivity extends BaseActivity implements View.OnClickListener{
     private TextView txt_title;
@@ -57,6 +60,7 @@ public class ExitGroupAcyivity extends BaseActivity implements View.OnClickListe
                         if(response.getErrorCode() == 0){
                             JSONObject jsonObject = JSONObject.parseObject(response.getPipe().getResponse());
                             if(jsonObject.getInteger("code")==0){
+                                EventBus.getDefault().post(new ExitGroup());
                                 finish();
                             }else{
                                 TT.show(ExitGroupAcyivity.this,""+jsonObject.getString("message"));
