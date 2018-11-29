@@ -275,19 +275,20 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
         if(GlobObject.friendMap.isEmpty()){
             List<Message> messageList= DataSupport.where("chat_id > 0 and chat_id <10000 group by chat_id").find(Message.class);
             for (int i = 0; i < messageList.size(); i++) {
-                Message message = DataSupport.where("chat_id = ?", messageList.get(i).getChat_id()+"").findLast(Message.class);
+//                Message message = DataSupport.where("chat_id = ?", messageList.get(i).getChat_id()+"").findLast(Message.class);
+                Message message = messageList.get(i);
                 if(message != null){
                     MsgBean a = new MsgBean();
-                    a.setChat_id(messageList.get(i).getChat_id());
-                    Friend friend = DataSupport.where("friendId = ?", messageList.get(i).getChat_id() + "").findLast(Friend.class);
+                    a.setChat_id(message.getChat_id());
+                    Friend friend = DataSupport.where("friendId = ?", message.getChat_id() + "").findLast(Friend.class);
                     if (friend == null) {
-                        a.setFriend(new Friend(messageList.get(i).getChat_id(),"系统管理员"));
+                        a.setFriend(new Friend(message.getChat_id(),"系统管理员"));
                     }else{
                         a.setFriend(friend);
                     }
                     a.setMessage(message);
                     a.setIsnew(false);
-                    GlobObject.msgMap.put(messageList.get(i).getChat_id(),a);
+                    GlobObject.msgMap.put(message.getChat_id(),a);
                 }
             }
 

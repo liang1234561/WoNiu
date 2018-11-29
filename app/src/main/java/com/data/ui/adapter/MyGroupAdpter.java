@@ -15,8 +15,10 @@ import com.data.ui.activity.ChatActivity;
 import com.data.util.image.SmartImageView;
 import com.juns.wechat.Constants;
 import com.juns.wechat.R;
+import com.juns.wechat.common.PinyinComparator;
 import com.juns.wechat.common.ViewHolder;
 
+import java.util.Collections;
 import java.util.List;
 
 public class MyGroupAdpter extends BaseAdapter {
@@ -26,6 +28,7 @@ public class MyGroupAdpter extends BaseAdapter {
 	public MyGroupAdpter(Context ctx, List<Friend> grouplist) {
 		context = ctx;
 		this.grouplist = grouplist;
+		Collections.sort(grouplist, new PinyinComparator());
 	}
 
 	@Override

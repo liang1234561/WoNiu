@@ -86,8 +86,8 @@ public class SplashActivity extends Activity implements EasyPermissions.Permissi
 			post(new Runnable() {
 				@Override
 				public void run() {
-					if(Utils.getBooleanValue(SplashActivity.this,
-							Constants.Conn)){
+					if(/*Utils.getBooleanValue(SplashActivity.this,
+							Constants.Conn)*/true){
 						Boolean isLogin = Utils.getBooleanValue(SplashActivity.this,
 								Constants.LoginState);
 						Intent intent = new Intent();
